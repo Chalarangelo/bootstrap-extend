@@ -1,12 +1,38 @@
 //=====================================================================
 //  Password Toggle
 //=====================================================================
+$activatedBackgroundColor: #e3e3e3;
+$activatedBorderColor: #adadad;
+
 .pwd-toggle, .pwd-untoggle{
   cursor: pointer;
+  &:hover, &:active, &:focus{
+    background-color: $activatedBackgroundColor;
+    border-color: $activatedBorderColor;
+  }
 }
 .pwd-toggle:before{
-  content:"Show";
+  content: "Show";
 }
 .pwd-untoggle:before{
-  content:"Hide";
+  content: "Hide";
+}
+//=====================================================================
+//  Collapse Button
+//=====================================================================
+.btn.btn-toggle:before{
+  content: "+";
+}
+.btn.btn-untoggle:before{
+  content: "\2212";
+}
+.btn.btn-toggle, .btn.btn-untoggle{
+  font-size: 18px;
+  line-height: 1.111111112222222;
+}
+.btn.btn-toggle + label, .btn.btn-untoggle + label{
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }

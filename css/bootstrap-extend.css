@@ -1,10 +1,29 @@
 .pwd-toggle, .pwd-untoggle {
   cursor: pointer; }
+  .pwd-toggle:hover, .pwd-toggle:active, .pwd-toggle:focus, .pwd-untoggle:hover, .pwd-untoggle:active, .pwd-untoggle:focus {
+    background-color: #e3e3e3;
+    border-color: #adadad; }
 
 .pwd-toggle:before {
   content: "Show"; }
 
 .pwd-untoggle:before {
   content: "Hide"; }
+
+.btn.btn-toggle:before {
+  content: "+"; }
+
+.btn.btn-untoggle:before {
+  content: "\2212"; }
+
+.btn.btn-toggle, .btn.btn-untoggle {
+  font-size: 18px;
+  line-height: 1.111111112222222; }
+
+.btn.btn-toggle + label, .btn.btn-untoggle + label {
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer; }
 
 /*# sourceMappingURL=bootstrap-extend.css.map */

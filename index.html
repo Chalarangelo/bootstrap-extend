@@ -11,10 +11,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <script type="text/javascript" src="js/bootstrap-extend.js"></script>
   <link rel="stylesheet" href="css/bootstrap-extend.css"/>
-  <link rel="stylesheet" href="css/bootstrap-extend-local.css"/>
   <title>Bootstrap-Extend</title>
  </head>
  <body>
+<div class="container">
+
   <div class="page-header">
   <h1>Bootstrap Extend</h1>
   <p>A few useful extensions for the very popular <a href="http://getbootstrap.com/">Bootstrap</a> framework.</p>
@@ -25,7 +26,7 @@
   <br/>
 
   <h3>Password field with toggle</h3>
-  <p>Extend the functionality of your <code>&lt;input type="password"&gt;</code> fields by adding a button that toggles password display on or off. Simply add the <code>.pwd</code> class to your field and the <code>.pwd-toggle</code> class to a <code>&lt;span&gt;&lt;span/&gt;</code> element in the same <code>.input-group</code> and users can now toggle password viewing on or off. When the form is submitted, the field will revent to <code>type="password"</code> regardless of its current state. Just be sure to use an <code>&lt;input type="submit"&gt;</code> element to submit your form.</p>
+  <p>Extend the functionality of your <code>&lt;input type="password"&gt;</code> fields by adding a button that toggles password display on or off. Simply add the <code>.pwd</code> class to your field and the <code>.pwd-toggle</code> class to a <code>&lt;span&gt;&lt;span/&gt;</code> element in the same <code>.input-group</code> and users can now toggle password viewing on or off. When the form is submitted, the field will revert to <code>type="password"</code> regardless of its current state for security reasons. Just be sure to use an <code>&lt;input type="submit"&gt;</code> element to submit your form.</p>
   <div class="panel panel-default">
    <div class="panel-heading">
     <h4 class="panel-title">Example</h4>
@@ -37,16 +38,60 @@
     <span class="input-group-addon pwd-toggle"></span>
    </div>
    <br/>
-   <input type="submit" class="btn" value="Submit Form"><br>
+   <input type="submit" class="btn btn-default" value="Submit Form"><br>
    <h4>Usage:</h4>
    <figure class="highlight">
     <pre><code class="language-html" data-lang="html">&lt;div class="input-group"&gt;
   &lt;input type="password" class="form-control pwd"/&gt;
   &lt;span class="text" class="form-control"&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre></figure>
-<br/><p><strong>Original idea and implementation<strong> by <a href="https://codepen.io/shellbryson/post/toggle-passwords">Shell Bryson</a>.</p>
+  </div><p><strong>Original idea and implementation</strong> by <a href="https://codepen.io/shellbryson/post/toggle-passwords">Shell Bryson</a>.</p> 
+  </div>
+  <br/>
+  <h3>Collapse toggle box</h3>
+  <p>Bootstrap's <a href="http://getbootstrap.com/javascript/#collapse">Collapse</a> is great. But if you are looking for a different style for your content toggle buttons, you can now use the <code>.btn.btn-toggle</code> class next to a <code>&lt;label&gt;</code> element to achieve that. All the functionality of the original Bootstrap component remains intact.</p>
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Example</h4>
+   </div>
+  <div class="panel-body">
+    <a class="btn btn-primary btn-toggle" role="button" data-toggle="collapse" href="#collapseLinkExample" aria-expanded="false" aria-controls="collapseLinkExample">
+    </a><label>Collapse using link with href</label>
+    <div class="collapse" id="collapseLinkExample">
+      <div class="well">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur euismod lobortis. Donec odio justo, eleifend a lacinia quis, tempor vel nisi. Phasellus fermentum iaculis interdum. Nullam nec congue nisl. Donec a nisi velit. Cras eu elit in quam semper auctor ut sed lorem. In ac eleifend ligula. Sed vulputate id tortor in fringilla. 
+      </div>
+    </div><br>
+    <button class="btn btn-default btn-toggle" type="button" data-toggle="collapse" data-target="#collapseDataTargetExample" aria-expanded="false" aria-controls="collapseDataTargetExample"></button><label>Collapse using button with data-target</label>
+    <div class="collapse" id="collapseDataTargetExample">
+      <div class="well">
+      Etiam posuere luctus lorem, at tempus lectus varius vel. Nullam in elementum mauris. Aenean faucibus sagittis lacus, a viverra ante. Vestibulum a pharetra nibh. Nullam sit amet est a nisi tincidunt blandit in tristique dui. Integer sed viverra risus. Vivamus orci tortor, fermentum ac euismod eu, iaculis bibendum lectus.
+      </div>
+    </div><br>
+    <h4>Usage:</h4>
+    <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;!-- Link with href --&gt;
+&lt;a class="btn btn-primary btn-toggle" role="button" data-toggle="collapse" 
+   href="#collapseLinkExample" aria-expanded="false" aria-controls="collapseLinkExample"&gt;
+&lt;/a&gt;
+&lt;label&gt;Link with href&lt;/label&gt;
+&lt;div class="collapse" id="collapseLinkExample"&gt;
+ &lt;div class="well"&gt;
+  ...
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Button with data-target --&gt;
+&lt;button class="btn btn-default btn-toggle" type="button" data-toggle="collapse" 
+   data-target="#collapseDataTargetExample" aria-expanded="false" aria-controls="collapseDataTargetExample"&gt;
+&lt;/button&gt;
+&lt;label&gt;Button with data-target&lt;/label&gt;
+&lt;div class="collapse" id="collapseDataTargetExample"&gt;
+ &lt;div class="well"&gt;
+  ...
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
   </div>
   </div>
-  
  </body>
 </html>

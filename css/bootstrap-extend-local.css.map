@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,UAAW;EACP,MAAM,EAAE,cAAc;EACtB,OAAO,EAAE,eAAe",
-"sources": ["../scss/bootstrap-extend-local.scss"],
-"names": [],
-"file": "bootstrap-extend-local.css"
-}
