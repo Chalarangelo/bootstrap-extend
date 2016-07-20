@@ -1,3 +1,10 @@
+.pwd-toggle, .pwd-untoggle {
+  cursor: pointer; }
 
+.pwd-toggle:before {
+  content: "Show"; }
+
+.pwd-untoggle:before {
+  content: "Hide"; }
 
 /*# sourceMappingURL=bootstrap-extend.css.map */

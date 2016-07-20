@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAGA,0BAA0B;EACxB,MAAM,EAAE,OAAO;;AAEjB,kBAAkB;EAChB,OAAO,EAAC,MAAM;;AAEhB,oBAAoB;EAClB,OAAO,EAAC,MAAM",
+"sources": ["../scss/bootstrap-extend.scss"],
 "names": [],
 "file": "bootstrap-extend.css"
 }
