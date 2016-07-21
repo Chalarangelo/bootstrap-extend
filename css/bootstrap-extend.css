@@ -1,14 +1,20 @@
 .pwd-toggle, .pwd-untoggle {
-  cursor: pointer; }
+  cursor: pointer;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4; }
   .pwd-toggle:hover, .pwd-toggle:active, .pwd-toggle:focus, .pwd-untoggle:hover, .pwd-untoggle:active, .pwd-untoggle:focus {
-    background-color: #e3e3e3;
-    border-color: #adadad; }
+    background-color: #286090;
+    border-color: #204d74; }
+  .pwd-toggle:before, .pwd-untoggle:before {
+    font-family: 'Glyphicons Halflings';
+    font-size: 16px; }
 
 .pwd-toggle:before {
-  content: "Show"; }
+  content: "\e105"; }
 
 .pwd-untoggle:before {
-  content: "Hide"; }
+  content: "\e106"; }
 
 .btn.btn-toggle:before {
   content: "+"; }
@@ -26,18 +32,55 @@
   font-weight: 600;
   cursor: pointer; }
 
+input[type="checkbox"].chkbox {
+  opacity: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+  position: absolute; }
+  input[type="checkbox"].chkbox + label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer; }
+    input[type="checkbox"].chkbox + label:before {
+      content: '';
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 30px;
+      padding: 2px;
+      margin-right: 10px;
+      text-align: center; }
+    input[type="checkbox"].chkbox + label:hover::before {
+      border: 2px solid #adadad; }
+  input[type="checkbox"].chkbox:checked + label:before {
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+    background: #ebebeb;
+    color: #555; }
+
+/*
 .chkbox, .rdbtn {
   opacity: 0;
-  position: absolute; }
+  position: absolute;
+}
 
 .chkbox, .chkbox-label, .rdbtn, .rdbtn-label {
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .chkbox-label, .rdbtn-label {
-  position: relative; }
+  position: relative;
+}
 
 .chkbox + .chkbox-label:before, .rdbtn + .rdbtn-label:before {
   content: '';
@@ -50,22 +93,26 @@
   height: 30px;
   padding: 2px;
   margin-right: 10px;
-  text-align: center; }
+  text-align: center;
+}
 
 .chkbox:checked + .chkbox-label:before {
   content: "\e013";
   font-family: 'Glyphicons Halflings';
   background: #ebebeb;
-  color: #555; }
+  color: #555;
+}
 
 .chkbox-label:hover::before, .rdbtn-label:hover::before {
-  border: 2px solid #adadad; }
+  border: 2px solid #adadad;
+}
 
 .rdbtn + .rdbtn-label:before {
-  border-radius: 50%; }
-
+  border-radius: 50%;
+}
 .rdbtn:checked + .rdbtn-label:before {
   background: #4CAF50;
-  box-shadow: inset 0px 0px 0px 4px #fff; }
+  box-shadow: inset 0px 0px 0px 4px #fff;
+}*/
 
 /*# sourceMappingURL=bootstrap-extend.css.map */

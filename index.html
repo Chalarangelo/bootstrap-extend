@@ -48,6 +48,7 @@
   </div><p><strong>Original idea and implementation</strong> by <a href="https://codepen.io/shellbryson/post/toggle-passwords">Shell Bryson</a>.</p> 
   </div>
   <br/>
+
   <h3>Collapse toggle box</h3>
   <p>Bootstrap's <a href="http://getbootstrap.com/javascript/#collapse">Collapse</a> is great. But if you are looking for a different style for your content toggle buttons, you can now use the <code>.btn.btn-toggle</code> class next to a <code>&lt;label&gt;</code> element to achieve that. All the functionality of the original Bootstrap component remains intact.</p>
   <div class="panel panel-default">
@@ -55,14 +56,14 @@
     <h4 class="panel-title">Example</h4>
    </div>
   <div class="panel-body">
-    <a class="btn btn-primary btn-toggle" role="button" data-toggle="collapse" href="#collapseLinkExample" aria-expanded="false" aria-controls="collapseLinkExample">
+    <a class="btn btn-primary btn-toggle" role="button" id="btn-toggle-0" data-toggle="collapse" href="#collapseLinkExample" aria-expanded="false" aria-controls="collapseLinkExample">
     </a><label>Collapse using link with href</label>
     <div class="collapse" id="collapseLinkExample">
       <div class="well">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur euismod lobortis. Donec odio justo, eleifend a lacinia quis, tempor vel nisi. Phasellus fermentum iaculis interdum. Nullam nec congue nisl. Donec a nisi velit. Cras eu elit in quam semper auctor ut sed lorem. In ac eleifend ligula. Sed vulputate id tortor in fringilla. 
       </div>
     </div><br>
-    <button class="btn btn-default btn-toggle" type="button" data-toggle="collapse" data-target="#collapseDataTargetExample" aria-expanded="false" aria-controls="collapseDataTargetExample"></button><label>Collapse using button with data-target</label>
+    <button class="btn btn-default btn-toggle" id="btn-toggle-1" type="button" data-toggle="collapse" data-target="#collapseDataTargetExample" aria-expanded="false" aria-controls="collapseDataTargetExample"></button><label>Collapse using button with data-target</label>
     <div class="collapse" id="collapseDataTargetExample">
       <div class="well">
       Etiam posuere luctus lorem, at tempus lectus varius vel. Nullam in elementum mauris. Aenean faucibus sagittis lacus, a viverra ante. Vestibulum a pharetra nibh. Nullam sit amet est a nisi tincidunt blandit in tristique dui. Integer sed viverra risus. Vivamus orci tortor, fermentum ac euismod eu, iaculis bibendum lectus.
@@ -91,9 +92,23 @@
   ...
  &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
+   </div>
   </div>
+  <br/>
+  <h3>Checkbox styles</h3>
+  <p>Use the <code>.chkbox</code> class only on an <code>&lt;input type="checkbox"&gt;</code> elements. There are six flavours, similar to the normal Bootstrap buttons:</p>
+  <ul>
+    <li><code>.chkbox-default</code></li>
+    <li><code>.chkbox-primary</code></li>
+    <li><code>.chkbox-success</code></li>
+    <li><code>.chkbox-info</code></li>
+    <li><code>.chkbox-warning</code></li>
+    <li><code>.chkbox-danger</code></li>
+  </ul>
+
     <input id="custom-checkbox" class="chkbox" type="checkbox">
     <label for="custom-checkbox" class="chkbox-label">Custom Checkbox's Label</label>
-  </div>
+  
+</div>
  </body>
 </html>

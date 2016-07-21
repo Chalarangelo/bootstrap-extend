@@ -1,21 +1,37 @@
 //=====================================================================
+//  Global Variable Definitions
+//========================Extended .btn-default========================
+$shadeWhite:      #fff;   $shadeWhiteDark:       #e6e6e6;
+$shadeLightGray:  #eee;   $shadeLightGrayDark:   #e3e3e3;
+$shadeDarkGray:   #ccc;   $shadeDarkGrayDark:    #adadad;
+//========================Extended .btn-primary========================
+$shadeBlue:       #337ab7;$shadeBlueDark:        #286090;
+$shadeDarkBlue:   #2e6da4;$shadeDarkBlueDark:    #204d74;
+//========================Extended .btn-success========================
+$shadeGreen:      #5cb85c;$shadeGreenDark:       #449d44;
+$shadeDarkGreen:  #4cae4c;$shadeDarkGreenDark:   #398439;
+//=====================================================================
 //  Password Toggle
 //=====================================================================
-$activatedBackgroundColor: #e3e3e3;
-$activatedBorderColor: #adadad;
-
 .pwd-toggle, .pwd-untoggle{
   cursor: pointer;
+  color: $shadeWhite;
+  background-color: $shadeBlue;
+  border-color: $shadeDarkBlue;
   &:hover, &:active, &:focus{
-    background-color: $activatedBackgroundColor;
-    border-color: $activatedBorderColor;
+    background-color: $shadeBlueDark;
+    border-color: $shadeDarkBlueDark;
+  }
+  &:before{
+    font-family: 'Glyphicons Halflings';
+    font-size: 16px;
   }
 }
 .pwd-toggle:before{
-  content: "Show";
+  content: "\e105";
 }
 .pwd-untoggle:before{
-  content: "Hide";
+  content: "\e106";
 }
 //=====================================================================
 //  Collapse Button
@@ -39,10 +55,50 @@ $activatedBorderColor: #adadad;
 //=====================================================================
 //  Checkbox Styles
 // TODO: Add stuff like default, info etc. like .btn
-// TODO: Make selectors checkbox.chckbox so that they cannot be applied
-// on other stuff
 // TODO: Work on the radio class
 //=====================================================================
+input[type="checkbox"].chkbox{
+  opacity: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+  position: absolute;
+  &+label{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+    &:before{
+      content: '';
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 30px;
+      padding: 2px;
+      margin-right: 10px;
+      text-align: center;
+    }
+    &:hover::before{
+      border: 2px solid #adadad;
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        content: "\e013";
+        font-family: 'Glyphicons Halflings';
+        background: #ebebeb;
+        color: #555;
+      }
+    }
+  }
+}
+/*
 .chkbox, .rdbtn {
   opacity: 0;
   position: absolute;
@@ -90,4 +146,4 @@ $activatedBorderColor: #adadad;
 .rdbtn:checked + .rdbtn-label:before {
   background: #4CAF50;
   box-shadow: inset 0px 0px 0px 4px #fff;
-}
+}*/
