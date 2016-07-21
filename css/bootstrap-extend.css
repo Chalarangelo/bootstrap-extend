@@ -201,74 +201,153 @@ input[type="checkbox"].chkbox {
   cursor: not-allowed;
   opacity: .65; }
 
-.rdbtn {
+input[type="radio"].rdbtn {
   opacity: 0;
   position: absolute;
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
   cursor: pointer; }
-  .rdbtn + label {
+  input[type="radio"].rdbtn + label {
     position: relative;
     display: inline-block;
     vertical-align: middle;
     margin: 5px;
     cursor: pointer; }
-    .rdbtn + label:before {
+    input[type="radio"].rdbtn + label:before {
       content: '';
       background: #fff;
-      border: 1px solid #ccc;
       border-radius: 4px;
       display: inline-block;
       vertical-align: middle;
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 24px;
       padding: 2px;
       margin-right: 10px;
       text-align: center;
       border-radius: 50%; }
-    .rdbtn + label:hover::before {
-      border: 1px solid #adadad; }
-  .rdbtn:checked + label:before {
-    background: #4CAF50;
-    box-shadow: inset 0px 0px 0px 4px #fff; }
+  input[type="radio"].rdbtn:checked + label:before {
+    box-shadow: inset 0px 0px 0px 3px #fff; }
 
-/*
-.rdbtn, .rdbtn-label {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px;
-  cursor: pointer;
-}
+.rdbtn-default + label:before {
+  border: 1px solid #ccc; }
+.rdbtn-default + label:hover::before, .rdbtn-default + label:focus::before, .rdbtn-default + label.focus::before {
+  border: 1px solid #bfbfbf;
+  color: #fff !important;
+  background: #fff !important;
+  box-shadow: inset 0px 0px 0px 3px #555; }
+.rdbtn-default:checked + label:before {
+  color: #555;
+  background: #fff !important; }
+.rdbtn-default:checked + label:hover::before, .rdbtn-default:checked + label:focus::before, .rdbtn-default:checked + label.focus:before {
+  color: #3b3b3b !important;
+  background: #e6e6e6 !important; }
+.rdbtn-default.disabled + label, .rdbtn-default.disabled + label:hover::before, .rdbtn-default.disabled + label:focus::before, .rdbtn-default.disabled + label.focus:before, .rdbtn-default.disabled + label:before, .rdbtn-default.disabled + label:hover, .rdbtn-default.disabled + label:focus, .rdbtn-default.disabled + label.focus, .rdbtn-default.disabled:checked + label, .rdbtn-default.disabled:checked + label:hover::before, .rdbtn-default.disabled:checked + label:focus::before, .rdbtn-default.disabled:checked + label.focus:before, .rdbtn-default.disabled:checked + label:before, .rdbtn-default.disabled:checked + label:hover, .rdbtn-default.disabled:checked + label:focus, .rdbtn-default.disabled:checked + label.focus, .rdbtn-default[disabled] + label, .rdbtn-default[disabled] + label:hover::before, .rdbtn-default[disabled] + label:focus::before, .rdbtn-default[disabled] + label.focus:before, .rdbtn-default[disabled] + label:before, .rdbtn-default[disabled] + label:hover, .rdbtn-default[disabled] + label:focus, .rdbtn-default[disabled] + label.focus, .rdbtn-default[disabled]:checked + label, .rdbtn-default[disabled]:checked + label:hover::before, .rdbtn-default[disabled]:checked + label:focus::before, .rdbtn-default[disabled]:checked + label.focus:before, .rdbtn-default[disabled]:checked + label:before, .rdbtn-default[disabled]:checked + label:hover, .rdbtn-default[disabled]:checked + label:focus, .rdbtn-default[disabled]:checked + label.focus, fieldset[disabled]:checked .rdbtn-default + label, fieldset[disabled]:checked .rdbtn-default + label:hover::before, fieldset[disabled]:checked .rdbtn-default + label:focus::before, fieldset[disabled]:checked .rdbtn-default + label.focus:before, fieldset[disabled]:checked .rdbtn-default + label:before, fieldset[disabled]:checked .rdbtn-default + label:hover, fieldset[disabled]:checked .rdbtn-default + label:focus, fieldset[disabled]:checked .rdbtn-default + label.focus, fieldset[disabled] .rdbtn-default + label, fieldset[disabled] .rdbtn-default + label:hover::before, fieldset[disabled] .rdbtn-default + label:focus::before, fieldset[disabled] .rdbtn-default + label.focus:before, fieldset[disabled] .rdbtn-default + label:before, fieldset[disabled] .rdbtn-default + label:hover, fieldset[disabled] .rdbtn-default + label:focus, fieldset[disabled] .rdbtn-default + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
+.rdbtn-default + label:hover::before, .rdbtn-default + label:focus::before, .rdbtn-default + label.focus::before {
+  color: #555 !important; }
 
-.rdbtn-label {
-  position: relative;
-}
+.rdbtn-primary + label:before {
+  border: 1px solid #2e6da4; }
+.rdbtn-primary + label:hover::before, .rdbtn-primary + label:focus::before, .rdbtn-primary + label.focus::before {
+  border: 1px solid #173853;
+  color: #337ab7 !important;
+  background: #337ab7 !important;
+  box-shadow: inset 0px 0px 0px 3px #fff; }
+.rdbtn-primary:checked + label:before {
+  color: #fff;
+  background: #337ab7 !important; }
+.rdbtn-primary:checked + label:hover::before, .rdbtn-primary:checked + label:focus::before, .rdbtn-primary:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #285f8f !important; }
+.rdbtn-primary.disabled + label, .rdbtn-primary.disabled + label:hover::before, .rdbtn-primary.disabled + label:focus::before, .rdbtn-primary.disabled + label.focus:before, .rdbtn-primary.disabled + label:before, .rdbtn-primary.disabled + label:hover, .rdbtn-primary.disabled + label:focus, .rdbtn-primary.disabled + label.focus, .rdbtn-primary.disabled:checked + label, .rdbtn-primary.disabled:checked + label:hover::before, .rdbtn-primary.disabled:checked + label:focus::before, .rdbtn-primary.disabled:checked + label.focus:before, .rdbtn-primary.disabled:checked + label:before, .rdbtn-primary.disabled:checked + label:hover, .rdbtn-primary.disabled:checked + label:focus, .rdbtn-primary.disabled:checked + label.focus, .rdbtn-primary[disabled] + label, .rdbtn-primary[disabled] + label:hover::before, .rdbtn-primary[disabled] + label:focus::before, .rdbtn-primary[disabled] + label.focus:before, .rdbtn-primary[disabled] + label:before, .rdbtn-primary[disabled] + label:hover, .rdbtn-primary[disabled] + label:focus, .rdbtn-primary[disabled] + label.focus, .rdbtn-primary[disabled]:checked + label, .rdbtn-primary[disabled]:checked + label:hover::before, .rdbtn-primary[disabled]:checked + label:focus::before, .rdbtn-primary[disabled]:checked + label.focus:before, .rdbtn-primary[disabled]:checked + label:before, .rdbtn-primary[disabled]:checked + label:hover, .rdbtn-primary[disabled]:checked + label:focus, .rdbtn-primary[disabled]:checked + label.focus, fieldset[disabled]:checked .rdbtn-primary + label, fieldset[disabled]:checked .rdbtn-primary + label:hover::before, fieldset[disabled]:checked .rdbtn-primary + label:focus::before, fieldset[disabled]:checked .rdbtn-primary + label.focus:before, fieldset[disabled]:checked .rdbtn-primary + label:before, fieldset[disabled]:checked .rdbtn-primary + label:hover, fieldset[disabled]:checked .rdbtn-primary + label:focus, fieldset[disabled]:checked .rdbtn-primary + label.focus, fieldset[disabled] .rdbtn-primary + label, fieldset[disabled] .rdbtn-primary + label:hover::before, fieldset[disabled] .rdbtn-primary + label:focus::before, fieldset[disabled] .rdbtn-primary + label.focus:before, fieldset[disabled] .rdbtn-primary + label:before, fieldset[disabled] .rdbtn-primary + label:hover, fieldset[disabled] .rdbtn-primary + label:focus, fieldset[disabled] .rdbtn-primary + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
 
-.rdbtn + .rdbtn-label:before {
-  content: '';
-  background: #fff;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 30px;
-  height: 30px;
-  padding: 2px;
-  margin-right: 10px;
-  text-align: center;
-}
+.rdbtn-success + label:before {
+  border: 1px solid #4cae4c; }
+.rdbtn-success + label:hover::before, .rdbtn-success + label:focus::before, .rdbtn-success + label.focus::before {
+  border: 1px solid #2d672d;
+  color: #5cb85c !important;
+  background: #5cb85c !important;
+  box-shadow: inset 0px 0px 0px 3px #fff; }
+.rdbtn-success:checked + label:before {
+  color: #fff;
+  background: #5cb85c !important; }
+.rdbtn-success:checked + label:hover::before, .rdbtn-success:checked + label:focus::before, .rdbtn-success:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #449d44 !important; }
+.rdbtn-success.disabled + label, .rdbtn-success.disabled + label:hover::before, .rdbtn-success.disabled + label:focus::before, .rdbtn-success.disabled + label.focus:before, .rdbtn-success.disabled + label:before, .rdbtn-success.disabled + label:hover, .rdbtn-success.disabled + label:focus, .rdbtn-success.disabled + label.focus, .rdbtn-success.disabled:checked + label, .rdbtn-success.disabled:checked + label:hover::before, .rdbtn-success.disabled:checked + label:focus::before, .rdbtn-success.disabled:checked + label.focus:before, .rdbtn-success.disabled:checked + label:before, .rdbtn-success.disabled:checked + label:hover, .rdbtn-success.disabled:checked + label:focus, .rdbtn-success.disabled:checked + label.focus, .rdbtn-success[disabled] + label, .rdbtn-success[disabled] + label:hover::before, .rdbtn-success[disabled] + label:focus::before, .rdbtn-success[disabled] + label.focus:before, .rdbtn-success[disabled] + label:before, .rdbtn-success[disabled] + label:hover, .rdbtn-success[disabled] + label:focus, .rdbtn-success[disabled] + label.focus, .rdbtn-success[disabled]:checked + label, .rdbtn-success[disabled]:checked + label:hover::before, .rdbtn-success[disabled]:checked + label:focus::before, .rdbtn-success[disabled]:checked + label.focus:before, .rdbtn-success[disabled]:checked + label:before, .rdbtn-success[disabled]:checked + label:hover, .rdbtn-success[disabled]:checked + label:focus, .rdbtn-success[disabled]:checked + label.focus, fieldset[disabled]:checked .rdbtn-success + label, fieldset[disabled]:checked .rdbtn-success + label:hover::before, fieldset[disabled]:checked .rdbtn-success + label:focus::before, fieldset[disabled]:checked .rdbtn-success + label.focus:before, fieldset[disabled]:checked .rdbtn-success + label:before, fieldset[disabled]:checked .rdbtn-success + label:hover, fieldset[disabled]:checked .rdbtn-success + label:focus, fieldset[disabled]:checked .rdbtn-success + label.focus, fieldset[disabled] .rdbtn-success + label, fieldset[disabled] .rdbtn-success + label:hover::before, fieldset[disabled] .rdbtn-success + label:focus::before, fieldset[disabled] .rdbtn-success + label.focus:before, fieldset[disabled] .rdbtn-success + label:before, fieldset[disabled] .rdbtn-success + label:hover, fieldset[disabled] .rdbtn-success + label:focus, fieldset[disabled] .rdbtn-success + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
 
-.rdbtn-label:hover::before {
-  border: 2px solid #adadad;
-}
+.rdbtn-info + label:before {
+  border: 1px solid #46b8da; }
+.rdbtn-info + label:hover::before, .rdbtn-info + label:focus::before, .rdbtn-info + label.focus::before {
+  border: 1px solid #1f7e9a;
+  color: #5bc0de !important;
+  background: #5bc0de !important;
+  box-shadow: inset 0px 0px 0px 3px #fff; }
+.rdbtn-info:checked + label:before {
+  color: #fff;
+  background: #5bc0de !important; }
+.rdbtn-info:checked + label:hover::before, .rdbtn-info:checked + label:focus::before, .rdbtn-info:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #31b0d5 !important; }
+.rdbtn-info.disabled + label, .rdbtn-info.disabled + label:hover::before, .rdbtn-info.disabled + label:focus::before, .rdbtn-info.disabled + label.focus:before, .rdbtn-info.disabled + label:before, .rdbtn-info.disabled + label:hover, .rdbtn-info.disabled + label:focus, .rdbtn-info.disabled + label.focus, .rdbtn-info.disabled:checked + label, .rdbtn-info.disabled:checked + label:hover::before, .rdbtn-info.disabled:checked + label:focus::before, .rdbtn-info.disabled:checked + label.focus:before, .rdbtn-info.disabled:checked + label:before, .rdbtn-info.disabled:checked + label:hover, .rdbtn-info.disabled:checked + label:focus, .rdbtn-info.disabled:checked + label.focus, .rdbtn-info[disabled] + label, .rdbtn-info[disabled] + label:hover::before, .rdbtn-info[disabled] + label:focus::before, .rdbtn-info[disabled] + label.focus:before, .rdbtn-info[disabled] + label:before, .rdbtn-info[disabled] + label:hover, .rdbtn-info[disabled] + label:focus, .rdbtn-info[disabled] + label.focus, .rdbtn-info[disabled]:checked + label, .rdbtn-info[disabled]:checked + label:hover::before, .rdbtn-info[disabled]:checked + label:focus::before, .rdbtn-info[disabled]:checked + label.focus:before, .rdbtn-info[disabled]:checked + label:before, .rdbtn-info[disabled]:checked + label:hover, .rdbtn-info[disabled]:checked + label:focus, .rdbtn-info[disabled]:checked + label.focus, fieldset[disabled]:checked .rdbtn-info + label, fieldset[disabled]:checked .rdbtn-info + label:hover::before, fieldset[disabled]:checked .rdbtn-info + label:focus::before, fieldset[disabled]:checked .rdbtn-info + label.focus:before, fieldset[disabled]:checked .rdbtn-info + label:before, fieldset[disabled]:checked .rdbtn-info + label:hover, fieldset[disabled]:checked .rdbtn-info + label:focus, fieldset[disabled]:checked .rdbtn-info + label.focus, fieldset[disabled] .rdbtn-info + label, fieldset[disabled] .rdbtn-info + label:hover::before, fieldset[disabled] .rdbtn-info + label:focus::before, fieldset[disabled] .rdbtn-info + label.focus:before, fieldset[disabled] .rdbtn-info + label:before, fieldset[disabled] .rdbtn-info + label:hover, fieldset[disabled] .rdbtn-info + label:focus, fieldset[disabled] .rdbtn-info + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
 
-.rdbtn + .rdbtn-label:before {
-  border-radius: 50%;
-}
-.rdbtn:checked + .rdbtn-label:before {
-  background: #4CAF50;
-  box-shadow: inset 0px 0px 0px 4px #fff;
-}*/
+.rdbtn-warning + label:before {
+  border: 1px solid #eea236; }
+.rdbtn-warning + label:hover::before, .rdbtn-warning + label:focus::before, .rdbtn-warning + label.focus::before {
+  border: 1px solid #b06d0f;
+  color: #f0ad4e !important;
+  background: #f0ad4e !important;
+  box-shadow: inset 0px 0px 0px 3px #fff; }
+.rdbtn-warning:checked + label:before {
+  color: #fff;
+  background: #f0ad4e !important; }
+.rdbtn-warning:checked + label:hover::before, .rdbtn-warning:checked + label:focus::before, .rdbtn-warning:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #ec971f !important; }
+.rdbtn-warning.disabled + label, .rdbtn-warning.disabled + label:hover::before, .rdbtn-warning.disabled + label:focus::before, .rdbtn-warning.disabled + label.focus:before, .rdbtn-warning.disabled + label:before, .rdbtn-warning.disabled + label:hover, .rdbtn-warning.disabled + label:focus, .rdbtn-warning.disabled + label.focus, .rdbtn-warning.disabled:checked + label, .rdbtn-warning.disabled:checked + label:hover::before, .rdbtn-warning.disabled:checked + label:focus::before, .rdbtn-warning.disabled:checked + label.focus:before, .rdbtn-warning.disabled:checked + label:before, .rdbtn-warning.disabled:checked + label:hover, .rdbtn-warning.disabled:checked + label:focus, .rdbtn-warning.disabled:checked + label.focus, .rdbtn-warning[disabled] + label, .rdbtn-warning[disabled] + label:hover::before, .rdbtn-warning[disabled] + label:focus::before, .rdbtn-warning[disabled] + label.focus:before, .rdbtn-warning[disabled] + label:before, .rdbtn-warning[disabled] + label:hover, .rdbtn-warning[disabled] + label:focus, .rdbtn-warning[disabled] + label.focus, .rdbtn-warning[disabled]:checked + label, .rdbtn-warning[disabled]:checked + label:hover::before, .rdbtn-warning[disabled]:checked + label:focus::before, .rdbtn-warning[disabled]:checked + label.focus:before, .rdbtn-warning[disabled]:checked + label:before, .rdbtn-warning[disabled]:checked + label:hover, .rdbtn-warning[disabled]:checked + label:focus, .rdbtn-warning[disabled]:checked + label.focus, fieldset[disabled]:checked .rdbtn-warning + label, fieldset[disabled]:checked .rdbtn-warning + label:hover::before, fieldset[disabled]:checked .rdbtn-warning + label:focus::before, fieldset[disabled]:checked .rdbtn-warning + label.focus:before, fieldset[disabled]:checked .rdbtn-warning + label:before, fieldset[disabled]:checked .rdbtn-warning + label:hover, fieldset[disabled]:checked .rdbtn-warning + label:focus, fieldset[disabled]:checked .rdbtn-warning + label.focus, fieldset[disabled] .rdbtn-warning + label, fieldset[disabled] .rdbtn-warning + label:hover::before, fieldset[disabled] .rdbtn-warning + label:focus::before, fieldset[disabled] .rdbtn-warning + label.focus:before, fieldset[disabled] .rdbtn-warning + label:before, fieldset[disabled] .rdbtn-warning + label:hover, fieldset[disabled] .rdbtn-warning + label:focus, fieldset[disabled] .rdbtn-warning + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
+
+.rdbtn-danger + label:before {
+  border: 1px solid #d43f3a; }
+.rdbtn-danger + label:hover::before, .rdbtn-danger + label:focus::before, .rdbtn-danger + label.focus::before {
+  border: 1px solid #8b211e;
+  color: #d9534f !important;
+  background: #d9534f !important;
+  box-shadow: inset 0px 0px 0px 3px #fff; }
+.rdbtn-danger:checked + label:before {
+  color: #fff;
+  background: #d9534f !important; }
+.rdbtn-danger:checked + label:hover::before, .rdbtn-danger:checked + label:focus::before, .rdbtn-danger:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #c9302c !important; }
+.rdbtn-danger.disabled + label, .rdbtn-danger.disabled + label:hover::before, .rdbtn-danger.disabled + label:focus::before, .rdbtn-danger.disabled + label.focus:before, .rdbtn-danger.disabled + label:before, .rdbtn-danger.disabled + label:hover, .rdbtn-danger.disabled + label:focus, .rdbtn-danger.disabled + label.focus, .rdbtn-danger.disabled:checked + label, .rdbtn-danger.disabled:checked + label:hover::before, .rdbtn-danger.disabled:checked + label:focus::before, .rdbtn-danger.disabled:checked + label.focus:before, .rdbtn-danger.disabled:checked + label:before, .rdbtn-danger.disabled:checked + label:hover, .rdbtn-danger.disabled:checked + label:focus, .rdbtn-danger.disabled:checked + label.focus, .rdbtn-danger[disabled] + label, .rdbtn-danger[disabled] + label:hover::before, .rdbtn-danger[disabled] + label:focus::before, .rdbtn-danger[disabled] + label.focus:before, .rdbtn-danger[disabled] + label:before, .rdbtn-danger[disabled] + label:hover, .rdbtn-danger[disabled] + label:focus, .rdbtn-danger[disabled] + label.focus, .rdbtn-danger[disabled]:checked + label, .rdbtn-danger[disabled]:checked + label:hover::before, .rdbtn-danger[disabled]:checked + label:focus::before, .rdbtn-danger[disabled]:checked + label.focus:before, .rdbtn-danger[disabled]:checked + label:before, .rdbtn-danger[disabled]:checked + label:hover, .rdbtn-danger[disabled]:checked + label:focus, .rdbtn-danger[disabled]:checked + label.focus, fieldset[disabled]:checked .rdbtn-danger + label, fieldset[disabled]:checked .rdbtn-danger + label:hover::before, fieldset[disabled]:checked .rdbtn-danger + label:focus::before, fieldset[disabled]:checked .rdbtn-danger + label.focus:before, fieldset[disabled]:checked .rdbtn-danger + label:before, fieldset[disabled]:checked .rdbtn-danger + label:hover, fieldset[disabled]:checked .rdbtn-danger + label:focus, fieldset[disabled]:checked .rdbtn-danger + label.focus, fieldset[disabled] .rdbtn-danger + label, fieldset[disabled] .rdbtn-danger + label:hover::before, fieldset[disabled] .rdbtn-danger + label:focus::before, fieldset[disabled] .rdbtn-danger + label.focus:before, fieldset[disabled] .rdbtn-danger + label:before, fieldset[disabled] .rdbtn-danger + label:hover, fieldset[disabled] .rdbtn-danger + label:focus, fieldset[disabled] .rdbtn-danger + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
+
+.rdbtn-notice + label:before {
+  border: 1px solid #6f5499; }
+.rdbtn-notice + label:hover::before, .rdbtn-notice + label:focus::before, .rdbtn-notice + label.focus::before {
+  border: 1px solid #574478;
+  color: #9783b9 !important;
+  background: #9783b9 !important;
+  box-shadow: inset 0px 0px 0px 3px #fff; }
+.rdbtn-notice:checked + label:before {
+  color: #fff;
+  background: #9783b9 !important; }
+.rdbtn-notice:checked + label:hover::before, .rdbtn-notice:checked + label:focus::before, .rdbtn-notice:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #7c62a7 !important; }
+.rdbtn-notice.disabled + label, .rdbtn-notice.disabled + label:hover::before, .rdbtn-notice.disabled + label:focus::before, .rdbtn-notice.disabled + label.focus:before, .rdbtn-notice.disabled + label:before, .rdbtn-notice.disabled + label:hover, .rdbtn-notice.disabled + label:focus, .rdbtn-notice.disabled + label.focus, .rdbtn-notice.disabled:checked + label, .rdbtn-notice.disabled:checked + label:hover::before, .rdbtn-notice.disabled:checked + label:focus::before, .rdbtn-notice.disabled:checked + label.focus:before, .rdbtn-notice.disabled:checked + label:before, .rdbtn-notice.disabled:checked + label:hover, .rdbtn-notice.disabled:checked + label:focus, .rdbtn-notice.disabled:checked + label.focus, .rdbtn-notice[disabled] + label, .rdbtn-notice[disabled] + label:hover::before, .rdbtn-notice[disabled] + label:focus::before, .rdbtn-notice[disabled] + label.focus:before, .rdbtn-notice[disabled] + label:before, .rdbtn-notice[disabled] + label:hover, .rdbtn-notice[disabled] + label:focus, .rdbtn-notice[disabled] + label.focus, .rdbtn-notice[disabled]:checked + label, .rdbtn-notice[disabled]:checked + label:hover::before, .rdbtn-notice[disabled]:checked + label:focus::before, .rdbtn-notice[disabled]:checked + label.focus:before, .rdbtn-notice[disabled]:checked + label:before, .rdbtn-notice[disabled]:checked + label:hover, .rdbtn-notice[disabled]:checked + label:focus, .rdbtn-notice[disabled]:checked + label.focus, fieldset[disabled]:checked .rdbtn-notice + label, fieldset[disabled]:checked .rdbtn-notice + label:hover::before, fieldset[disabled]:checked .rdbtn-notice + label:focus::before, fieldset[disabled]:checked .rdbtn-notice + label.focus:before, fieldset[disabled]:checked .rdbtn-notice + label:before, fieldset[disabled]:checked .rdbtn-notice + label:hover, fieldset[disabled]:checked .rdbtn-notice + label:focus, fieldset[disabled]:checked .rdbtn-notice + label.focus, fieldset[disabled] .rdbtn-notice + label, fieldset[disabled] .rdbtn-notice + label:hover::before, fieldset[disabled] .rdbtn-notice + label:focus::before, fieldset[disabled] .rdbtn-notice + label.focus:before, fieldset[disabled] .rdbtn-notice + label:before, fieldset[disabled] .rdbtn-notice + label:hover, fieldset[disabled] .rdbtn-notice + label:focus, fieldset[disabled] .rdbtn-notice + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
 
 /*# sourceMappingURL=bootstrap-extend.css.map */

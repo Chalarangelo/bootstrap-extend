@@ -114,7 +114,47 @@ $shadePurple:     #9783b9;  $shadeDarkPurple: #6f5499;
     }
   }
 }
-
+//=====================================================================
+// Radio button variants mixin
+//
+// Easily pump out default styles, as well as :hover, :focus and 
+// disabled options for all radio buttons
+//=====================================================================
+@mixin radio-variant($color, $background, $border){
+  +label{
+    &:before{
+      border: 1px solid $border;
+    }
+    &:hover::before, &:focus::before, &.focus::before{
+      border: 1px solid darken($background, 25%);
+      color: $background !important;
+      background: $background !important;
+      box-shadow: inset 0px 0px 0px 3px $color;
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        color: $color;
+        background: $background !important;
+      }
+      &:hover::before, &:focus::before, &.focus:before{
+        color: darken($color, 10%) !important;
+        background: darken($background, 10%) !important;
+      }
+    }
+  }
+  &.disabled, &.disabled:checked, &[disabled], &[disabled]:checked,
+  fieldset[disabled]:checked &, fieldset[disabled] & {
+    +label{
+      &,&:hover::before,&:focus::before,&.focus:before,
+      &:before, &:hover, &:focus, &.focus {
+        cursor: not-allowed;
+        opacity: .65;
+      }
+    }
+  }
+}
 //=====================================================================
 //  Button Notice Style
 //=====================================================================
@@ -175,8 +215,6 @@ $shadePurple:     #9783b9;  $shadeDarkPurple: #6f5499;
 }
 //=====================================================================
 //  Checkbox Styles
-// TODO: Add stuff like default, info etc. like .btn
-// TODO: Work on the radio class
 //=====================================================================
 input[type="checkbox"].chkbox{
   opacity: 0;
@@ -243,9 +281,10 @@ input[type="checkbox"].chkbox{
 .chkbox-notice{
    @include checkbox-variant($shadeWhite,$shadePurple, $shadeDarkPurple);
 }
-
-
-.rdbtn {
+//=====================================================================
+//  Radio Button Styles
+//=====================================================================
+input[type="radio"].rdbtn {
   opacity: 0;
   position: absolute;
   display: inline-block;
@@ -260,65 +299,49 @@ input[type="checkbox"].chkbox{
     cursor: pointer;
     &:before{
       content: '';
-      background: #fff;
-      border: 1px solid #ccc;
+      background: $shadeWhite;
       border-radius: 4px;
       display: inline-block;
       vertical-align: middle;
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 24px;
       padding: 2px;
       margin-right: 10px;
       text-align: center;
       border-radius: 50%;
     }
-    &:hover::before{
-      border: 1px solid #adadad;
-    }
   }
   &:checked{
     &+label{
       &:before{
-        background: #4CAF50;
-        box-shadow: inset 0px 0px 0px 4px #fff;
+        box-shadow: inset 0px 0px 0px 3px $shadeWhite;
       }
     }
   }
 }
-/*
-.rdbtn, .rdbtn-label {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px;
-  cursor: pointer;
+.rdbtn-default{
+  @include radio-variant($shadeBlackGray,$shadeWhite, $shadeDarkGray);
+  +label{
+   &:hover::before, &:focus::before, &.focus::before{
+      color: $shadeBlackGray !important;
+    }
+  }
 }
-
-.rdbtn-label {
-  position: relative;
+.rdbtn-primary{
+  @include radio-variant($shadeWhite,$shadeBlue, $shadeDarkBlue);
 }
-
-.rdbtn + .rdbtn-label:before {
-  content: '';
-  background: #fff;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 30px;
-  height: 30px;
-  padding: 2px;
-  margin-right: 10px;
-  text-align: center;
+.rdbtn-success{
+  @include radio-variant($shadeWhite,$shadeGreen, $shadeDarkGreen);
 }
-
-.rdbtn-label:hover::before {
-  border: 2px solid #adadad;
+.rdbtn-info{
+  @include radio-variant($shadeWhite,$shadeCyan, $shadeDarkCyan);
 }
-
-.rdbtn + .rdbtn-label:before {
-  border-radius: 50%;
+.rdbtn-warning{
+  @include radio-variant($shadeWhite,$shadeOrange, $shadeDarkOrange);
 }
-.rdbtn:checked + .rdbtn-label:before {
-  background: #4CAF50;
-  box-shadow: inset 0px 0px 0px 4px #fff;
-}*/
+.rdbtn-danger{
+  @include radio-variant($shadeWhite,$shadeRed, $shadeDarkRed);
+}
+.rdbtn-notice{
+   @include radio-variant($shadeWhite,$shadePurple, $shadeDarkPurple);
+}
