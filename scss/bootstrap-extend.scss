@@ -4,23 +4,33 @@
 $shadeWhite:      #fff;   $shadeWhiteDark:       #e6e6e6;
 $shadeLightGray:  #eee;   $shadeLightGrayDark:   #e3e3e3;
 $shadeDarkGray:   #ccc;   $shadeDarkGrayDark:    #adadad;
+$shadeBlackGray:  #555;
 //========================Extended .btn-primary========================
 $shadeBlue:       #337ab7;$shadeBlueDark:        #286090;
 $shadeDarkBlue:   #2e6da4;$shadeDarkBlueDark:    #204d74;
 //========================Extended .btn-success========================
 $shadeGreen:      #5cb85c;$shadeGreenDark:       #449d44;
 $shadeDarkGreen:  #4cae4c;$shadeDarkGreenDark:   #398439;
+//========================Extended .btn-info===========================
+$shadeCyan:       #5bc0de;$shadeCyanDark:        #31b0d5;
+$shadeDarkCyan:   #46b8da;$shadeDarkCyanDark:    #269abc;
+//========================Extended .btn-warning========================
+$shadeOrange:     #f0ad4e;$shadeOrangeDark:      #ec971f;
+$shadeDarkOrange: #eea236;$shadeDarkOrangeDark:  #d58512;
+//========================Extended .btn-danger=========================
+$shadeRed:        #d9534f;$shadeRedDark:         #c9302c;
+$shadeDarkRed:    #d43f3a;$shadeDarkRedDark:     #ac2925;
 //=====================================================================
 //  Password Toggle
 //=====================================================================
 .pwd-toggle, .pwd-untoggle{
   cursor: pointer;
   color: $shadeWhite;
-  background-color: $shadeBlue;
-  border-color: $shadeDarkBlue;
+  background-color: $shadeCyan;
+  border-color: $shadeDarkCyan;
   &:hover, &:active, &:focus{
-    background-color: $shadeBlueDark;
-    border-color: $shadeDarkBlueDark;
+    background-color: $shadeCyanDark;
+    border-color: $shadeDarkCyanDark;
   }
   &:before{
     font-family: 'Glyphicons Halflings';
@@ -37,7 +47,7 @@ $shadeDarkGreen:  #4cae4c;$shadeDarkGreenDark:   #398439;
 //  Collapse Button
 //=====================================================================
 .btn.btn-toggle:before{
-  content: "+";
+    content: "+";
 }
 .btn.btn-untoggle:before{
   content: "\2212";
@@ -45,12 +55,12 @@ $shadeDarkGreen:  #4cae4c;$shadeDarkGreenDark:   #398439;
 .btn.btn-toggle, .btn.btn-untoggle{
   font-size: 18px;
   line-height: 1.111111112222222;
-}
-.btn.btn-toggle + label, .btn.btn-untoggle + label{
-  margin-left: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
+  &+label{
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
 }
 //=====================================================================
 //  Checkbox Styles
@@ -72,19 +82,19 @@ input[type="checkbox"].chkbox{
     cursor: pointer;
     &:before{
       content: '';
-      background: #fff;
-      border: 2px solid #ccc;
+      background: $shadeWhite;
       border-radius: 4px;
       display: inline-block;
       vertical-align: middle;
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
       padding: 2px;
       margin-right: 10px;
       text-align: center;
     }
     &:hover::before{
-      border: 2px solid #adadad;
+      content: "\e013";
+      font-family: 'Glyphicons Halflings';
     }
   }
   &:checked{
@@ -92,12 +102,69 @@ input[type="checkbox"].chkbox{
       &:before{
         content: "\e013";
         font-family: 'Glyphicons Halflings';
-        background: #ebebeb;
-        color: #555;
       }
     }
   }
 }
+.chkbox-default{
+  +label{
+    &:before{
+      border: 1px solid $shadeDarkGray;
+    }
+    &:hover::before{
+      border: 1px solid $shadeDarkGrayDark;
+      color: $shadeDarkGrayDark !important;
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        color: $shadeBlackGray;
+        background: $shadeLightGray !important;
+      }
+      &:hover::before{
+        color: $shadeDarkGrayDark !important;
+        background: $shadeLightGrayDark !important;
+      }
+    }
+  }
+}
+.chkbox-primary{
+  +label{
+    &:before{
+      border: 1px solid $shadeDarkBlue;
+    }
+    &:hover::before{
+      border: 1px solid $shadeDarkBlueDark;
+      color: $shadeBlue !important;
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        color: $shadeWhite;
+        background: $shadeBlue !important;
+      }
+      &:hover::before{
+        color: $shadeWhiteDark !important;
+        background: $shadeBlueDark !important;
+      }
+    }
+  }
+}
+.chkbox-success{
+
+}
+.chkbox-info{
+
+}
+.chkbox-warning{
+
+}
+.chkbox-danger{
+
+}
+
 /*
 .chkbox, .rdbtn {
   opacity: 0;

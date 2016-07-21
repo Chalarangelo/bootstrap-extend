@@ -1,11 +1,11 @@
 .pwd-toggle, .pwd-untoggle {
   cursor: pointer;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4; }
+  background-color: #5bc0de;
+  border-color: #46b8da; }
   .pwd-toggle:hover, .pwd-toggle:active, .pwd-toggle:focus, .pwd-untoggle:hover, .pwd-untoggle:active, .pwd-untoggle:focus {
-    background-color: #286090;
-    border-color: #204d74; }
+    background-color: #31b0d5;
+    border-color: #269abc; }
   .pwd-toggle:before, .pwd-untoggle:before {
     font-family: 'Glyphicons Halflings';
     font-size: 16px; }
@@ -25,12 +25,11 @@
 .btn.btn-toggle, .btn.btn-untoggle {
   font-size: 18px;
   line-height: 1.111111112222222; }
-
-.btn.btn-toggle + label, .btn.btn-untoggle + label {
-  margin-left: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer; }
+  .btn.btn-toggle + label, .btn.btn-untoggle + label {
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer; }
 
 input[type="checkbox"].chkbox {
   opacity: 0;
@@ -48,22 +47,44 @@ input[type="checkbox"].chkbox {
     input[type="checkbox"].chkbox + label:before {
       content: '';
       background: #fff;
-      border: 2px solid #ccc;
       border-radius: 4px;
       display: inline-block;
       vertical-align: middle;
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
       padding: 2px;
       margin-right: 10px;
       text-align: center; }
     input[type="checkbox"].chkbox + label:hover::before {
-      border: 2px solid #adadad; }
+      content: "\e013";
+      font-family: 'Glyphicons Halflings'; }
   input[type="checkbox"].chkbox:checked + label:before {
     content: "\e013";
-    font-family: 'Glyphicons Halflings';
-    background: #ebebeb;
-    color: #555; }
+    font-family: 'Glyphicons Halflings'; }
+
+.chkbox-default + label:before {
+  border: 1px solid #ccc; }
+.chkbox-default + label:hover::before {
+  border: 1px solid #adadad;
+  color: #adadad !important; }
+.chkbox-default:checked + label:before {
+  color: #555;
+  background: #eee !important; }
+.chkbox-default:checked + label:hover::before {
+  color: #adadad !important;
+  background: #e3e3e3 !important; }
+
+.chkbox-primary + label:before {
+  border: 1px solid #2e6da4; }
+.chkbox-primary + label:hover::before {
+  border: 1px solid #204d74;
+  color: #337ab7 !important; }
+.chkbox-primary:checked + label:before {
+  color: #fff;
+  background: #337ab7 !important; }
+.chkbox-primary:checked + label:hover::before {
+  color: #e6e6e6 !important;
+  background: #286090 !important; }
 
 /*
 .chkbox, .rdbtn {
