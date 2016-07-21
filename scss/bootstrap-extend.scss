@@ -244,24 +244,24 @@ input[type="checkbox"].chkbox{
    @include checkbox-variant($shadeWhite,$shadePurple, $shadeDarkPurple);
 }
 
-/*
-.chkbox, .rdbtn {
+
+.rdbtn {
   opacity: 0;
   position: absolute;
 }
 
-.chkbox, .chkbox-label, .rdbtn, .rdbtn-label {
+.rdbtn, .rdbtn-label {
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
   cursor: pointer;
 }
 
-.chkbox-label, .rdbtn-label {
+.rdbtn-label {
   position: relative;
 }
 
-.chkbox + .chkbox-label:before, .rdbtn + .rdbtn-label:before {
+.rdbtn + .rdbtn-label:before {
   content: '';
   background: #fff;
   border: 2px solid #ccc;
@@ -275,14 +275,7 @@ input[type="checkbox"].chkbox{
   text-align: center;
 }
 
-.chkbox:checked + .chkbox-label:before {
-  content: "\e013";
-  font-family: 'Glyphicons Halflings';
-  background: #ebebeb;
-  color: #555;
-}
-
-.chkbox-label:hover::before, .rdbtn-label:hover::before {
+.rdbtn-label:hover::before {
   border: 2px solid #adadad;
 }
 
@@ -292,4 +285,4 @@ input[type="checkbox"].chkbox{
 .rdbtn:checked + .rdbtn-label:before {
   background: #4CAF50;
   box-shadow: inset 0px 0px 0px 4px #fff;
-}*/
+}

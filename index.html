@@ -17,13 +17,27 @@
 <div class="container">
 
   <div class="page-header">
-  <h1>Bootstrap Extend</h1>
+  <h1>Bootstrap Extend <small>Easy-to-use components for Bootstrap 3</small></h1>
   <p>A few useful extensions for the very popular <a href="http://getbootstrap.com/">Bootstrap</a> framework.</p>
   </div>
 
-  <h2>Components <small>Easy-to-use components for Bootstrap 3</small></h2>
-  <p>The following is a list of available components as of now. This list will be updated as more components are developed and added to the framework.</p>
-  <br/>
+  <h2>Components, CSS and Javascript</h2>
+  <p>The following is a list of available components, styles and scripts as of now. This list will be updated as more components are developed and added to the framework.</p>
+
+  <h3>One extra button style <small>Because there can never be enough</small></h3>
+  <p>Use the <code>.btn-notice</code> class like any other button tag from Bootstrap. Inspired from the Bootstrap website's header colours.</p>
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Example</h4>
+   </div>
+  <div class="panel-body">
+   <button class="btn btn-notice">Hello there!</button>
+   <br/>
+   <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;button class="btn btn-notice"&gt;Hello there!&lt;button/&gt;</code></pre></figure>
+   </div> 
+  </div>
 
   <h3>Password field with toggle</h3>
   <p>Extend the functionality of your <code>&lt;input type="password"&gt;</code> fields by adding a button that toggles password display on or off. Simply add the <code>.pwd</code> class to your field and the <code>.pwd-toggle</code> class to a <code>&lt;span&gt;&lt;span/&gt;</code> element in the same <code>.input-group</code> and users can now toggle password viewing on or off. When the form is submitted, the field will revert to <code>type="password"</code> regardless of its current state for security reasons. Just be sure to use an <code>&lt;input type="submit"&gt;</code> element to submit your form.</p>
@@ -45,9 +59,9 @@
   &lt;input type="password" class="form-control pwd"/&gt;
   &lt;span class="text" class="form-control"&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre></figure>
-  </div><p><strong>Original idea and implementation</strong> by <a href="https://codepen.io/shellbryson/post/toggle-passwords">Shell Bryson</a>.</p> 
   </div>
-  <br/>
+  <p>&nbsp;&nbsp;&nbsp;<strong>Original idea and implementation</strong> by <a href="https://codepen.io/shellbryson/post/toggle-passwords">Shell Bryson</a>.</p> 
+  </div>
 
   <h3>Collapse toggle box</h3>
   <p>Bootstrap's <a href="http://getbootstrap.com/javascript/#collapse">Collapse</a> is great. But if you are looking for a different style for your content toggle buttons, you can now use the <code>.btn.btn-toggle</code> class next to a <code>&lt;label&gt;</code> element to achieve that. All the functionality of the original Bootstrap component remains intact.</p>
@@ -94,9 +108,9 @@
 &lt;/div&gt;</code></pre></figure>
    </div>
   </div>
-  <br/>
-  <h3>Checkbox styles <small>In 6 pure CSS flavours</small></h3>
-  <p>Use the <code>.chkbox</code> class only on an <code>&lt;input type="checkbox"&gt;</code> elements. There are six flavours, similar to the normal Bootstrap buttons:</p>
+
+  <h3>Checkbox styles <small>In 7 pure CSS flavours</small></h3>
+  <p>Use the <code>.chkbox</code> class only on an <code>&lt;input type="checkbox"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the checkbox's <code>id</code>. There are seven flavours of checkboxes, similar to the classic Bootstrap buttons:</p>
   <ul>
     <li><code>.chkbox-default</code></li>
     <li><code>.chkbox-primary</code></li>
@@ -104,10 +118,35 @@
     <li><code>.chkbox-info</code></li>
     <li><code>.chkbox-warning</code></li>
     <li><code>.chkbox-danger</code></li>
+    <li><code>.chkbox-notice</code></li>
   </ul>
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Example</h4>
+   </div>
+  <div class="panel-body">
+   <input id="ch1" class="chkbox chkbox-default" type="checkbox"> <label for="ch1">Default  </label>
+   <input id="ch2" class="chkbox chkbox-primary" type="checkbox"> <label for="ch2">Primary  </label>
+   <input id="ch3" class="chkbox chkbox-success" type="checkbox"> <label for="ch3">Success  </label>
+   <input id="ch4" class="chkbox chkbox-info"    type="checkbox"> <label for="ch4">Info     </label>
+   <input id="ch5" class="chkbox chkbox-warning" type="checkbox"> <label for="ch5">Danger   </label>
+   <input id="ch6" class="chkbox chkbox-danger"  type="checkbox"> <label for="ch6">Warning  </label>
+   <input id="ch7" class="chkbox chkbox-notice"  type="checkbox"> <label for="ch7">Notice   </label>
+   <br/>
+   <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;input type="checkbox" class="chkbox chkbox-default" id="chk-default"&gt;&lt;label for="chk-default"&gt;Default&lt;/label&gt;
+&lt;input type="checkbox" class="chkbox chkbox-primary" id="chk-primary"&gt;&lt;label for="chk-primary"&gt;Primary&lt;/label&gt;
+&lt;input type="checkbox" class="chkbox chkbox-success" id="chk-success"&gt;&lt;label for="chk-success"&gt;Success&lt;/label&gt;
+&lt;input type="checkbox" class="chkbox chkbox-info" id="chk-info"&gt;&lt;label for="chk-info"&gt;Info&lt;/label&gt;
+&lt;input type="checkbox" class="chkbox chkbox-warning" id="chk-warning"&gt;&lt;label for="chk-warning"&gt;Warning&lt;/label&gt;
+&lt;input type="checkbox" class="chkbox chkbox-danger" id="chk-danger"&gt;&lt;label for="chk-danger"&gt;Danger&lt;/label&gt;
+&lt;input type="checkbox" class="chkbox chkbox-notice" id="chk-notice"&gt;&lt;label for="chk-notice"&gt;Notice&lt;/label&gt;</code></pre></figure>
+   </div> 
+  </div>
 
-    <input id="custom-checkbox" class="chkbox chkbox-notice" type="checkbox">
-    <label for="custom-checkbox" class="chkbox-label">Custom Checkbox's Label</label>
+  <input id="rd1" class="rdbtn" name="test" type="radio"> <label for="rd1" class="rdbtn-label">Default  </label>
+  <input id="rd2" class="rdbtn" name="test" type="radio"> <label for="rd2" class="rdbtn-label">Primary  </label>
   
 </div>
  </body>

@@ -201,24 +201,20 @@ input[type="checkbox"].chkbox {
   cursor: not-allowed;
   opacity: .65; }
 
-/*
-.chkbox, .rdbtn {
+.rdbtn {
   opacity: 0;
-  position: absolute;
-}
+  position: absolute; }
 
-.chkbox, .chkbox-label, .rdbtn, .rdbtn-label {
+.rdbtn, .rdbtn-label {
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
-.chkbox-label, .rdbtn-label {
-  position: relative;
-}
+.rdbtn-label {
+  position: relative; }
 
-.chkbox + .chkbox-label:before, .rdbtn + .rdbtn-label:before {
+.rdbtn + .rdbtn-label:before {
   content: '';
   background: #fff;
   border: 2px solid #ccc;
@@ -229,26 +225,16 @@ input[type="checkbox"].chkbox {
   height: 30px;
   padding: 2px;
   margin-right: 10px;
-  text-align: center;
-}
+  text-align: center; }
 
-.chkbox:checked + .chkbox-label:before {
-  content: "\e013";
-  font-family: 'Glyphicons Halflings';
-  background: #ebebeb;
-  color: #555;
-}
-
-.chkbox-label:hover::before, .rdbtn-label:hover::before {
-  border: 2px solid #adadad;
-}
+.rdbtn-label:hover::before {
+  border: 2px solid #adadad; }
 
 .rdbtn + .rdbtn-label:before {
-  border-radius: 50%;
-}
+  border-radius: 50%; }
+
 .rdbtn:checked + .rdbtn-label:before {
   background: #4CAF50;
-  box-shadow: inset 0px 0px 0px 4px #fff;
-}*/
+  box-shadow: inset 0px 0px 0px 4px #fff; }
 
 /*# sourceMappingURL=bootstrap-extend.css.map */
