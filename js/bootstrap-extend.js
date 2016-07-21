@@ -3,6 +3,8 @@
 //  Password Toggle Click Event
 $(document).on('click','.pwd-toggle, .pwd-untoggle', function(e){
   e && e.preventDefault();
+  if($(e.target).hasClass('disabled') || $(e.target).attr('disabled') == true) 
+    return;
   var $field = $(e.target).siblings('.pwd');
   if ($field.attr('type') == 'password') {
       $(e.target).removeClass('pwd-toggle').addClass('pwd-untoggle');

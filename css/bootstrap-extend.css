@@ -1,14 +1,46 @@
+.btn-notice {
+  color: #fff;
+  background-color: #9783b9;
+  border-color: #6f5499; }
+  .btn-notice:focus, .btn-notice.focus {
+    color: #fff;
+    background-color: #7c62a7;
+    border-color: #332747; }
+  .btn-notice:hover {
+    color: #fff;
+    background-color: #7c62a7;
+    border-color: #523e71; }
+  .btn-notice:active, .btn-notice.active, .open > .btn-notice.dropdown-toggle {
+    color: #fff;
+    background-color: #7c62a7;
+    border-color: #523e71; }
+    .btn-notice:active:hover, .btn-notice:active:focus, .btn-notice:active.focus, .btn-notice.active:hover, .btn-notice.active:focus, .btn-notice.active.focus, .open > .btn-notice.dropdown-toggle:hover, .open > .btn-notice.dropdown-toggle:focus, .open > .btn-notice.dropdown-toggle.focus {
+      color: #fff;
+      background-color: #6a5393;
+      border-color: #332747; }
+  .btn-notice:active, .btn-notice.active, .open > .btn-notice.dropdown-toggle {
+    background-image: none; }
+  .btn-notice.disabled:hover, .btn-notice.disabled:focus, .btn-notice.disabled.focus, .btn-notice[disabled]:hover, .btn-notice[disabled]:focus, .btn-notice[disabled].focus, fieldset[disabled] .btn-notice:hover, fieldset[disabled] .btn-notice:focus, fieldset[disabled] .btn-notice.focus {
+    background-color: #9783b9;
+    border-color: #6f5499; }
+  .btn-notice .badge {
+    color: #9783b9;
+    background-color: #fff; }
+
 .pwd-toggle, .pwd-untoggle {
   cursor: pointer;
   color: #fff;
   background-color: #5bc0de;
   border-color: #46b8da; }
-  .pwd-toggle:hover, .pwd-toggle:active, .pwd-toggle:focus, .pwd-untoggle:hover, .pwd-untoggle:active, .pwd-untoggle:focus {
+  .pwd-toggle:hover, .pwd-toggle:active, .pwd-toggle:focus, .pwd-toggle.focus, .pwd-toggle.active, .pwd-untoggle:hover, .pwd-untoggle:active, .pwd-untoggle:focus, .pwd-untoggle.focus, .pwd-untoggle.active {
     background-color: #31b0d5;
-    border-color: #269abc; }
+    border-color: #1b6d86; }
   .pwd-toggle:before, .pwd-untoggle:before {
     font-family: 'Glyphicons Halflings';
     font-size: 16px; }
+  .pwd-toggle.disabled:hover, .pwd-toggle.disabled:focus, .pwd-toggle.disabled.focus, .pwd-toggle[disabled]:hover, .pwd-toggle[disabled]:focus, .pwd-toggle[disabled].focus, fieldset[disabled] .pwd-toggle:hover, fieldset[disabled] .pwd-toggle:focus, fieldset[disabled] .pwd-toggle.focus, .pwd-untoggle.disabled:hover, .pwd-untoggle.disabled:focus, .pwd-untoggle.disabled.focus, .pwd-untoggle[disabled]:hover, .pwd-untoggle[disabled]:focus, .pwd-untoggle[disabled].focus, fieldset[disabled] .pwd-untoggle:hover, fieldset[disabled] .pwd-untoggle:focus, fieldset[disabled] .pwd-untoggle.focus {
+    cursor: not-allowed;
+    opacity: .65; }
 
 .pwd-toggle:before {
   content: "\e105"; }
@@ -64,27 +96,110 @@ input[type="checkbox"].chkbox {
 
 .chkbox-default + label:before {
   border: 1px solid #ccc; }
-.chkbox-default + label:hover::before {
-  border: 1px solid #adadad;
-  color: #adadad !important; }
+.chkbox-default + label:hover::before, .chkbox-default + label:focus::before, .chkbox-default + label.focus::before {
+  border: 1px solid #bfbfbf;
+  color: #fff !important; }
 .chkbox-default:checked + label:before {
   color: #555;
-  background: #eee !important; }
-.chkbox-default:checked + label:hover::before {
-  color: #adadad !important;
-  background: #e3e3e3 !important; }
+  background: #fff !important; }
+.chkbox-default:checked + label:hover::before, .chkbox-default:checked + label:focus::before, .chkbox-default:checked + label.focus:before {
+  color: #3b3b3b !important;
+  background: #e6e6e6 !important; }
+.chkbox-default.disabled + label, .chkbox-default.disabled + label:hover::before, .chkbox-default.disabled + label:focus::before, .chkbox-default.disabled + label.focus:before, .chkbox-default.disabled + label:before, .chkbox-default.disabled + label:hover, .chkbox-default.disabled + label:focus, .chkbox-default.disabled + label.focus, .chkbox-default.disabled:checked + label, .chkbox-default.disabled:checked + label:hover::before, .chkbox-default.disabled:checked + label:focus::before, .chkbox-default.disabled:checked + label.focus:before, .chkbox-default.disabled:checked + label:before, .chkbox-default.disabled:checked + label:hover, .chkbox-default.disabled:checked + label:focus, .chkbox-default.disabled:checked + label.focus, .chkbox-default[disabled] + label, .chkbox-default[disabled] + label:hover::before, .chkbox-default[disabled] + label:focus::before, .chkbox-default[disabled] + label.focus:before, .chkbox-default[disabled] + label:before, .chkbox-default[disabled] + label:hover, .chkbox-default[disabled] + label:focus, .chkbox-default[disabled] + label.focus, .chkbox-default[disabled]:checked + label, .chkbox-default[disabled]:checked + label:hover::before, .chkbox-default[disabled]:checked + label:focus::before, .chkbox-default[disabled]:checked + label.focus:before, .chkbox-default[disabled]:checked + label:before, .chkbox-default[disabled]:checked + label:hover, .chkbox-default[disabled]:checked + label:focus, .chkbox-default[disabled]:checked + label.focus, fieldset[disabled]:checked .chkbox-default + label, fieldset[disabled]:checked .chkbox-default + label:hover::before, fieldset[disabled]:checked .chkbox-default + label:focus::before, fieldset[disabled]:checked .chkbox-default + label.focus:before, fieldset[disabled]:checked .chkbox-default + label:before, fieldset[disabled]:checked .chkbox-default + label:hover, fieldset[disabled]:checked .chkbox-default + label:focus, fieldset[disabled]:checked .chkbox-default + label.focus, fieldset[disabled] .chkbox-default + label, fieldset[disabled] .chkbox-default + label:hover::before, fieldset[disabled] .chkbox-default + label:focus::before, fieldset[disabled] .chkbox-default + label.focus:before, fieldset[disabled] .chkbox-default + label:before, fieldset[disabled] .chkbox-default + label:hover, fieldset[disabled] .chkbox-default + label:focus, fieldset[disabled] .chkbox-default + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
+.chkbox-default + label:hover::before, .chkbox-default + label:focus::before, .chkbox-default + label.focus::before {
+  color: #555 !important; }
 
 .chkbox-primary + label:before {
   border: 1px solid #2e6da4; }
-.chkbox-primary + label:hover::before {
-  border: 1px solid #204d74;
+.chkbox-primary + label:hover::before, .chkbox-primary + label:focus::before, .chkbox-primary + label.focus::before {
+  border: 1px solid #173853;
   color: #337ab7 !important; }
 .chkbox-primary:checked + label:before {
   color: #fff;
   background: #337ab7 !important; }
-.chkbox-primary:checked + label:hover::before {
+.chkbox-primary:checked + label:hover::before, .chkbox-primary:checked + label:focus::before, .chkbox-primary:checked + label.focus:before {
   color: #e6e6e6 !important;
-  background: #286090 !important; }
+  background: #285f8f !important; }
+.chkbox-primary.disabled + label, .chkbox-primary.disabled + label:hover::before, .chkbox-primary.disabled + label:focus::before, .chkbox-primary.disabled + label.focus:before, .chkbox-primary.disabled + label:before, .chkbox-primary.disabled + label:hover, .chkbox-primary.disabled + label:focus, .chkbox-primary.disabled + label.focus, .chkbox-primary.disabled:checked + label, .chkbox-primary.disabled:checked + label:hover::before, .chkbox-primary.disabled:checked + label:focus::before, .chkbox-primary.disabled:checked + label.focus:before, .chkbox-primary.disabled:checked + label:before, .chkbox-primary.disabled:checked + label:hover, .chkbox-primary.disabled:checked + label:focus, .chkbox-primary.disabled:checked + label.focus, .chkbox-primary[disabled] + label, .chkbox-primary[disabled] + label:hover::before, .chkbox-primary[disabled] + label:focus::before, .chkbox-primary[disabled] + label.focus:before, .chkbox-primary[disabled] + label:before, .chkbox-primary[disabled] + label:hover, .chkbox-primary[disabled] + label:focus, .chkbox-primary[disabled] + label.focus, .chkbox-primary[disabled]:checked + label, .chkbox-primary[disabled]:checked + label:hover::before, .chkbox-primary[disabled]:checked + label:focus::before, .chkbox-primary[disabled]:checked + label.focus:before, .chkbox-primary[disabled]:checked + label:before, .chkbox-primary[disabled]:checked + label:hover, .chkbox-primary[disabled]:checked + label:focus, .chkbox-primary[disabled]:checked + label.focus, fieldset[disabled]:checked .chkbox-primary + label, fieldset[disabled]:checked .chkbox-primary + label:hover::before, fieldset[disabled]:checked .chkbox-primary + label:focus::before, fieldset[disabled]:checked .chkbox-primary + label.focus:before, fieldset[disabled]:checked .chkbox-primary + label:before, fieldset[disabled]:checked .chkbox-primary + label:hover, fieldset[disabled]:checked .chkbox-primary + label:focus, fieldset[disabled]:checked .chkbox-primary + label.focus, fieldset[disabled] .chkbox-primary + label, fieldset[disabled] .chkbox-primary + label:hover::before, fieldset[disabled] .chkbox-primary + label:focus::before, fieldset[disabled] .chkbox-primary + label.focus:before, fieldset[disabled] .chkbox-primary + label:before, fieldset[disabled] .chkbox-primary + label:hover, fieldset[disabled] .chkbox-primary + label:focus, fieldset[disabled] .chkbox-primary + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
+
+.chkbox-success + label:before {
+  border: 1px solid #4cae4c; }
+.chkbox-success + label:hover::before, .chkbox-success + label:focus::before, .chkbox-success + label.focus::before {
+  border: 1px solid #2d672d;
+  color: #5cb85c !important; }
+.chkbox-success:checked + label:before {
+  color: #fff;
+  background: #5cb85c !important; }
+.chkbox-success:checked + label:hover::before, .chkbox-success:checked + label:focus::before, .chkbox-success:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #449d44 !important; }
+.chkbox-success.disabled + label, .chkbox-success.disabled + label:hover::before, .chkbox-success.disabled + label:focus::before, .chkbox-success.disabled + label.focus:before, .chkbox-success.disabled + label:before, .chkbox-success.disabled + label:hover, .chkbox-success.disabled + label:focus, .chkbox-success.disabled + label.focus, .chkbox-success.disabled:checked + label, .chkbox-success.disabled:checked + label:hover::before, .chkbox-success.disabled:checked + label:focus::before, .chkbox-success.disabled:checked + label.focus:before, .chkbox-success.disabled:checked + label:before, .chkbox-success.disabled:checked + label:hover, .chkbox-success.disabled:checked + label:focus, .chkbox-success.disabled:checked + label.focus, .chkbox-success[disabled] + label, .chkbox-success[disabled] + label:hover::before, .chkbox-success[disabled] + label:focus::before, .chkbox-success[disabled] + label.focus:before, .chkbox-success[disabled] + label:before, .chkbox-success[disabled] + label:hover, .chkbox-success[disabled] + label:focus, .chkbox-success[disabled] + label.focus, .chkbox-success[disabled]:checked + label, .chkbox-success[disabled]:checked + label:hover::before, .chkbox-success[disabled]:checked + label:focus::before, .chkbox-success[disabled]:checked + label.focus:before, .chkbox-success[disabled]:checked + label:before, .chkbox-success[disabled]:checked + label:hover, .chkbox-success[disabled]:checked + label:focus, .chkbox-success[disabled]:checked + label.focus, fieldset[disabled]:checked .chkbox-success + label, fieldset[disabled]:checked .chkbox-success + label:hover::before, fieldset[disabled]:checked .chkbox-success + label:focus::before, fieldset[disabled]:checked .chkbox-success + label.focus:before, fieldset[disabled]:checked .chkbox-success + label:before, fieldset[disabled]:checked .chkbox-success + label:hover, fieldset[disabled]:checked .chkbox-success + label:focus, fieldset[disabled]:checked .chkbox-success + label.focus, fieldset[disabled] .chkbox-success + label, fieldset[disabled] .chkbox-success + label:hover::before, fieldset[disabled] .chkbox-success + label:focus::before, fieldset[disabled] .chkbox-success + label.focus:before, fieldset[disabled] .chkbox-success + label:before, fieldset[disabled] .chkbox-success + label:hover, fieldset[disabled] .chkbox-success + label:focus, fieldset[disabled] .chkbox-success + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
+
+.chkbox-info + label:before {
+  border: 1px solid #46b8da; }
+.chkbox-info + label:hover::before, .chkbox-info + label:focus::before, .chkbox-info + label.focus::before {
+  border: 1px solid #1f7e9a;
+  color: #5bc0de !important; }
+.chkbox-info:checked + label:before {
+  color: #fff;
+  background: #5bc0de !important; }
+.chkbox-info:checked + label:hover::before, .chkbox-info:checked + label:focus::before, .chkbox-info:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #31b0d5 !important; }
+.chkbox-info.disabled + label, .chkbox-info.disabled + label:hover::before, .chkbox-info.disabled + label:focus::before, .chkbox-info.disabled + label.focus:before, .chkbox-info.disabled + label:before, .chkbox-info.disabled + label:hover, .chkbox-info.disabled + label:focus, .chkbox-info.disabled + label.focus, .chkbox-info.disabled:checked + label, .chkbox-info.disabled:checked + label:hover::before, .chkbox-info.disabled:checked + label:focus::before, .chkbox-info.disabled:checked + label.focus:before, .chkbox-info.disabled:checked + label:before, .chkbox-info.disabled:checked + label:hover, .chkbox-info.disabled:checked + label:focus, .chkbox-info.disabled:checked + label.focus, .chkbox-info[disabled] + label, .chkbox-info[disabled] + label:hover::before, .chkbox-info[disabled] + label:focus::before, .chkbox-info[disabled] + label.focus:before, .chkbox-info[disabled] + label:before, .chkbox-info[disabled] + label:hover, .chkbox-info[disabled] + label:focus, .chkbox-info[disabled] + label.focus, .chkbox-info[disabled]:checked + label, .chkbox-info[disabled]:checked + label:hover::before, .chkbox-info[disabled]:checked + label:focus::before, .chkbox-info[disabled]:checked + label.focus:before, .chkbox-info[disabled]:checked + label:before, .chkbox-info[disabled]:checked + label:hover, .chkbox-info[disabled]:checked + label:focus, .chkbox-info[disabled]:checked + label.focus, fieldset[disabled]:checked .chkbox-info + label, fieldset[disabled]:checked .chkbox-info + label:hover::before, fieldset[disabled]:checked .chkbox-info + label:focus::before, fieldset[disabled]:checked .chkbox-info + label.focus:before, fieldset[disabled]:checked .chkbox-info + label:before, fieldset[disabled]:checked .chkbox-info + label:hover, fieldset[disabled]:checked .chkbox-info + label:focus, fieldset[disabled]:checked .chkbox-info + label.focus, fieldset[disabled] .chkbox-info + label, fieldset[disabled] .chkbox-info + label:hover::before, fieldset[disabled] .chkbox-info + label:focus::before, fieldset[disabled] .chkbox-info + label.focus:before, fieldset[disabled] .chkbox-info + label:before, fieldset[disabled] .chkbox-info + label:hover, fieldset[disabled] .chkbox-info + label:focus, fieldset[disabled] .chkbox-info + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
+
+.chkbox-warning + label:before {
+  border: 1px solid #eea236; }
+.chkbox-warning + label:hover::before, .chkbox-warning + label:focus::before, .chkbox-warning + label.focus::before {
+  border: 1px solid #b06d0f;
+  color: #f0ad4e !important; }
+.chkbox-warning:checked + label:before {
+  color: #fff;
+  background: #f0ad4e !important; }
+.chkbox-warning:checked + label:hover::before, .chkbox-warning:checked + label:focus::before, .chkbox-warning:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #ec971f !important; }
+.chkbox-warning.disabled + label, .chkbox-warning.disabled + label:hover::before, .chkbox-warning.disabled + label:focus::before, .chkbox-warning.disabled + label.focus:before, .chkbox-warning.disabled + label:before, .chkbox-warning.disabled + label:hover, .chkbox-warning.disabled + label:focus, .chkbox-warning.disabled + label.focus, .chkbox-warning.disabled:checked + label, .chkbox-warning.disabled:checked + label:hover::before, .chkbox-warning.disabled:checked + label:focus::before, .chkbox-warning.disabled:checked + label.focus:before, .chkbox-warning.disabled:checked + label:before, .chkbox-warning.disabled:checked + label:hover, .chkbox-warning.disabled:checked + label:focus, .chkbox-warning.disabled:checked + label.focus, .chkbox-warning[disabled] + label, .chkbox-warning[disabled] + label:hover::before, .chkbox-warning[disabled] + label:focus::before, .chkbox-warning[disabled] + label.focus:before, .chkbox-warning[disabled] + label:before, .chkbox-warning[disabled] + label:hover, .chkbox-warning[disabled] + label:focus, .chkbox-warning[disabled] + label.focus, .chkbox-warning[disabled]:checked + label, .chkbox-warning[disabled]:checked + label:hover::before, .chkbox-warning[disabled]:checked + label:focus::before, .chkbox-warning[disabled]:checked + label.focus:before, .chkbox-warning[disabled]:checked + label:before, .chkbox-warning[disabled]:checked + label:hover, .chkbox-warning[disabled]:checked + label:focus, .chkbox-warning[disabled]:checked + label.focus, fieldset[disabled]:checked .chkbox-warning + label, fieldset[disabled]:checked .chkbox-warning + label:hover::before, fieldset[disabled]:checked .chkbox-warning + label:focus::before, fieldset[disabled]:checked .chkbox-warning + label.focus:before, fieldset[disabled]:checked .chkbox-warning + label:before, fieldset[disabled]:checked .chkbox-warning + label:hover, fieldset[disabled]:checked .chkbox-warning + label:focus, fieldset[disabled]:checked .chkbox-warning + label.focus, fieldset[disabled] .chkbox-warning + label, fieldset[disabled] .chkbox-warning + label:hover::before, fieldset[disabled] .chkbox-warning + label:focus::before, fieldset[disabled] .chkbox-warning + label.focus:before, fieldset[disabled] .chkbox-warning + label:before, fieldset[disabled] .chkbox-warning + label:hover, fieldset[disabled] .chkbox-warning + label:focus, fieldset[disabled] .chkbox-warning + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
+
+.chkbox-danger + label:before {
+  border: 1px solid #d43f3a; }
+.chkbox-danger + label:hover::before, .chkbox-danger + label:focus::before, .chkbox-danger + label.focus::before {
+  border: 1px solid #8b211e;
+  color: #d9534f !important; }
+.chkbox-danger:checked + label:before {
+  color: #fff;
+  background: #d9534f !important; }
+.chkbox-danger:checked + label:hover::before, .chkbox-danger:checked + label:focus::before, .chkbox-danger:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #c9302c !important; }
+.chkbox-danger.disabled + label, .chkbox-danger.disabled + label:hover::before, .chkbox-danger.disabled + label:focus::before, .chkbox-danger.disabled + label.focus:before, .chkbox-danger.disabled + label:before, .chkbox-danger.disabled + label:hover, .chkbox-danger.disabled + label:focus, .chkbox-danger.disabled + label.focus, .chkbox-danger.disabled:checked + label, .chkbox-danger.disabled:checked + label:hover::before, .chkbox-danger.disabled:checked + label:focus::before, .chkbox-danger.disabled:checked + label.focus:before, .chkbox-danger.disabled:checked + label:before, .chkbox-danger.disabled:checked + label:hover, .chkbox-danger.disabled:checked + label:focus, .chkbox-danger.disabled:checked + label.focus, .chkbox-danger[disabled] + label, .chkbox-danger[disabled] + label:hover::before, .chkbox-danger[disabled] + label:focus::before, .chkbox-danger[disabled] + label.focus:before, .chkbox-danger[disabled] + label:before, .chkbox-danger[disabled] + label:hover, .chkbox-danger[disabled] + label:focus, .chkbox-danger[disabled] + label.focus, .chkbox-danger[disabled]:checked + label, .chkbox-danger[disabled]:checked + label:hover::before, .chkbox-danger[disabled]:checked + label:focus::before, .chkbox-danger[disabled]:checked + label.focus:before, .chkbox-danger[disabled]:checked + label:before, .chkbox-danger[disabled]:checked + label:hover, .chkbox-danger[disabled]:checked + label:focus, .chkbox-danger[disabled]:checked + label.focus, fieldset[disabled]:checked .chkbox-danger + label, fieldset[disabled]:checked .chkbox-danger + label:hover::before, fieldset[disabled]:checked .chkbox-danger + label:focus::before, fieldset[disabled]:checked .chkbox-danger + label.focus:before, fieldset[disabled]:checked .chkbox-danger + label:before, fieldset[disabled]:checked .chkbox-danger + label:hover, fieldset[disabled]:checked .chkbox-danger + label:focus, fieldset[disabled]:checked .chkbox-danger + label.focus, fieldset[disabled] .chkbox-danger + label, fieldset[disabled] .chkbox-danger + label:hover::before, fieldset[disabled] .chkbox-danger + label:focus::before, fieldset[disabled] .chkbox-danger + label.focus:before, fieldset[disabled] .chkbox-danger + label:before, fieldset[disabled] .chkbox-danger + label:hover, fieldset[disabled] .chkbox-danger + label:focus, fieldset[disabled] .chkbox-danger + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
+
+.chkbox-notice + label:before {
+  border: 1px solid #6f5499; }
+.chkbox-notice + label:hover::before, .chkbox-notice + label:focus::before, .chkbox-notice + label.focus::before {
+  border: 1px solid #574478;
+  color: #9783b9 !important; }
+.chkbox-notice:checked + label:before {
+  color: #fff;
+  background: #9783b9 !important; }
+.chkbox-notice:checked + label:hover::before, .chkbox-notice:checked + label:focus::before, .chkbox-notice:checked + label.focus:before {
+  color: #e6e6e6 !important;
+  background: #7c62a7 !important; }
+.chkbox-notice.disabled + label, .chkbox-notice.disabled + label:hover::before, .chkbox-notice.disabled + label:focus::before, .chkbox-notice.disabled + label.focus:before, .chkbox-notice.disabled + label:before, .chkbox-notice.disabled + label:hover, .chkbox-notice.disabled + label:focus, .chkbox-notice.disabled + label.focus, .chkbox-notice.disabled:checked + label, .chkbox-notice.disabled:checked + label:hover::before, .chkbox-notice.disabled:checked + label:focus::before, .chkbox-notice.disabled:checked + label.focus:before, .chkbox-notice.disabled:checked + label:before, .chkbox-notice.disabled:checked + label:hover, .chkbox-notice.disabled:checked + label:focus, .chkbox-notice.disabled:checked + label.focus, .chkbox-notice[disabled] + label, .chkbox-notice[disabled] + label:hover::before, .chkbox-notice[disabled] + label:focus::before, .chkbox-notice[disabled] + label.focus:before, .chkbox-notice[disabled] + label:before, .chkbox-notice[disabled] + label:hover, .chkbox-notice[disabled] + label:focus, .chkbox-notice[disabled] + label.focus, .chkbox-notice[disabled]:checked + label, .chkbox-notice[disabled]:checked + label:hover::before, .chkbox-notice[disabled]:checked + label:focus::before, .chkbox-notice[disabled]:checked + label.focus:before, .chkbox-notice[disabled]:checked + label:before, .chkbox-notice[disabled]:checked + label:hover, .chkbox-notice[disabled]:checked + label:focus, .chkbox-notice[disabled]:checked + label.focus, fieldset[disabled]:checked .chkbox-notice + label, fieldset[disabled]:checked .chkbox-notice + label:hover::before, fieldset[disabled]:checked .chkbox-notice + label:focus::before, fieldset[disabled]:checked .chkbox-notice + label.focus:before, fieldset[disabled]:checked .chkbox-notice + label:before, fieldset[disabled]:checked .chkbox-notice + label:hover, fieldset[disabled]:checked .chkbox-notice + label:focus, fieldset[disabled]:checked .chkbox-notice + label.focus, fieldset[disabled] .chkbox-notice + label, fieldset[disabled] .chkbox-notice + label:hover::before, fieldset[disabled] .chkbox-notice + label:focus::before, fieldset[disabled] .chkbox-notice + label.focus:before, fieldset[disabled] .chkbox-notice + label:before, fieldset[disabled] .chkbox-notice + label:hover, fieldset[disabled] .chkbox-notice + label:focus, fieldset[disabled] .chkbox-notice + label.focus {
+  cursor: not-allowed;
+  opacity: .65; }
 
 /*
 .chkbox, .rdbtn {

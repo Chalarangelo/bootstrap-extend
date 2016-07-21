@@ -1,25 +1,126 @@
 //=====================================================================
 //  Global Variable Definitions
 //========================Extended .btn-default========================
-$shadeWhite:      #fff;   $shadeWhiteDark:       #e6e6e6;
-$shadeLightGray:  #eee;   $shadeLightGrayDark:   #e3e3e3;
-$shadeDarkGray:   #ccc;   $shadeDarkGrayDark:    #adadad;
-$shadeBlackGray:  #555;
+$shadeWhite:      #fff;     $shadeLightGray:  #eee;   
+$shadeDarkGray:   #ccc;     $shadeBlackGray:  #555;
 //========================Extended .btn-primary========================
-$shadeBlue:       #337ab7;$shadeBlueDark:        #286090;
-$shadeDarkBlue:   #2e6da4;$shadeDarkBlueDark:    #204d74;
+$shadeBlue:       #337ab7;  $shadeDarkBlue:   #2e6da4;
 //========================Extended .btn-success========================
-$shadeGreen:      #5cb85c;$shadeGreenDark:       #449d44;
-$shadeDarkGreen:  #4cae4c;$shadeDarkGreenDark:   #398439;
+$shadeGreen:      #5cb85c;  $shadeDarkGreen:  #4cae4c;
 //========================Extended .btn-info===========================
-$shadeCyan:       #5bc0de;$shadeCyanDark:        #31b0d5;
-$shadeDarkCyan:   #46b8da;$shadeDarkCyanDark:    #269abc;
+$shadeCyan:       #5bc0de;  $shadeDarkCyan:   #46b8da;
 //========================Extended .btn-warning========================
-$shadeOrange:     #f0ad4e;$shadeOrangeDark:      #ec971f;
-$shadeDarkOrange: #eea236;$shadeDarkOrangeDark:  #d58512;
+$shadeOrange:     #f0ad4e;  $shadeDarkOrange: #eea236;
 //========================Extended .btn-danger=========================
-$shadeRed:        #d9534f;$shadeRedDark:         #c9302c;
-$shadeDarkRed:    #d43f3a;$shadeDarkRedDark:     #ac2925;
+$shadeRed:        #d9534f;  $shadeDarkRed:    #d43f3a;
+//=========================Custom .btn-notice==========================
+$shadePurple:     #9783b9;  $shadeDarkPurple: #6f5499;
+//=====================================================================
+//  Mixins
+//=====================================================================
+// Button variants mixin (from Bootstrap/mixins/_buttons.scss)
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+//=====================================================================
+@mixin button-variant($color, $background, $border){
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 25%);
+  }
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+          border-color: darken($border, 25%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+//=====================================================================
+// Checkbox variants mixin
+//
+// Easily pump out default styles, as well as :hover, :focus and 
+// disabled options for all checkboxes
+//=====================================================================
+@mixin checkbox-variant($color, $background, $border){
+  +label{
+    &:before{
+      border: 1px solid $border;
+    }
+    &:hover::before, &:focus::before, &.focus::before{
+      border: 1px solid darken($background, 25%);
+      color: $background !important;
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        color: $color;
+        background: $background !important;
+      }
+      &:hover::before, &:focus::before, &.focus:before{
+        color: darken($color, 10%) !important;
+        background: darken($background, 10%) !important;
+      }
+    }
+  }
+  &.disabled, &.disabled:checked, &[disabled], &[disabled]:checked,
+  fieldset[disabled]:checked &, fieldset[disabled] & {
+    +label{
+      &,&:hover::before,&:focus::before,&.focus:before,
+      &:before, &:hover, &:focus, &.focus {
+        cursor: not-allowed;
+        opacity: .65;
+      }
+    }
+  }
+}
+
+//=====================================================================
+//  Button Notice Style
+//=====================================================================
+.btn-notice {
+  @include button-variant($shadeWhite,$shadePurple, $shadeDarkPurple);
+}
 //=====================================================================
 //  Password Toggle
 //=====================================================================
@@ -28,13 +129,23 @@ $shadeDarkRed:    #d43f3a;$shadeDarkRedDark:     #ac2925;
   color: $shadeWhite;
   background-color: $shadeCyan;
   border-color: $shadeDarkCyan;
-  &:hover, &:active, &:focus{
-    background-color: $shadeCyanDark;
-    border-color: $shadeDarkCyanDark;
+  &:hover, &:active, &:focus, &.focus, &.active{
+    background-color: darken($shadeCyan, 10%);
+    border-color: darken($shadeDarkCyan, 25%);
   }
   &:before{
     font-family: 'Glyphicons Halflings';
     font-size: 16px;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      cursor: not-allowed;
+        opacity: .65;
+    }
   }
 }
 .pwd-toggle:before{
@@ -107,62 +218,30 @@ input[type="checkbox"].chkbox{
   }
 }
 .chkbox-default{
+  @include checkbox-variant($shadeBlackGray,$shadeWhite, $shadeDarkGray);
   +label{
-    &:before{
-      border: 1px solid $shadeDarkGray;
-    }
-    &:hover::before{
-      border: 1px solid $shadeDarkGrayDark;
-      color: $shadeDarkGrayDark !important;
-    }
-  }
-  &:checked{
-    &+label{
-      &:before{
-        color: $shadeBlackGray;
-        background: $shadeLightGray !important;
-      }
-      &:hover::before{
-        color: $shadeDarkGrayDark !important;
-        background: $shadeLightGrayDark !important;
-      }
+   &:hover::before, &:focus::before, &.focus::before{
+      color: $shadeBlackGray !important;
     }
   }
 }
 .chkbox-primary{
-  +label{
-    &:before{
-      border: 1px solid $shadeDarkBlue;
-    }
-    &:hover::before{
-      border: 1px solid $shadeDarkBlueDark;
-      color: $shadeBlue !important;
-    }
-  }
-  &:checked{
-    &+label{
-      &:before{
-        color: $shadeWhite;
-        background: $shadeBlue !important;
-      }
-      &:hover::before{
-        color: $shadeWhiteDark !important;
-        background: $shadeBlueDark !important;
-      }
-    }
-  }
+  @include checkbox-variant($shadeWhite,$shadeBlue, $shadeDarkBlue);
 }
 .chkbox-success{
-
+  @include checkbox-variant($shadeWhite,$shadeGreen, $shadeDarkGreen);
 }
 .chkbox-info{
-
+  @include checkbox-variant($shadeWhite,$shadeCyan, $shadeDarkCyan);
 }
 .chkbox-warning{
-
+  @include checkbox-variant($shadeWhite,$shadeOrange, $shadeDarkOrange);
 }
 .chkbox-danger{
-
+  @include checkbox-variant($shadeWhite,$shadeRed, $shadeDarkRed);
+}
+.chkbox-notice{
+   @include checkbox-variant($shadeWhite,$shadePurple, $shadeDarkPurple);
 }
 
 /*
