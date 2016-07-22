@@ -1,3 +1,1 @@
 bloatstrap.css linguist-vendored=false
-(^|/)bootstrap([^.]*)\.(js|css|less|scss|styl)$ linguist-vendored=false
-(^|/)custom\.bootstrap([^\s]*)(js|css|less|scss|styl)$ linguist-vendored=false
