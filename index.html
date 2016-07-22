@@ -63,6 +63,94 @@
   <p>&nbsp;&nbsp;&nbsp;<strong>Original idea and implementation</strong> by <a href="https://codepen.io/shellbryson/post/toggle-passwords">Shell Bryson</a>.</p> 
   </div>
 
+<h3>Toggle Switches <small>Rectangular, round, with text or without, all in pure CSS</small></h3>
+  <p>Use the <code>.switch</code> class only on <code>&lt;input type="checkbox"&gt;</code> or <code>&lt;input type="radio"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the inout's <code>id</code>. There are two types of toggle switches, round and rectangular. Both types have seven flavours, similar to the classic Bootstrap buttons:</p>
+  <ul>
+    <li><code>.switch-round-default</code> and <code>.switch-rect-default</code></li>
+    <li><code>.switch-round-primary</code> and <code>.switch-rect-primary</code></li>
+    <li><code>.switch-round-success</code> and <code>.switch-rect-success</code></li>
+    <li><code>.switch-round-info</code> and <code>.switch-rect-info</code></li>
+    <li><code>.switch-round-warning</code> and <code>.switch-rect-warning</code></li>
+    <li><code>.switch-round-danger</code> and <code>.switch-rect-danger</code></li>
+    <li><code>.switch-round-notice</code> and <code>.switch-rect-notice</code></li>
+  </ul>
+  <p>You can also add optional text labels to your toggle switches. There are three options of toggle switch text labels:</p>
+  <ul>
+    <li><code>.switch-on-off</code> (Displays "ON" and "OFF")</li>
+    <li><code>.switch-io</code> (Displays the on and off symbols)</li>
+    <li><code>.switch-yes-no</code> (Displays "YES" and "NO")</li>
+  </ul>
+
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Examples</h4>
+   </div>
+  <div class="panel-body">
+  <h4>Round toggle switches:</h4>
+   Default <input id="cT1" class="switch switch-round-default" type="checkbox"> <label for="cT1"></label>
+   Primary <input id="cT2" class="switch switch-round-primary" type="checkbox"> <label for="cT2"></label>
+   Success <input id="cT3" class="switch switch-round-success" type="checkbox"> <label for="cT3"></label>
+   Info: <input id="cT4" class="switch switch-round-info"    type="checkbox"> <label for="cT4"></label>
+   <br><strong>Radio button toggle switch group</strong><br>
+   Warning <input id="cT5" class="switch switch-round-warning" type="radio" name="roundToggle"> <label for="cT5"></label>
+   Danger <input id="cT6" class="switch switch-round-danger"  type="radio" name="roundToggle"> <label for="cT6"></label>
+   Notice <input id="cT7" class="switch switch-round-notice"  type="radio" name="roundToggle"> <label for="cT7"></label>
+   <br/>
+  <h4>Usage:</h4>
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">Default &lt;input id="cT1" class="switch switch-round-default" type="checkbox"&gt; &lt;label for="cT1"&gt;&lt;/label&gt;
+Primary &lt;input id="cT2" class="switch switch-round-primary" type="checkbox"&gt; &lt;label for="cT2"&gt;&lt;/label&gt;
+Success &lt;input id="cT3" class="switch switch-round-success" type="checkbox"&gt; &lt;label for="cT3"&gt;&lt;/label&gt;
+Info &lt;input id="cT4" class="switch switch-round-info"    type="checkbox"&gt; &lt;label for="cT4"&gt;&lt;/label&gt;
+&lt;br&gt;Radio button toggle switch group&lt;br&gt;
+Warning &lt;input id="cT5" class="switch switch-round-warning" type="radio" name="roundToggle"&gt; &lt;label for="cT5"&gt;&lt;/label&gt;
+Danger &lt;input id="cT6" class="switch switch-round-danger"  type="radio" name="roundToggle"&gt; &lt;label for="cT6"&gt;&lt;/label&gt;
+Notice &lt;input id="cT7" class="switch switch-round-notice"  type="radio" name="roundToggle"&gt; &lt;label for="cT7"&gt;&lt;/label&gt;</code></pre></figure>
+<br>
+<h4>Rectangular toggle switches:</h4>
+   Default <input id="rT1" class="switch switch-rect-default" type="checkbox"> <label for="rT1"></label>
+   Primary <input id="rT2" class="switch switch-rect-primary" type="checkbox"> <label for="rT2"></label>
+   Success <input id="rT3" class="switch switch-rect-success" type="checkbox"> <label for="rT3"></label>
+   Info <input id="rT4" class="switch switch-rect-info"    type="checkbox"> <label for="rT4"></label>
+   <br><strong>Radio button toggle switch group</strong><br>
+   Warning <input id="rT5" class="switch switch-rect-warning" type="radio" name="rectToggle"> <label for="rT5"></label>
+   Danger <input id="rT6" class="switch switch-rect-danger"  type="radio" name="rectToggle"> <label for="rT6"></label>
+   Notice <input id="rT7" class="switch switch-rect-notice"  type="radio" name="rectToggle"> <label for="rT7"></label>
+   <br/>
+  <h4>Usage:</h4>
+<figure class="highlight">
+    <pre><code class="language-html" data-lang="html">Default &lt;input id="rT1" class="switch switch-rect-default" type="checkbox"&gt; &lt;label for="rT1"&gt;&lt;/label&gt;
+Primary &lt;input id="rT2" class="switch switch-rect-primary" type="checkbox"&gt; &lt;label for="rT2"&gt;&lt;/label&gt;
+Success &lt;input id="rT3" class="switch switch-rect-success" type="checkbox"&gt; &lt;label for="rT3"&gt;&lt;/label&gt;
+Info &lt;input id="rT4" class="switch switch-rect-info"    type="checkbox"&gt; &lt;label for="rT4"&gt;&lt;/label&gt;
+&lt;br&gt;Radio button toggle switch group&lt;br&gt;
+Warning &lt;input id="rT5" class="switch switch-rect-warning" type="radio" name="rectToggle"&gt; &lt;label for="rT5"&gt;&lt;/label&gt;
+Danger &lt;input id="rT6" class="switch switch-rect-danger"  type="radio" name="rectToggle"&gt; &lt;label for="rT6"&gt;&lt;/label&gt;
+Notice &lt;input id="rT7" class="switch switch-rect-notice"  type="radio" name="rectToggle"&gt; &lt;label for="rT7"&gt;&lt;/label&gt;</code></pre></figure>
+<br>
+  <h4>Optional text:</h4>
+  <strong>Round toggle switches</strong><br>
+  On/Off <input id="o1" class="switch switch-round-primary switch-on-off" type="checkbox"> <label for="o1"></label>
+  I/O <input id="o2" class="switch switch-round-primary switch-io" type="checkbox"> <label for="o2"></label>
+  Yes/No <input id="o3" class="switch switch-round-primary switch-yes-no" type="checkbox"> <label for="o3"></label>
+  <br><strong>Rectangular toggle switches</strong><br>
+  On/Off <input id="o4" class="switch switch-rect-primary switch-on-off" type="checkbox"> <label for="o4"></label>
+  I/O <input id="o5" class="switch switch-rect-primary switch-io" type="checkbox"> <label for="o5"></label>
+  Yes/No <input id="o6" class="switch switch-rect-primary switch-yes-no" type="checkbox"> <label for="o6"></label>
+<h4>Usage:</h4>
+<figure class="highlight">
+    <pre><code class="language-html" data-lang="html">Round toggle switches&lt;br&gt;
+On/Off &lt;input id="o1" class="switch switch-round-primary switch-on-off" type="checkbox"&gt; &lt;label for="o1"&gt;&lt;/label&gt;
+I/O &lt;input id="o2" class="switch switch-round-primary switch-io" type="checkbox"&gt; &lt;label for="o2"&gt;&lt;/label&gt;
+Yes/No &lt;input id="o3" class="switch switch-round-primary switch-yes-no" type="checkbox"&gt; &lt;label for="o3"&gt;&lt;/label&gt;
+&lt;br&gt;Rectangular toggle switches&lt;br&gt;
+On/Off &lt;input id="o4" class="switch switch-rect-primary switch-on-off" type="checkbox"&gt; &lt;label for="o4"&gt;&lt;/label&gt;
+I/O &lt;input id="o5" class="switch switch-rect-primary switch-io" type="checkbox"&gt; &lt;label for="o5"&gt;&lt;/label&gt;
+Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="checkbox"&gt; &lt;label for="o6"&gt;&lt;/label&gt;</code></pre></figure>
+   </div> 
+   <p>&nbsp;&nbsp;&nbsp;<strong>Original idea and implementation</strong> by <a href="http://callmenick.com/post/css-toggle-switch-examples">callmenick.com</a>.</p>
+  </div>
+
   <h3>Collapse toggle box</h3>
   <p>Bootstrap's <a href="http://getbootstrap.com/javascript/#collapse">Collapse</a> is great. But if you are looking for a different style for your content toggle buttons, you can now use the <code>.btn.btn-toggle</code> class next to a <code>&lt;label&gt;</code> element to achieve that. All the functionality of the original Bootstrap component remains intact.</p>
   <div class="panel panel-default">
@@ -110,7 +198,7 @@
   </div>
 
   <h3>Checkbox styles <small>In 7 pure CSS flavours</small></h3>
-  <p>Use the <code>.chkbox</code> class only on an <code>&lt;input type="checkbox"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the checkbox's <code>id</code>. There are seven flavours of checkboxes, similar to the classic Bootstrap buttons:</p>
+  <p>Use the <code>.chkbox</code> class only on <code>&lt;input type="checkbox"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the checkbox's <code>id</code>. There are seven flavours of checkboxes, similar to the classic Bootstrap buttons:</p>
   <ul>
     <li><code>.chkbox-default</code></li>
     <li><code>.chkbox-primary</code></li>
@@ -146,7 +234,7 @@
   </div>
 
  <h3>Radio button styles <small>In 7 pure CSS flavours</small></h3>
-  <p>Use the <code>.rdbtn</code> class only on an <code>&lt;input type="radio"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the radio button's <code>id</code>. There are seven flavours of radio buttons, similar to the classic Bootstrap buttons:</p>
+  <p>Use the <code>.rdbtn</code> class only on <code>&lt;input type="radio"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the radio button's <code>id</code>. There are seven flavours of radio buttons, similar to the classic Bootstrap buttons:</p>
   <ul>
     <li><code>.rdbtn-default</code></li>
     <li><code>.rdbtn-primary</code></li>
@@ -180,20 +268,6 @@
 &lt;input type="radio" class="rdbtn rdbtn-notice" id="rdb-notice" name="rd-group"&gt;&lt;label for="rdb-notice"&gt;Notice&lt;/label&gt;</code></pre></figure>
    </div> 
   </div>
-
-
-    <input id="cmn-toggle-1" class="switch switch-round" type="checkbox" name="rd-group">
-    <label for="cmn-toggle-1"></label>
-
-  <!-- <div class="switch">
-    <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="radio" name="rd-group">
-    <label for="cmn-toggle-4"></label>
-  </div>
-
-  <div class="switch">
-    <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-round-flat" type="radio" name="rd-group">
-    <label for="cmn-toggle-7" data-on="Yes" data-off="No"></label>
-  </div> -->
 
 
 </div>

@@ -1,4 +1,4 @@
-/* line 161, ../scss/bootstrap-extend.scss */
+/* line 421, ../scss/bootstrap-extend.scss */
 .btn-notice {
   color: #fff;
   background-color: #9783b9;
@@ -43,55 +43,55 @@
   background-color: #fff;
 }
 
-/* line 167, ../scss/bootstrap-extend.scss */
+/* line 427, ../scss/bootstrap-extend.scss */
 .pwd-toggle, .pwd-untoggle {
   cursor: pointer;
   color: #fff;
   background-color: #5bc0de;
   border-color: #46b8da;
 }
-/* line 172, ../scss/bootstrap-extend.scss */
+/* line 432, ../scss/bootstrap-extend.scss */
 .pwd-toggle:hover, .pwd-toggle:active, .pwd-toggle:focus, .pwd-toggle.focus, .pwd-toggle.active, .pwd-untoggle:hover, .pwd-untoggle:active, .pwd-untoggle:focus, .pwd-untoggle.focus, .pwd-untoggle.active {
   background-color: #31b0d5;
   border-color: #1b6d86;
 }
-/* line 176, ../scss/bootstrap-extend.scss */
+/* line 436, ../scss/bootstrap-extend.scss */
 .pwd-toggle:before, .pwd-untoggle:before {
   font-family: 'Glyphicons Halflings';
   font-size: 16px;
 }
-/* line 183, ../scss/bootstrap-extend.scss */
+/* line 443, ../scss/bootstrap-extend.scss */
 .pwd-toggle.disabled:hover, .pwd-toggle.disabled:focus, .pwd-toggle.disabled.focus, .pwd-toggle[disabled]:hover, .pwd-toggle[disabled]:focus, .pwd-toggle[disabled].focus, fieldset[disabled] .pwd-toggle:hover, fieldset[disabled] .pwd-toggle:focus, fieldset[disabled] .pwd-toggle.focus, .pwd-untoggle.disabled:hover, .pwd-untoggle.disabled:focus, .pwd-untoggle.disabled.focus, .pwd-untoggle[disabled]:hover, .pwd-untoggle[disabled]:focus, .pwd-untoggle[disabled].focus, fieldset[disabled] .pwd-untoggle:hover, fieldset[disabled] .pwd-untoggle:focus, fieldset[disabled] .pwd-untoggle.focus {
   cursor: not-allowed;
   opacity: .65;
 }
 
-/* line 191, ../scss/bootstrap-extend.scss */
+/* line 451, ../scss/bootstrap-extend.scss */
 .pwd-toggle:before {
   content: "\e105";
 }
 
-/* line 194, ../scss/bootstrap-extend.scss */
+/* line 454, ../scss/bootstrap-extend.scss */
 .pwd-untoggle:before {
   content: "\e106";
 }
 
-/* line 200, ../scss/bootstrap-extend.scss */
+/* line 460, ../scss/bootstrap-extend.scss */
 .btn.btn-toggle:before {
   content: "+";
 }
 
-/* line 203, ../scss/bootstrap-extend.scss */
+/* line 463, ../scss/bootstrap-extend.scss */
 .btn.btn-untoggle:before {
   content: "\2212";
 }
 
-/* line 206, ../scss/bootstrap-extend.scss */
+/* line 466, ../scss/bootstrap-extend.scss */
 .btn.btn-toggle, .btn.btn-untoggle {
   font-size: 18px;
   line-height: 1.111111112222222;
 }
-/* line 209, ../scss/bootstrap-extend.scss */
+/* line 469, ../scss/bootstrap-extend.scss */
 .btn.btn-toggle + label, .btn.btn-untoggle + label {
   margin-left: 12px;
   font-size: 16px;
@@ -99,7 +99,7 @@
   cursor: pointer;
 }
 
-/* line 219, ../scss/bootstrap-extend.scss */
+/* line 479, ../scss/bootstrap-extend.scss */
 input[type="checkbox"].chkbox {
   opacity: 0;
   display: inline-block;
@@ -108,7 +108,7 @@ input[type="checkbox"].chkbox {
   cursor: pointer;
   position: absolute;
 }
-/* line 226, ../scss/bootstrap-extend.scss */
+/* line 486, ../scss/bootstrap-extend.scss */
 input[type="checkbox"].chkbox + label {
   position: relative;
   display: inline-block;
@@ -116,7 +116,7 @@ input[type="checkbox"].chkbox + label {
   margin: 5px;
   cursor: pointer;
 }
-/* line 232, ../scss/bootstrap-extend.scss */
+/* line 492, ../scss/bootstrap-extend.scss */
 input[type="checkbox"].chkbox + label:before {
   content: '';
   background: #fff;
@@ -129,12 +129,12 @@ input[type="checkbox"].chkbox + label:before {
   margin-right: 10px;
   text-align: center;
 }
-/* line 244, ../scss/bootstrap-extend.scss */
+/* line 504, ../scss/bootstrap-extend.scss */
 input[type="checkbox"].chkbox + label:hover::before {
   content: "\e013";
   font-family: 'Glyphicons Halflings';
 }
-/* line 251, ../scss/bootstrap-extend.scss */
+/* line 511, ../scss/bootstrap-extend.scss */
 input[type="checkbox"].chkbox:checked + label:before {
   content: "\e013";
   font-family: 'Glyphicons Halflings';
@@ -145,7 +145,7 @@ input[type="checkbox"].chkbox:checked + label:before {
   border: 1px solid #ccc;
 }
 /* line 89, ../scss/bootstrap-extend.scss */
-.chkbox-default + label:hover::before, .chkbox-default + label:focus::before, .chkbox-default + label.focus::before {
+.chkbox-default + label:hover::before, .chkbox-default + label:focus::before, .chkbox-default + label.focus:before {
   border: 1px solid #bfbfbf;
   color: #fff !important;
 }
@@ -164,7 +164,7 @@ input[type="checkbox"].chkbox:checked + label:before {
   cursor: not-allowed;
   opacity: .65;
 }
-/* line 261, ../scss/bootstrap-extend.scss */
+/* line 521, ../scss/bootstrap-extend.scss */
 .chkbox-default + label:hover::before, .chkbox-default + label:focus::before, .chkbox-default + label.focus::before {
   color: #555 !important;
 }
@@ -174,7 +174,7 @@ input[type="checkbox"].chkbox:checked + label:before {
   border: 1px solid #2e6da4;
 }
 /* line 89, ../scss/bootstrap-extend.scss */
-.chkbox-primary + label:hover::before, .chkbox-primary + label:focus::before, .chkbox-primary + label.focus::before {
+.chkbox-primary + label:hover::before, .chkbox-primary + label:focus::before, .chkbox-primary + label.focus:before {
   border: 1px solid #173853;
   color: #337ab7 !important;
 }
@@ -199,7 +199,7 @@ input[type="checkbox"].chkbox:checked + label:before {
   border: 1px solid #4cae4c;
 }
 /* line 89, ../scss/bootstrap-extend.scss */
-.chkbox-success + label:hover::before, .chkbox-success + label:focus::before, .chkbox-success + label.focus::before {
+.chkbox-success + label:hover::before, .chkbox-success + label:focus::before, .chkbox-success + label.focus:before {
   border: 1px solid #2d672d;
   color: #5cb85c !important;
 }
@@ -224,7 +224,7 @@ input[type="checkbox"].chkbox:checked + label:before {
   border: 1px solid #46b8da;
 }
 /* line 89, ../scss/bootstrap-extend.scss */
-.chkbox-info + label:hover::before, .chkbox-info + label:focus::before, .chkbox-info + label.focus::before {
+.chkbox-info + label:hover::before, .chkbox-info + label:focus::before, .chkbox-info + label.focus:before {
   border: 1px solid #1f7e9a;
   color: #5bc0de !important;
 }
@@ -249,7 +249,7 @@ input[type="checkbox"].chkbox:checked + label:before {
   border: 1px solid #eea236;
 }
 /* line 89, ../scss/bootstrap-extend.scss */
-.chkbox-warning + label:hover::before, .chkbox-warning + label:focus::before, .chkbox-warning + label.focus::before {
+.chkbox-warning + label:hover::before, .chkbox-warning + label:focus::before, .chkbox-warning + label.focus:before {
   border: 1px solid #b06d0f;
   color: #f0ad4e !important;
 }
@@ -274,7 +274,7 @@ input[type="checkbox"].chkbox:checked + label:before {
   border: 1px solid #d43f3a;
 }
 /* line 89, ../scss/bootstrap-extend.scss */
-.chkbox-danger + label:hover::before, .chkbox-danger + label:focus::before, .chkbox-danger + label.focus::before {
+.chkbox-danger + label:hover::before, .chkbox-danger + label:focus::before, .chkbox-danger + label.focus:before {
   border: 1px solid #8b211e;
   color: #d9534f !important;
 }
@@ -299,7 +299,7 @@ input[type="checkbox"].chkbox:checked + label:before {
   border: 1px solid #6f5499;
 }
 /* line 89, ../scss/bootstrap-extend.scss */
-.chkbox-notice + label:hover::before, .chkbox-notice + label:focus::before, .chkbox-notice + label.focus::before {
+.chkbox-notice + label:hover::before, .chkbox-notice + label:focus::before, .chkbox-notice + label.focus:before {
   border: 1px solid #574478;
   color: #9783b9 !important;
 }
@@ -319,7 +319,7 @@ input[type="checkbox"].chkbox:checked + label:before {
   opacity: .65;
 }
 
-/* line 287, ../scss/bootstrap-extend.scss */
+/* line 547, ../scss/bootstrap-extend.scss */
 input[type="radio"].rdbtn {
   opacity: 0;
   position: absolute;
@@ -328,7 +328,7 @@ input[type="radio"].rdbtn {
   margin: 5px;
   cursor: pointer;
 }
-/* line 294, ../scss/bootstrap-extend.scss */
+/* line 554, ../scss/bootstrap-extend.scss */
 input[type="radio"].rdbtn + label {
   position: relative;
   display: inline-block;
@@ -336,7 +336,7 @@ input[type="radio"].rdbtn + label {
   margin: 5px;
   cursor: pointer;
 }
-/* line 300, ../scss/bootstrap-extend.scss */
+/* line 560, ../scss/bootstrap-extend.scss */
 input[type="radio"].rdbtn + label:before {
   content: '';
   background: #fff;
@@ -350,7 +350,7 @@ input[type="radio"].rdbtn + label:before {
   text-align: center;
   border-radius: 50%;
 }
-/* line 316, ../scss/bootstrap-extend.scss */
+/* line 576, ../scss/bootstrap-extend.scss */
 input[type="radio"].rdbtn:checked + label:before {
   box-shadow: inset 0px 0px 0px 3px #fff;
 }
@@ -360,7 +360,7 @@ input[type="radio"].rdbtn:checked + label:before {
   border: 1px solid #ccc;
 }
 /* line 128, ../scss/bootstrap-extend.scss */
-.rdbtn-default + label:hover::before, .rdbtn-default + label:focus::before, .rdbtn-default + label.focus::before {
+.rdbtn-default + label:hover::before, .rdbtn-default + label:focus::before, .rdbtn-default + label.focus:before {
   border: 1px solid #bfbfbf;
   color: #fff !important;
   background: #fff !important;
@@ -381,16 +381,16 @@ input[type="radio"].rdbtn:checked + label:before {
   cursor: not-allowed;
   opacity: .65;
 }
-/* line 325, ../scss/bootstrap-extend.scss */
+/* line 585, ../scss/bootstrap-extend.scss */
 .rdbtn-default + label:hover::before, .rdbtn-default + label:focus::before, .rdbtn-default + label.focus::before {
   background: #aeaeae !important;
   box-shadow: inset 0px 0px 0px 3px #fff !important;
 }
-/* line 332, ../scss/bootstrap-extend.scss */
+/* line 592, ../scss/bootstrap-extend.scss */
 .rdbtn-default:checked + label:before {
   background: #8c8c8c !important;
 }
-/* line 335, ../scss/bootstrap-extend.scss */
+/* line 595, ../scss/bootstrap-extend.scss */
 .rdbtn-default:checked + label:hover::before, .rdbtn-default:checked + label:focus::before, .rdbtn-default:checked + label.focus:before {
   background: #6e6e6e !important;
 }
@@ -400,7 +400,7 @@ input[type="radio"].rdbtn:checked + label:before {
   border: 1px solid #2e6da4;
 }
 /* line 128, ../scss/bootstrap-extend.scss */
-.rdbtn-primary + label:hover::before, .rdbtn-primary + label:focus::before, .rdbtn-primary + label.focus::before {
+.rdbtn-primary + label:hover::before, .rdbtn-primary + label:focus::before, .rdbtn-primary + label.focus:before {
   border: 1px solid #173853;
   color: #337ab7 !important;
   background: #337ab7 !important;
@@ -427,7 +427,7 @@ input[type="radio"].rdbtn:checked + label:before {
   border: 1px solid #4cae4c;
 }
 /* line 128, ../scss/bootstrap-extend.scss */
-.rdbtn-success + label:hover::before, .rdbtn-success + label:focus::before, .rdbtn-success + label.focus::before {
+.rdbtn-success + label:hover::before, .rdbtn-success + label:focus::before, .rdbtn-success + label.focus:before {
   border: 1px solid #2d672d;
   color: #5cb85c !important;
   background: #5cb85c !important;
@@ -454,7 +454,7 @@ input[type="radio"].rdbtn:checked + label:before {
   border: 1px solid #46b8da;
 }
 /* line 128, ../scss/bootstrap-extend.scss */
-.rdbtn-info + label:hover::before, .rdbtn-info + label:focus::before, .rdbtn-info + label.focus::before {
+.rdbtn-info + label:hover::before, .rdbtn-info + label:focus::before, .rdbtn-info + label.focus:before {
   border: 1px solid #1f7e9a;
   color: #5bc0de !important;
   background: #5bc0de !important;
@@ -481,7 +481,7 @@ input[type="radio"].rdbtn:checked + label:before {
   border: 1px solid #eea236;
 }
 /* line 128, ../scss/bootstrap-extend.scss */
-.rdbtn-warning + label:hover::before, .rdbtn-warning + label:focus::before, .rdbtn-warning + label.focus::before {
+.rdbtn-warning + label:hover::before, .rdbtn-warning + label:focus::before, .rdbtn-warning + label.focus:before {
   border: 1px solid #b06d0f;
   color: #f0ad4e !important;
   background: #f0ad4e !important;
@@ -508,7 +508,7 @@ input[type="radio"].rdbtn:checked + label:before {
   border: 1px solid #d43f3a;
 }
 /* line 128, ../scss/bootstrap-extend.scss */
-.rdbtn-danger + label:hover::before, .rdbtn-danger + label:focus::before, .rdbtn-danger + label.focus::before {
+.rdbtn-danger + label:hover::before, .rdbtn-danger + label:focus::before, .rdbtn-danger + label.focus:before {
   border: 1px solid #8b211e;
   color: #d9534f !important;
   background: #d9534f !important;
@@ -535,7 +535,7 @@ input[type="radio"].rdbtn:checked + label:before {
   border: 1px solid #6f5499;
 }
 /* line 128, ../scss/bootstrap-extend.scss */
-.rdbtn-notice + label:hover::before, .rdbtn-notice + label:focus::before, .rdbtn-notice + label.focus::before {
+.rdbtn-notice + label:hover::before, .rdbtn-notice + label:focus::before, .rdbtn-notice + label.focus:before {
   border: 1px solid #574478;
   color: #9783b9 !important;
   background: #9783b9 !important;
@@ -557,23 +557,836 @@ input[type="radio"].rdbtn:checked + label:before {
   opacity: .65;
 }
 
-/* line 362, ../scss/bootstrap-extend.scss */
+/* line 622, ../scss/bootstrap-extend.scss */
 input[type="radio"].switch, input[type="checkbox"].switch {
   position: absolute;
   margin-left: -9999px;
   visibility: hidden;
 }
-/* line 366, ../scss/bootstrap-extend.scss */
+/* line 626, ../scss/bootstrap-extend.scss */
 input[type="radio"].switch + label, input[type="checkbox"].switch + label {
-  display: block;
+  display: inline-block;
   position: relative;
   cursor: pointer;
   outline: none;
   user-select: none;
 }
 
-/* line 375, ../scss/bootstrap-extend.scss */
-.switch-round + label {
+/* line 291, ../scss/bootstrap-extend.scss */
+.switch-rect-default + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: background 0.4s;
+}
+/* line 298, ../scss/bootstrap-extend.scss */
+.switch-rect-default + label:before, .switch-rect-default + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 303, ../scss/bootstrap-extend.scss */
+.switch-rect-default + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 313, ../scss/bootstrap-extend.scss */
+.switch-rect-default + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 322, ../scss/bootstrap-extend.scss */
+.switch-rect-default + label:hover, .switch-rect-default + label:focus, .switch-rect-default + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 324, ../scss/bootstrap-extend.scss */
+.switch-rect-default + label:hover:after, .switch-rect-default + label:focus:after, .switch-rect-default + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 327, ../scss/bootstrap-extend.scss */
+.switch-rect-default + label:hover:before, .switch-rect-default + label:focus:before, .switch-rect-default + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 333, ../scss/bootstrap-extend.scss */
+.switch-rect-default:checked + label {
+  background-color: #ccc;
+}
+/* line 335, ../scss/bootstrap-extend.scss */
+.switch-rect-default:checked + label:before {
+  color: #555;
+}
+/* line 338, ../scss/bootstrap-extend.scss */
+.switch-rect-default:checked + label:after {
+  margin-left: 27px;
+  background-color: #555;
+}
+/* line 342, ../scss/bootstrap-extend.scss */
+.switch-rect-default:checked + label:hover, .switch-rect-default:checked + label:focus, .switch-rect-default:checked + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 344, ../scss/bootstrap-extend.scss */
+.switch-rect-default:checked + label:hover:after, .switch-rect-default:checked + label:focus:after, .switch-rect-default:checked + label.focus:after {
+  background-color: #3b3b3b;
+}
+/* line 347, ../scss/bootstrap-extend.scss */
+.switch-rect-default:checked + label:hover:before, .switch-rect-default:checked + label:focus:before, .switch-rect-default:checked + label.focus:before {
+  color: #3b3b3b;
+}
+/* line 355, ../scss/bootstrap-extend.scss */
+.switch-rect-default.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 363, ../scss/bootstrap-extend.scss */
+.switch-rect-default.switch-io:checked + label:before {
+  content: "\00a0I";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 373, ../scss/bootstrap-extend.scss */
+.switch-rect-default.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 381, ../scss/bootstrap-extend.scss */
+.switch-rect-default.switch-on-off:checked + label:before {
+  content: "\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 391, ../scss/bootstrap-extend.scss */
+.switch-rect-default.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 399, ../scss/bootstrap-extend.scss */
+.switch-rect-default.switch-yes-no:checked + label:before {
+  content: "\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 410, ../scss/bootstrap-extend.scss */
+.switch-rect-default.disabled + label, .switch-rect-default.disabled + label:hover::before, .switch-rect-default.disabled + label:focus::before, .switch-rect-default.disabled + label.focus:before, .switch-rect-default.disabled + label:before, .switch-rect-default.disabled + label:hover, .switch-rect-default.disabled + label:focus, .switch-rect-default.disabled + label.focus, .switch-rect-default.disabled:checked + label, .switch-rect-default.disabled:checked + label:hover::before, .switch-rect-default.disabled:checked + label:focus::before, .switch-rect-default.disabled:checked + label.focus:before, .switch-rect-default.disabled:checked + label:before, .switch-rect-default.disabled:checked + label:hover, .switch-rect-default.disabled:checked + label:focus, .switch-rect-default.disabled:checked + label.focus, .switch-rect-default[disabled] + label, .switch-rect-default[disabled] + label:hover::before, .switch-rect-default[disabled] + label:focus::before, .switch-rect-default[disabled] + label.focus:before, .switch-rect-default[disabled] + label:before, .switch-rect-default[disabled] + label:hover, .switch-rect-default[disabled] + label:focus, .switch-rect-default[disabled] + label.focus, .switch-rect-default[disabled]:checked + label, .switch-rect-default[disabled]:checked + label:hover::before, .switch-rect-default[disabled]:checked + label:focus::before, .switch-rect-default[disabled]:checked + label.focus:before, .switch-rect-default[disabled]:checked + label:before, .switch-rect-default[disabled]:checked + label:hover, .switch-rect-default[disabled]:checked + label:focus, .switch-rect-default[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-rect-default + label, fieldset[disabled]:checked .switch-rect-default + label:hover::before, fieldset[disabled]:checked .switch-rect-default + label:focus::before, fieldset[disabled]:checked .switch-rect-default + label.focus:before, fieldset[disabled]:checked .switch-rect-default + label:before, fieldset[disabled]:checked .switch-rect-default + label:hover, fieldset[disabled]:checked .switch-rect-default + label:focus, fieldset[disabled]:checked .switch-rect-default + label.focus, fieldset[disabled] .switch-rect-default + label, fieldset[disabled] .switch-rect-default + label:hover::before, fieldset[disabled] .switch-rect-default + label:focus::before, fieldset[disabled] .switch-rect-default + label.focus:before, fieldset[disabled] .switch-rect-default + label:before, fieldset[disabled] .switch-rect-default + label:hover, fieldset[disabled] .switch-rect-default + label:focus, fieldset[disabled] .switch-rect-default + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+/* line 637, ../scss/bootstrap-extend.scss */
+.switch-rect-default:checked + label {
+  background-color: #555;
+}
+/* line 639, ../scss/bootstrap-extend.scss */
+.switch-rect-default:checked + label:hover {
+  background-color: #151515;
+}
+
+/* line 291, ../scss/bootstrap-extend.scss */
+.switch-rect-primary + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: background 0.4s;
+}
+/* line 298, ../scss/bootstrap-extend.scss */
+.switch-rect-primary + label:before, .switch-rect-primary + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 303, ../scss/bootstrap-extend.scss */
+.switch-rect-primary + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 313, ../scss/bootstrap-extend.scss */
+.switch-rect-primary + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 322, ../scss/bootstrap-extend.scss */
+.switch-rect-primary + label:hover, .switch-rect-primary + label:focus, .switch-rect-primary + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 324, ../scss/bootstrap-extend.scss */
+.switch-rect-primary + label:hover:after, .switch-rect-primary + label:focus:after, .switch-rect-primary + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 327, ../scss/bootstrap-extend.scss */
+.switch-rect-primary + label:hover:before, .switch-rect-primary + label:focus:before, .switch-rect-primary + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 333, ../scss/bootstrap-extend.scss */
+.switch-rect-primary:checked + label {
+  background-color: #2e6da4;
+}
+/* line 335, ../scss/bootstrap-extend.scss */
+.switch-rect-primary:checked + label:before {
+  color: #337ab7;
+}
+/* line 338, ../scss/bootstrap-extend.scss */
+.switch-rect-primary:checked + label:after {
+  margin-left: 27px;
+  background-color: #337ab7;
+}
+/* line 342, ../scss/bootstrap-extend.scss */
+.switch-rect-primary:checked + label:hover, .switch-rect-primary:checked + label:focus, .switch-rect-primary:checked + label.focus {
+  background-color: #122b40;
+}
+/* line 344, ../scss/bootstrap-extend.scss */
+.switch-rect-primary:checked + label:hover:after, .switch-rect-primary:checked + label:focus:after, .switch-rect-primary:checked + label.focus:after {
+  background-color: #285f8f;
+}
+/* line 347, ../scss/bootstrap-extend.scss */
+.switch-rect-primary:checked + label:hover:before, .switch-rect-primary:checked + label:focus:before, .switch-rect-primary:checked + label.focus:before {
+  color: #285f8f;
+}
+/* line 355, ../scss/bootstrap-extend.scss */
+.switch-rect-primary.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 363, ../scss/bootstrap-extend.scss */
+.switch-rect-primary.switch-io:checked + label:before {
+  content: "\00a0I";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 373, ../scss/bootstrap-extend.scss */
+.switch-rect-primary.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 381, ../scss/bootstrap-extend.scss */
+.switch-rect-primary.switch-on-off:checked + label:before {
+  content: "\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 391, ../scss/bootstrap-extend.scss */
+.switch-rect-primary.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 399, ../scss/bootstrap-extend.scss */
+.switch-rect-primary.switch-yes-no:checked + label:before {
+  content: "\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 410, ../scss/bootstrap-extend.scss */
+.switch-rect-primary.disabled + label, .switch-rect-primary.disabled + label:hover::before, .switch-rect-primary.disabled + label:focus::before, .switch-rect-primary.disabled + label.focus:before, .switch-rect-primary.disabled + label:before, .switch-rect-primary.disabled + label:hover, .switch-rect-primary.disabled + label:focus, .switch-rect-primary.disabled + label.focus, .switch-rect-primary.disabled:checked + label, .switch-rect-primary.disabled:checked + label:hover::before, .switch-rect-primary.disabled:checked + label:focus::before, .switch-rect-primary.disabled:checked + label.focus:before, .switch-rect-primary.disabled:checked + label:before, .switch-rect-primary.disabled:checked + label:hover, .switch-rect-primary.disabled:checked + label:focus, .switch-rect-primary.disabled:checked + label.focus, .switch-rect-primary[disabled] + label, .switch-rect-primary[disabled] + label:hover::before, .switch-rect-primary[disabled] + label:focus::before, .switch-rect-primary[disabled] + label.focus:before, .switch-rect-primary[disabled] + label:before, .switch-rect-primary[disabled] + label:hover, .switch-rect-primary[disabled] + label:focus, .switch-rect-primary[disabled] + label.focus, .switch-rect-primary[disabled]:checked + label, .switch-rect-primary[disabled]:checked + label:hover::before, .switch-rect-primary[disabled]:checked + label:focus::before, .switch-rect-primary[disabled]:checked + label.focus:before, .switch-rect-primary[disabled]:checked + label:before, .switch-rect-primary[disabled]:checked + label:hover, .switch-rect-primary[disabled]:checked + label:focus, .switch-rect-primary[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-rect-primary + label, fieldset[disabled]:checked .switch-rect-primary + label:hover::before, fieldset[disabled]:checked .switch-rect-primary + label:focus::before, fieldset[disabled]:checked .switch-rect-primary + label.focus:before, fieldset[disabled]:checked .switch-rect-primary + label:before, fieldset[disabled]:checked .switch-rect-primary + label:hover, fieldset[disabled]:checked .switch-rect-primary + label:focus, fieldset[disabled]:checked .switch-rect-primary + label.focus, fieldset[disabled] .switch-rect-primary + label, fieldset[disabled] .switch-rect-primary + label:hover::before, fieldset[disabled] .switch-rect-primary + label:focus::before, fieldset[disabled] .switch-rect-primary + label.focus:before, fieldset[disabled] .switch-rect-primary + label:before, fieldset[disabled] .switch-rect-primary + label:hover, fieldset[disabled] .switch-rect-primary + label:focus, fieldset[disabled] .switch-rect-primary + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 291, ../scss/bootstrap-extend.scss */
+.switch-rect-success + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: background 0.4s;
+}
+/* line 298, ../scss/bootstrap-extend.scss */
+.switch-rect-success + label:before, .switch-rect-success + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 303, ../scss/bootstrap-extend.scss */
+.switch-rect-success + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 313, ../scss/bootstrap-extend.scss */
+.switch-rect-success + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 322, ../scss/bootstrap-extend.scss */
+.switch-rect-success + label:hover, .switch-rect-success + label:focus, .switch-rect-success + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 324, ../scss/bootstrap-extend.scss */
+.switch-rect-success + label:hover:after, .switch-rect-success + label:focus:after, .switch-rect-success + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 327, ../scss/bootstrap-extend.scss */
+.switch-rect-success + label:hover:before, .switch-rect-success + label:focus:before, .switch-rect-success + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 333, ../scss/bootstrap-extend.scss */
+.switch-rect-success:checked + label {
+  background-color: #4cae4c;
+}
+/* line 335, ../scss/bootstrap-extend.scss */
+.switch-rect-success:checked + label:before {
+  color: #5cb85c;
+}
+/* line 338, ../scss/bootstrap-extend.scss */
+.switch-rect-success:checked + label:after {
+  margin-left: 27px;
+  background-color: #5cb85c;
+}
+/* line 342, ../scss/bootstrap-extend.scss */
+.switch-rect-success:checked + label:hover, .switch-rect-success:checked + label:focus, .switch-rect-success:checked + label.focus {
+  background-color: #255525;
+}
+/* line 344, ../scss/bootstrap-extend.scss */
+.switch-rect-success:checked + label:hover:after, .switch-rect-success:checked + label:focus:after, .switch-rect-success:checked + label.focus:after {
+  background-color: #449d44;
+}
+/* line 347, ../scss/bootstrap-extend.scss */
+.switch-rect-success:checked + label:hover:before, .switch-rect-success:checked + label:focus:before, .switch-rect-success:checked + label.focus:before {
+  color: #449d44;
+}
+/* line 355, ../scss/bootstrap-extend.scss */
+.switch-rect-success.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 363, ../scss/bootstrap-extend.scss */
+.switch-rect-success.switch-io:checked + label:before {
+  content: "\00a0I";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 373, ../scss/bootstrap-extend.scss */
+.switch-rect-success.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 381, ../scss/bootstrap-extend.scss */
+.switch-rect-success.switch-on-off:checked + label:before {
+  content: "\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 391, ../scss/bootstrap-extend.scss */
+.switch-rect-success.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 399, ../scss/bootstrap-extend.scss */
+.switch-rect-success.switch-yes-no:checked + label:before {
+  content: "\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 410, ../scss/bootstrap-extend.scss */
+.switch-rect-success.disabled + label, .switch-rect-success.disabled + label:hover::before, .switch-rect-success.disabled + label:focus::before, .switch-rect-success.disabled + label.focus:before, .switch-rect-success.disabled + label:before, .switch-rect-success.disabled + label:hover, .switch-rect-success.disabled + label:focus, .switch-rect-success.disabled + label.focus, .switch-rect-success.disabled:checked + label, .switch-rect-success.disabled:checked + label:hover::before, .switch-rect-success.disabled:checked + label:focus::before, .switch-rect-success.disabled:checked + label.focus:before, .switch-rect-success.disabled:checked + label:before, .switch-rect-success.disabled:checked + label:hover, .switch-rect-success.disabled:checked + label:focus, .switch-rect-success.disabled:checked + label.focus, .switch-rect-success[disabled] + label, .switch-rect-success[disabled] + label:hover::before, .switch-rect-success[disabled] + label:focus::before, .switch-rect-success[disabled] + label.focus:before, .switch-rect-success[disabled] + label:before, .switch-rect-success[disabled] + label:hover, .switch-rect-success[disabled] + label:focus, .switch-rect-success[disabled] + label.focus, .switch-rect-success[disabled]:checked + label, .switch-rect-success[disabled]:checked + label:hover::before, .switch-rect-success[disabled]:checked + label:focus::before, .switch-rect-success[disabled]:checked + label.focus:before, .switch-rect-success[disabled]:checked + label:before, .switch-rect-success[disabled]:checked + label:hover, .switch-rect-success[disabled]:checked + label:focus, .switch-rect-success[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-rect-success + label, fieldset[disabled]:checked .switch-rect-success + label:hover::before, fieldset[disabled]:checked .switch-rect-success + label:focus::before, fieldset[disabled]:checked .switch-rect-success + label.focus:before, fieldset[disabled]:checked .switch-rect-success + label:before, fieldset[disabled]:checked .switch-rect-success + label:hover, fieldset[disabled]:checked .switch-rect-success + label:focus, fieldset[disabled]:checked .switch-rect-success + label.focus, fieldset[disabled] .switch-rect-success + label, fieldset[disabled] .switch-rect-success + label:hover::before, fieldset[disabled] .switch-rect-success + label:focus::before, fieldset[disabled] .switch-rect-success + label.focus:before, fieldset[disabled] .switch-rect-success + label:before, fieldset[disabled] .switch-rect-success + label:hover, fieldset[disabled] .switch-rect-success + label:focus, fieldset[disabled] .switch-rect-success + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 291, ../scss/bootstrap-extend.scss */
+.switch-rect-info + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: background 0.4s;
+}
+/* line 298, ../scss/bootstrap-extend.scss */
+.switch-rect-info + label:before, .switch-rect-info + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 303, ../scss/bootstrap-extend.scss */
+.switch-rect-info + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 313, ../scss/bootstrap-extend.scss */
+.switch-rect-info + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 322, ../scss/bootstrap-extend.scss */
+.switch-rect-info + label:hover, .switch-rect-info + label:focus, .switch-rect-info + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 324, ../scss/bootstrap-extend.scss */
+.switch-rect-info + label:hover:after, .switch-rect-info + label:focus:after, .switch-rect-info + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 327, ../scss/bootstrap-extend.scss */
+.switch-rect-info + label:hover:before, .switch-rect-info + label:focus:before, .switch-rect-info + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 333, ../scss/bootstrap-extend.scss */
+.switch-rect-info:checked + label {
+  background-color: #46b8da;
+}
+/* line 335, ../scss/bootstrap-extend.scss */
+.switch-rect-info:checked + label:before {
+  color: #5bc0de;
+}
+/* line 338, ../scss/bootstrap-extend.scss */
+.switch-rect-info:checked + label:after {
+  margin-left: 27px;
+  background-color: #5bc0de;
+}
+/* line 342, ../scss/bootstrap-extend.scss */
+.switch-rect-info:checked + label:hover, .switch-rect-info:checked + label:focus, .switch-rect-info:checked + label.focus {
+  background-color: #1b6d86;
+}
+/* line 344, ../scss/bootstrap-extend.scss */
+.switch-rect-info:checked + label:hover:after, .switch-rect-info:checked + label:focus:after, .switch-rect-info:checked + label.focus:after {
+  background-color: #31b0d5;
+}
+/* line 347, ../scss/bootstrap-extend.scss */
+.switch-rect-info:checked + label:hover:before, .switch-rect-info:checked + label:focus:before, .switch-rect-info:checked + label.focus:before {
+  color: #31b0d5;
+}
+/* line 355, ../scss/bootstrap-extend.scss */
+.switch-rect-info.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 363, ../scss/bootstrap-extend.scss */
+.switch-rect-info.switch-io:checked + label:before {
+  content: "\00a0I";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 373, ../scss/bootstrap-extend.scss */
+.switch-rect-info.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 381, ../scss/bootstrap-extend.scss */
+.switch-rect-info.switch-on-off:checked + label:before {
+  content: "\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 391, ../scss/bootstrap-extend.scss */
+.switch-rect-info.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 399, ../scss/bootstrap-extend.scss */
+.switch-rect-info.switch-yes-no:checked + label:before {
+  content: "\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 410, ../scss/bootstrap-extend.scss */
+.switch-rect-info.disabled + label, .switch-rect-info.disabled + label:hover::before, .switch-rect-info.disabled + label:focus::before, .switch-rect-info.disabled + label.focus:before, .switch-rect-info.disabled + label:before, .switch-rect-info.disabled + label:hover, .switch-rect-info.disabled + label:focus, .switch-rect-info.disabled + label.focus, .switch-rect-info.disabled:checked + label, .switch-rect-info.disabled:checked + label:hover::before, .switch-rect-info.disabled:checked + label:focus::before, .switch-rect-info.disabled:checked + label.focus:before, .switch-rect-info.disabled:checked + label:before, .switch-rect-info.disabled:checked + label:hover, .switch-rect-info.disabled:checked + label:focus, .switch-rect-info.disabled:checked + label.focus, .switch-rect-info[disabled] + label, .switch-rect-info[disabled] + label:hover::before, .switch-rect-info[disabled] + label:focus::before, .switch-rect-info[disabled] + label.focus:before, .switch-rect-info[disabled] + label:before, .switch-rect-info[disabled] + label:hover, .switch-rect-info[disabled] + label:focus, .switch-rect-info[disabled] + label.focus, .switch-rect-info[disabled]:checked + label, .switch-rect-info[disabled]:checked + label:hover::before, .switch-rect-info[disabled]:checked + label:focus::before, .switch-rect-info[disabled]:checked + label.focus:before, .switch-rect-info[disabled]:checked + label:before, .switch-rect-info[disabled]:checked + label:hover, .switch-rect-info[disabled]:checked + label:focus, .switch-rect-info[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-rect-info + label, fieldset[disabled]:checked .switch-rect-info + label:hover::before, fieldset[disabled]:checked .switch-rect-info + label:focus::before, fieldset[disabled]:checked .switch-rect-info + label.focus:before, fieldset[disabled]:checked .switch-rect-info + label:before, fieldset[disabled]:checked .switch-rect-info + label:hover, fieldset[disabled]:checked .switch-rect-info + label:focus, fieldset[disabled]:checked .switch-rect-info + label.focus, fieldset[disabled] .switch-rect-info + label, fieldset[disabled] .switch-rect-info + label:hover::before, fieldset[disabled] .switch-rect-info + label:focus::before, fieldset[disabled] .switch-rect-info + label.focus:before, fieldset[disabled] .switch-rect-info + label:before, fieldset[disabled] .switch-rect-info + label:hover, fieldset[disabled] .switch-rect-info + label:focus, fieldset[disabled] .switch-rect-info + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 291, ../scss/bootstrap-extend.scss */
+.switch-rect-warning + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: background 0.4s;
+}
+/* line 298, ../scss/bootstrap-extend.scss */
+.switch-rect-warning + label:before, .switch-rect-warning + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 303, ../scss/bootstrap-extend.scss */
+.switch-rect-warning + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 313, ../scss/bootstrap-extend.scss */
+.switch-rect-warning + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 322, ../scss/bootstrap-extend.scss */
+.switch-rect-warning + label:hover, .switch-rect-warning + label:focus, .switch-rect-warning + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 324, ../scss/bootstrap-extend.scss */
+.switch-rect-warning + label:hover:after, .switch-rect-warning + label:focus:after, .switch-rect-warning + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 327, ../scss/bootstrap-extend.scss */
+.switch-rect-warning + label:hover:before, .switch-rect-warning + label:focus:before, .switch-rect-warning + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 333, ../scss/bootstrap-extend.scss */
+.switch-rect-warning:checked + label {
+  background-color: #eea236;
+}
+/* line 335, ../scss/bootstrap-extend.scss */
+.switch-rect-warning:checked + label:before {
+  color: #f0ad4e;
+}
+/* line 338, ../scss/bootstrap-extend.scss */
+.switch-rect-warning:checked + label:after {
+  margin-left: 27px;
+  background-color: #f0ad4e;
+}
+/* line 342, ../scss/bootstrap-extend.scss */
+.switch-rect-warning:checked + label:hover, .switch-rect-warning:checked + label:focus, .switch-rect-warning:checked + label.focus {
+  background-color: #985e0d;
+}
+/* line 344, ../scss/bootstrap-extend.scss */
+.switch-rect-warning:checked + label:hover:after, .switch-rect-warning:checked + label:focus:after, .switch-rect-warning:checked + label.focus:after {
+  background-color: #ec971f;
+}
+/* line 347, ../scss/bootstrap-extend.scss */
+.switch-rect-warning:checked + label:hover:before, .switch-rect-warning:checked + label:focus:before, .switch-rect-warning:checked + label.focus:before {
+  color: #ec971f;
+}
+/* line 355, ../scss/bootstrap-extend.scss */
+.switch-rect-warning.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 363, ../scss/bootstrap-extend.scss */
+.switch-rect-warning.switch-io:checked + label:before {
+  content: "\00a0I";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 373, ../scss/bootstrap-extend.scss */
+.switch-rect-warning.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 381, ../scss/bootstrap-extend.scss */
+.switch-rect-warning.switch-on-off:checked + label:before {
+  content: "\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 391, ../scss/bootstrap-extend.scss */
+.switch-rect-warning.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 399, ../scss/bootstrap-extend.scss */
+.switch-rect-warning.switch-yes-no:checked + label:before {
+  content: "\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 410, ../scss/bootstrap-extend.scss */
+.switch-rect-warning.disabled + label, .switch-rect-warning.disabled + label:hover::before, .switch-rect-warning.disabled + label:focus::before, .switch-rect-warning.disabled + label.focus:before, .switch-rect-warning.disabled + label:before, .switch-rect-warning.disabled + label:hover, .switch-rect-warning.disabled + label:focus, .switch-rect-warning.disabled + label.focus, .switch-rect-warning.disabled:checked + label, .switch-rect-warning.disabled:checked + label:hover::before, .switch-rect-warning.disabled:checked + label:focus::before, .switch-rect-warning.disabled:checked + label.focus:before, .switch-rect-warning.disabled:checked + label:before, .switch-rect-warning.disabled:checked + label:hover, .switch-rect-warning.disabled:checked + label:focus, .switch-rect-warning.disabled:checked + label.focus, .switch-rect-warning[disabled] + label, .switch-rect-warning[disabled] + label:hover::before, .switch-rect-warning[disabled] + label:focus::before, .switch-rect-warning[disabled] + label.focus:before, .switch-rect-warning[disabled] + label:before, .switch-rect-warning[disabled] + label:hover, .switch-rect-warning[disabled] + label:focus, .switch-rect-warning[disabled] + label.focus, .switch-rect-warning[disabled]:checked + label, .switch-rect-warning[disabled]:checked + label:hover::before, .switch-rect-warning[disabled]:checked + label:focus::before, .switch-rect-warning[disabled]:checked + label.focus:before, .switch-rect-warning[disabled]:checked + label:before, .switch-rect-warning[disabled]:checked + label:hover, .switch-rect-warning[disabled]:checked + label:focus, .switch-rect-warning[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-rect-warning + label, fieldset[disabled]:checked .switch-rect-warning + label:hover::before, fieldset[disabled]:checked .switch-rect-warning + label:focus::before, fieldset[disabled]:checked .switch-rect-warning + label.focus:before, fieldset[disabled]:checked .switch-rect-warning + label:before, fieldset[disabled]:checked .switch-rect-warning + label:hover, fieldset[disabled]:checked .switch-rect-warning + label:focus, fieldset[disabled]:checked .switch-rect-warning + label.focus, fieldset[disabled] .switch-rect-warning + label, fieldset[disabled] .switch-rect-warning + label:hover::before, fieldset[disabled] .switch-rect-warning + label:focus::before, fieldset[disabled] .switch-rect-warning + label.focus:before, fieldset[disabled] .switch-rect-warning + label:before, fieldset[disabled] .switch-rect-warning + label:hover, fieldset[disabled] .switch-rect-warning + label:focus, fieldset[disabled] .switch-rect-warning + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 291, ../scss/bootstrap-extend.scss */
+.switch-rect-danger + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: background 0.4s;
+}
+/* line 298, ../scss/bootstrap-extend.scss */
+.switch-rect-danger + label:before, .switch-rect-danger + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 303, ../scss/bootstrap-extend.scss */
+.switch-rect-danger + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 313, ../scss/bootstrap-extend.scss */
+.switch-rect-danger + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 322, ../scss/bootstrap-extend.scss */
+.switch-rect-danger + label:hover, .switch-rect-danger + label:focus, .switch-rect-danger + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 324, ../scss/bootstrap-extend.scss */
+.switch-rect-danger + label:hover:after, .switch-rect-danger + label:focus:after, .switch-rect-danger + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 327, ../scss/bootstrap-extend.scss */
+.switch-rect-danger + label:hover:before, .switch-rect-danger + label:focus:before, .switch-rect-danger + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 333, ../scss/bootstrap-extend.scss */
+.switch-rect-danger:checked + label {
+  background-color: #d43f3a;
+}
+/* line 335, ../scss/bootstrap-extend.scss */
+.switch-rect-danger:checked + label:before {
+  color: #d9534f;
+}
+/* line 338, ../scss/bootstrap-extend.scss */
+.switch-rect-danger:checked + label:after {
+  margin-left: 27px;
+  background-color: #d9534f;
+}
+/* line 342, ../scss/bootstrap-extend.scss */
+.switch-rect-danger:checked + label:hover, .switch-rect-danger:checked + label:focus, .switch-rect-danger:checked + label.focus {
+  background-color: #751d1a;
+}
+/* line 344, ../scss/bootstrap-extend.scss */
+.switch-rect-danger:checked + label:hover:after, .switch-rect-danger:checked + label:focus:after, .switch-rect-danger:checked + label.focus:after {
+  background-color: #c9302c;
+}
+/* line 347, ../scss/bootstrap-extend.scss */
+.switch-rect-danger:checked + label:hover:before, .switch-rect-danger:checked + label:focus:before, .switch-rect-danger:checked + label.focus:before {
+  color: #c9302c;
+}
+/* line 355, ../scss/bootstrap-extend.scss */
+.switch-rect-danger.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 363, ../scss/bootstrap-extend.scss */
+.switch-rect-danger.switch-io:checked + label:before {
+  content: "\00a0I";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 373, ../scss/bootstrap-extend.scss */
+.switch-rect-danger.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 381, ../scss/bootstrap-extend.scss */
+.switch-rect-danger.switch-on-off:checked + label:before {
+  content: "\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 391, ../scss/bootstrap-extend.scss */
+.switch-rect-danger.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 399, ../scss/bootstrap-extend.scss */
+.switch-rect-danger.switch-yes-no:checked + label:before {
+  content: "\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 410, ../scss/bootstrap-extend.scss */
+.switch-rect-danger.disabled + label, .switch-rect-danger.disabled + label:hover::before, .switch-rect-danger.disabled + label:focus::before, .switch-rect-danger.disabled + label.focus:before, .switch-rect-danger.disabled + label:before, .switch-rect-danger.disabled + label:hover, .switch-rect-danger.disabled + label:focus, .switch-rect-danger.disabled + label.focus, .switch-rect-danger.disabled:checked + label, .switch-rect-danger.disabled:checked + label:hover::before, .switch-rect-danger.disabled:checked + label:focus::before, .switch-rect-danger.disabled:checked + label.focus:before, .switch-rect-danger.disabled:checked + label:before, .switch-rect-danger.disabled:checked + label:hover, .switch-rect-danger.disabled:checked + label:focus, .switch-rect-danger.disabled:checked + label.focus, .switch-rect-danger[disabled] + label, .switch-rect-danger[disabled] + label:hover::before, .switch-rect-danger[disabled] + label:focus::before, .switch-rect-danger[disabled] + label.focus:before, .switch-rect-danger[disabled] + label:before, .switch-rect-danger[disabled] + label:hover, .switch-rect-danger[disabled] + label:focus, .switch-rect-danger[disabled] + label.focus, .switch-rect-danger[disabled]:checked + label, .switch-rect-danger[disabled]:checked + label:hover::before, .switch-rect-danger[disabled]:checked + label:focus::before, .switch-rect-danger[disabled]:checked + label.focus:before, .switch-rect-danger[disabled]:checked + label:before, .switch-rect-danger[disabled]:checked + label:hover, .switch-rect-danger[disabled]:checked + label:focus, .switch-rect-danger[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-rect-danger + label, fieldset[disabled]:checked .switch-rect-danger + label:hover::before, fieldset[disabled]:checked .switch-rect-danger + label:focus::before, fieldset[disabled]:checked .switch-rect-danger + label.focus:before, fieldset[disabled]:checked .switch-rect-danger + label:before, fieldset[disabled]:checked .switch-rect-danger + label:hover, fieldset[disabled]:checked .switch-rect-danger + label:focus, fieldset[disabled]:checked .switch-rect-danger + label.focus, fieldset[disabled] .switch-rect-danger + label, fieldset[disabled] .switch-rect-danger + label:hover::before, fieldset[disabled] .switch-rect-danger + label:focus::before, fieldset[disabled] .switch-rect-danger + label.focus:before, fieldset[disabled] .switch-rect-danger + label:before, fieldset[disabled] .switch-rect-danger + label:hover, fieldset[disabled] .switch-rect-danger + label:focus, fieldset[disabled] .switch-rect-danger + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 291, ../scss/bootstrap-extend.scss */
+.switch-rect-notice + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: background 0.4s;
+}
+/* line 298, ../scss/bootstrap-extend.scss */
+.switch-rect-notice + label:before, .switch-rect-notice + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 303, ../scss/bootstrap-extend.scss */
+.switch-rect-notice + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 313, ../scss/bootstrap-extend.scss */
+.switch-rect-notice + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 322, ../scss/bootstrap-extend.scss */
+.switch-rect-notice + label:hover, .switch-rect-notice + label:focus, .switch-rect-notice + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 324, ../scss/bootstrap-extend.scss */
+.switch-rect-notice + label:hover:after, .switch-rect-notice + label:focus:after, .switch-rect-notice + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 327, ../scss/bootstrap-extend.scss */
+.switch-rect-notice + label:hover:before, .switch-rect-notice + label:focus:before, .switch-rect-notice + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 333, ../scss/bootstrap-extend.scss */
+.switch-rect-notice:checked + label {
+  background-color: #6f5499;
+}
+/* line 335, ../scss/bootstrap-extend.scss */
+.switch-rect-notice:checked + label:before {
+  color: #9783b9;
+}
+/* line 338, ../scss/bootstrap-extend.scss */
+.switch-rect-notice:checked + label:after {
+  margin-left: 27px;
+  background-color: #9783b9;
+}
+/* line 342, ../scss/bootstrap-extend.scss */
+.switch-rect-notice:checked + label:hover, .switch-rect-notice:checked + label:focus, .switch-rect-notice:checked + label.focus {
+  background-color: #332747;
+}
+/* line 344, ../scss/bootstrap-extend.scss */
+.switch-rect-notice:checked + label:hover:after, .switch-rect-notice:checked + label:focus:after, .switch-rect-notice:checked + label.focus:after {
+  background-color: #7c62a7;
+}
+/* line 347, ../scss/bootstrap-extend.scss */
+.switch-rect-notice:checked + label:hover:before, .switch-rect-notice:checked + label:focus:before, .switch-rect-notice:checked + label.focus:before {
+  color: #7c62a7;
+}
+/* line 355, ../scss/bootstrap-extend.scss */
+.switch-rect-notice.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 363, ../scss/bootstrap-extend.scss */
+.switch-rect-notice.switch-io:checked + label:before {
+  content: "\00a0I";
+  font-size: 17px;
+  line-height: 1.5;
+}
+/* line 373, ../scss/bootstrap-extend.scss */
+.switch-rect-notice.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 381, ../scss/bootstrap-extend.scss */
+.switch-rect-notice.switch-on-off:checked + label:before {
+  content: "\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 391, ../scss/bootstrap-extend.scss */
+.switch-rect-notice.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 399, ../scss/bootstrap-extend.scss */
+.switch-rect-notice.switch-yes-no:checked + label:before {
+  content: "\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 410, ../scss/bootstrap-extend.scss */
+.switch-rect-notice.disabled + label, .switch-rect-notice.disabled + label:hover::before, .switch-rect-notice.disabled + label:focus::before, .switch-rect-notice.disabled + label.focus:before, .switch-rect-notice.disabled + label:before, .switch-rect-notice.disabled + label:hover, .switch-rect-notice.disabled + label:focus, .switch-rect-notice.disabled + label.focus, .switch-rect-notice.disabled:checked + label, .switch-rect-notice.disabled:checked + label:hover::before, .switch-rect-notice.disabled:checked + label:focus::before, .switch-rect-notice.disabled:checked + label.focus:before, .switch-rect-notice.disabled:checked + label:before, .switch-rect-notice.disabled:checked + label:hover, .switch-rect-notice.disabled:checked + label:focus, .switch-rect-notice.disabled:checked + label.focus, .switch-rect-notice[disabled] + label, .switch-rect-notice[disabled] + label:hover::before, .switch-rect-notice[disabled] + label:focus::before, .switch-rect-notice[disabled] + label.focus:before, .switch-rect-notice[disabled] + label:before, .switch-rect-notice[disabled] + label:hover, .switch-rect-notice[disabled] + label:focus, .switch-rect-notice[disabled] + label.focus, .switch-rect-notice[disabled]:checked + label, .switch-rect-notice[disabled]:checked + label:hover::before, .switch-rect-notice[disabled]:checked + label:focus::before, .switch-rect-notice[disabled]:checked + label.focus:before, .switch-rect-notice[disabled]:checked + label:before, .switch-rect-notice[disabled]:checked + label:hover, .switch-rect-notice[disabled]:checked + label:focus, .switch-rect-notice[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-rect-notice + label, fieldset[disabled]:checked .switch-rect-notice + label:hover::before, fieldset[disabled]:checked .switch-rect-notice + label:focus::before, fieldset[disabled]:checked .switch-rect-notice + label.focus:before, fieldset[disabled]:checked .switch-rect-notice + label:before, fieldset[disabled]:checked .switch-rect-notice + label:hover, fieldset[disabled]:checked .switch-rect-notice + label:focus, fieldset[disabled]:checked .switch-rect-notice + label.focus, fieldset[disabled] .switch-rect-notice + label, fieldset[disabled] .switch-rect-notice + label:hover::before, fieldset[disabled] .switch-rect-notice + label:focus::before, fieldset[disabled] .switch-rect-notice + label.focus:before, fieldset[disabled] .switch-rect-notice + label:before, fieldset[disabled] .switch-rect-notice + label:hover, fieldset[disabled] .switch-rect-notice + label:focus, fieldset[disabled] .switch-rect-notice + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 165, ../scss/bootstrap-extend.scss */
+.switch-round-default + label {
   padding: 2px;
   width: 56px;
   height: 28px;
@@ -581,14 +1394,14 @@ input[type="radio"].switch + label, input[type="checkbox"].switch + label {
   border-radius: 26px;
   transition: background 0.4s;
 }
-/* line 382, ../scss/bootstrap-extend.scss */
-.switch-round + label:before, .switch-round + label:after {
+/* line 172, ../scss/bootstrap-extend.scss */
+.switch-round-default + label:before, .switch-round-default + label:after {
   display: block;
   position: absolute;
   content: "";
 }
-/* line 387, ../scss/bootstrap-extend.scss */
-.switch-round + label:before {
+/* line 177, ../scss/bootstrap-extend.scss */
+.switch-round-default + label:before {
   top: 1px;
   left: 1px;
   bottom: 1px;
@@ -596,56 +1409,777 @@ input[type="radio"].switch + label, input[type="checkbox"].switch + label {
   background-color: #fff;
   border-radius: 26px;
   transition: background 0.4s;
-  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
   color: #ccc;
-  font-size: 17px;
 }
-/* line 399, ../scss/bootstrap-extend.scss */
-.switch-round + label:after {
+/* line 187, ../scss/bootstrap-extend.scss */
+.switch-round-default + label:after {
   top: 4px;
   left: 4px;
   bottom: 4px;
-  width: 22px;
+  width: 21px;
   background-color: #ccc;
   border-radius: 26px;
   transition: margin 0.4s, background 0.4s;
 }
-/* line 408, ../scss/bootstrap-extend.scss */
-.switch-round + label:hover {
+/* line 196, ../scss/bootstrap-extend.scss */
+.switch-round-default + label:hover, .switch-round-default + label:focus, .switch-round-default + label.focus {
   background-color: #8c8c8c;
 }
-/* line 410, ../scss/bootstrap-extend.scss */
-.switch-round + label:hover:after {
+/* line 198, ../scss/bootstrap-extend.scss */
+.switch-round-default + label:hover:after, .switch-round-default + label:focus:after, .switch-round-default + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 201, ../scss/bootstrap-extend.scss */
+.switch-round-default + label:hover:before, .switch-round-default + label:focus:before, .switch-round-default + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 207, ../scss/bootstrap-extend.scss */
+.switch-round-default:checked + label {
+  background-color: #ccc;
+}
+/* line 209, ../scss/bootstrap-extend.scss */
+.switch-round-default:checked + label:before {
+  color: #555;
+}
+/* line 212, ../scss/bootstrap-extend.scss */
+.switch-round-default:checked + label:after {
+  margin-left: 27px;
+  background-color: #555;
+}
+/* line 216, ../scss/bootstrap-extend.scss */
+.switch-round-default:checked + label:hover, .switch-round-default:checked + label:focus, .switch-round-default:checked + label.focus {
   background-color: #8c8c8c;
 }
-/* line 413, ../scss/bootstrap-extend.scss */
-.switch-round + label:hover:before {
-  color: #8c8c8c;
+/* line 218, ../scss/bootstrap-extend.scss */
+.switch-round-default:checked + label:hover:after, .switch-round-default:checked + label:focus:after, .switch-round-default:checked + label.focus:after {
+  background-color: #3b3b3b;
 }
-/* line 419, ../scss/bootstrap-extend.scss */
-.switch-round:checked + label {
-  background-color: #4cae4c;
+/* line 221, ../scss/bootstrap-extend.scss */
+.switch-round-default:checked + label:hover:before, .switch-round-default:checked + label:focus:before, .switch-round-default:checked + label.focus:before {
+  color: #3b3b3b;
 }
-/* line 421, ../scss/bootstrap-extend.scss */
-.switch-round:checked + label:before {
-  content: "\00a0\00a0I";
-  color: #5cb85c;
+/* line 229, ../scss/bootstrap-extend.scss */
+.switch-round-default.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
   font-size: 17px;
 }
-/* line 426, ../scss/bootstrap-extend.scss */
-.switch-round:checked + label:after {
-  margin-left: 26px;
+/* line 236, ../scss/bootstrap-extend.scss */
+.switch-round-default.switch-io:checked + label:before {
+  content: "\00a0\00a0I";
+  font-size: 17px;
+}
+/* line 245, ../scss/bootstrap-extend.scss */
+.switch-round-default.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 253, ../scss/bootstrap-extend.scss */
+.switch-round-default.switch-on-off:checked + label:before {
+  content: "\00a0\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 263, ../scss/bootstrap-extend.scss */
+.switch-round-default.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 271, ../scss/bootstrap-extend.scss */
+.switch-round-default.switch-yes-no:checked + label:before {
+  content: "\00a0\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 282, ../scss/bootstrap-extend.scss */
+.switch-round-default.disabled + label, .switch-round-default.disabled + label:hover::before, .switch-round-default.disabled + label:focus::before, .switch-round-default.disabled + label.focus:before, .switch-round-default.disabled + label:before, .switch-round-default.disabled + label:hover, .switch-round-default.disabled + label:focus, .switch-round-default.disabled + label.focus, .switch-round-default.disabled:checked + label, .switch-round-default.disabled:checked + label:hover::before, .switch-round-default.disabled:checked + label:focus::before, .switch-round-default.disabled:checked + label.focus:before, .switch-round-default.disabled:checked + label:before, .switch-round-default.disabled:checked + label:hover, .switch-round-default.disabled:checked + label:focus, .switch-round-default.disabled:checked + label.focus, .switch-round-default[disabled] + label, .switch-round-default[disabled] + label:hover::before, .switch-round-default[disabled] + label:focus::before, .switch-round-default[disabled] + label.focus:before, .switch-round-default[disabled] + label:before, .switch-round-default[disabled] + label:hover, .switch-round-default[disabled] + label:focus, .switch-round-default[disabled] + label.focus, .switch-round-default[disabled]:checked + label, .switch-round-default[disabled]:checked + label:hover::before, .switch-round-default[disabled]:checked + label:focus::before, .switch-round-default[disabled]:checked + label.focus:before, .switch-round-default[disabled]:checked + label:before, .switch-round-default[disabled]:checked + label:hover, .switch-round-default[disabled]:checked + label:focus, .switch-round-default[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-round-default + label, fieldset[disabled]:checked .switch-round-default + label:hover::before, fieldset[disabled]:checked .switch-round-default + label:focus::before, fieldset[disabled]:checked .switch-round-default + label.focus:before, fieldset[disabled]:checked .switch-round-default + label:before, fieldset[disabled]:checked .switch-round-default + label:hover, fieldset[disabled]:checked .switch-round-default + label:focus, fieldset[disabled]:checked .switch-round-default + label.focus, fieldset[disabled] .switch-round-default + label, fieldset[disabled] .switch-round-default + label:hover::before, fieldset[disabled] .switch-round-default + label:focus::before, fieldset[disabled] .switch-round-default + label.focus:before, fieldset[disabled] .switch-round-default + label:before, fieldset[disabled] .switch-round-default + label:hover, fieldset[disabled] .switch-round-default + label:focus, fieldset[disabled] .switch-round-default + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+/* line 666, ../scss/bootstrap-extend.scss */
+.switch-round-default:checked + label {
+  background-color: #555;
+}
+/* line 668, ../scss/bootstrap-extend.scss */
+.switch-round-default:checked + label:hover {
+  background-color: #151515;
+}
+
+/* line 165, ../scss/bootstrap-extend.scss */
+.switch-round-primary + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: background 0.4s;
+}
+/* line 172, ../scss/bootstrap-extend.scss */
+.switch-round-primary + label:before, .switch-round-primary + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 177, ../scss/bootstrap-extend.scss */
+.switch-round-primary + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 26px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 187, ../scss/bootstrap-extend.scss */
+.switch-round-primary + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 196, ../scss/bootstrap-extend.scss */
+.switch-round-primary + label:hover, .switch-round-primary + label:focus, .switch-round-primary + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 198, ../scss/bootstrap-extend.scss */
+.switch-round-primary + label:hover:after, .switch-round-primary + label:focus:after, .switch-round-primary + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 201, ../scss/bootstrap-extend.scss */
+.switch-round-primary + label:hover:before, .switch-round-primary + label:focus:before, .switch-round-primary + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 207, ../scss/bootstrap-extend.scss */
+.switch-round-primary:checked + label {
+  background-color: #2e6da4;
+}
+/* line 209, ../scss/bootstrap-extend.scss */
+.switch-round-primary:checked + label:before {
+  color: #337ab7;
+}
+/* line 212, ../scss/bootstrap-extend.scss */
+.switch-round-primary:checked + label:after {
+  margin-left: 27px;
+  background-color: #337ab7;
+}
+/* line 216, ../scss/bootstrap-extend.scss */
+.switch-round-primary:checked + label:hover, .switch-round-primary:checked + label:focus, .switch-round-primary:checked + label.focus {
+  background-color: #122b40;
+}
+/* line 218, ../scss/bootstrap-extend.scss */
+.switch-round-primary:checked + label:hover:after, .switch-round-primary:checked + label:focus:after, .switch-round-primary:checked + label.focus:after {
+  background-color: #285f8f;
+}
+/* line 221, ../scss/bootstrap-extend.scss */
+.switch-round-primary:checked + label:hover:before, .switch-round-primary:checked + label:focus:before, .switch-round-primary:checked + label.focus:before {
+  color: #285f8f;
+}
+/* line 229, ../scss/bootstrap-extend.scss */
+.switch-round-primary.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+}
+/* line 236, ../scss/bootstrap-extend.scss */
+.switch-round-primary.switch-io:checked + label:before {
+  content: "\00a0\00a0I";
+  font-size: 17px;
+}
+/* line 245, ../scss/bootstrap-extend.scss */
+.switch-round-primary.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 253, ../scss/bootstrap-extend.scss */
+.switch-round-primary.switch-on-off:checked + label:before {
+  content: "\00a0\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 263, ../scss/bootstrap-extend.scss */
+.switch-round-primary.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 271, ../scss/bootstrap-extend.scss */
+.switch-round-primary.switch-yes-no:checked + label:before {
+  content: "\00a0\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 282, ../scss/bootstrap-extend.scss */
+.switch-round-primary.disabled + label, .switch-round-primary.disabled + label:hover::before, .switch-round-primary.disabled + label:focus::before, .switch-round-primary.disabled + label.focus:before, .switch-round-primary.disabled + label:before, .switch-round-primary.disabled + label:hover, .switch-round-primary.disabled + label:focus, .switch-round-primary.disabled + label.focus, .switch-round-primary.disabled:checked + label, .switch-round-primary.disabled:checked + label:hover::before, .switch-round-primary.disabled:checked + label:focus::before, .switch-round-primary.disabled:checked + label.focus:before, .switch-round-primary.disabled:checked + label:before, .switch-round-primary.disabled:checked + label:hover, .switch-round-primary.disabled:checked + label:focus, .switch-round-primary.disabled:checked + label.focus, .switch-round-primary[disabled] + label, .switch-round-primary[disabled] + label:hover::before, .switch-round-primary[disabled] + label:focus::before, .switch-round-primary[disabled] + label.focus:before, .switch-round-primary[disabled] + label:before, .switch-round-primary[disabled] + label:hover, .switch-round-primary[disabled] + label:focus, .switch-round-primary[disabled] + label.focus, .switch-round-primary[disabled]:checked + label, .switch-round-primary[disabled]:checked + label:hover::before, .switch-round-primary[disabled]:checked + label:focus::before, .switch-round-primary[disabled]:checked + label.focus:before, .switch-round-primary[disabled]:checked + label:before, .switch-round-primary[disabled]:checked + label:hover, .switch-round-primary[disabled]:checked + label:focus, .switch-round-primary[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-round-primary + label, fieldset[disabled]:checked .switch-round-primary + label:hover::before, fieldset[disabled]:checked .switch-round-primary + label:focus::before, fieldset[disabled]:checked .switch-round-primary + label.focus:before, fieldset[disabled]:checked .switch-round-primary + label:before, fieldset[disabled]:checked .switch-round-primary + label:hover, fieldset[disabled]:checked .switch-round-primary + label:focus, fieldset[disabled]:checked .switch-round-primary + label.focus, fieldset[disabled] .switch-round-primary + label, fieldset[disabled] .switch-round-primary + label:hover::before, fieldset[disabled] .switch-round-primary + label:focus::before, fieldset[disabled] .switch-round-primary + label.focus:before, fieldset[disabled] .switch-round-primary + label:before, fieldset[disabled] .switch-round-primary + label:hover, fieldset[disabled] .switch-round-primary + label:focus, fieldset[disabled] .switch-round-primary + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 165, ../scss/bootstrap-extend.scss */
+.switch-round-success + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: background 0.4s;
+}
+/* line 172, ../scss/bootstrap-extend.scss */
+.switch-round-success + label:before, .switch-round-success + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 177, ../scss/bootstrap-extend.scss */
+.switch-round-success + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 26px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 187, ../scss/bootstrap-extend.scss */
+.switch-round-success + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 196, ../scss/bootstrap-extend.scss */
+.switch-round-success + label:hover, .switch-round-success + label:focus, .switch-round-success + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 198, ../scss/bootstrap-extend.scss */
+.switch-round-success + label:hover:after, .switch-round-success + label:focus:after, .switch-round-success + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 201, ../scss/bootstrap-extend.scss */
+.switch-round-success + label:hover:before, .switch-round-success + label:focus:before, .switch-round-success + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 207, ../scss/bootstrap-extend.scss */
+.switch-round-success:checked + label {
+  background-color: #4cae4c;
+}
+/* line 209, ../scss/bootstrap-extend.scss */
+.switch-round-success:checked + label:before {
+  color: #5cb85c;
+}
+/* line 212, ../scss/bootstrap-extend.scss */
+.switch-round-success:checked + label:after {
+  margin-left: 27px;
   background-color: #5cb85c;
 }
-/* line 430, ../scss/bootstrap-extend.scss */
-.switch-round:checked + label:hover {
+/* line 216, ../scss/bootstrap-extend.scss */
+.switch-round-success:checked + label:hover, .switch-round-success:checked + label:focus, .switch-round-success:checked + label.focus {
   background-color: #255525;
 }
-/* line 432, ../scss/bootstrap-extend.scss */
-.switch-round:checked + label:hover:after {
-  background-color: #2d672d;
+/* line 218, ../scss/bootstrap-extend.scss */
+.switch-round-success:checked + label:hover:after, .switch-round-success:checked + label:focus:after, .switch-round-success:checked + label.focus:after {
+  background-color: #449d44;
 }
-/* line 435, ../scss/bootstrap-extend.scss */
-.switch-round:checked + label:hover:before {
-  color: #2d672d;
+/* line 221, ../scss/bootstrap-extend.scss */
+.switch-round-success:checked + label:hover:before, .switch-round-success:checked + label:focus:before, .switch-round-success:checked + label.focus:before {
+  color: #449d44;
+}
+/* line 229, ../scss/bootstrap-extend.scss */
+.switch-round-success.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+}
+/* line 236, ../scss/bootstrap-extend.scss */
+.switch-round-success.switch-io:checked + label:before {
+  content: "\00a0\00a0I";
+  font-size: 17px;
+}
+/* line 245, ../scss/bootstrap-extend.scss */
+.switch-round-success.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 253, ../scss/bootstrap-extend.scss */
+.switch-round-success.switch-on-off:checked + label:before {
+  content: "\00a0\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 263, ../scss/bootstrap-extend.scss */
+.switch-round-success.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 271, ../scss/bootstrap-extend.scss */
+.switch-round-success.switch-yes-no:checked + label:before {
+  content: "\00a0\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 282, ../scss/bootstrap-extend.scss */
+.switch-round-success.disabled + label, .switch-round-success.disabled + label:hover::before, .switch-round-success.disabled + label:focus::before, .switch-round-success.disabled + label.focus:before, .switch-round-success.disabled + label:before, .switch-round-success.disabled + label:hover, .switch-round-success.disabled + label:focus, .switch-round-success.disabled + label.focus, .switch-round-success.disabled:checked + label, .switch-round-success.disabled:checked + label:hover::before, .switch-round-success.disabled:checked + label:focus::before, .switch-round-success.disabled:checked + label.focus:before, .switch-round-success.disabled:checked + label:before, .switch-round-success.disabled:checked + label:hover, .switch-round-success.disabled:checked + label:focus, .switch-round-success.disabled:checked + label.focus, .switch-round-success[disabled] + label, .switch-round-success[disabled] + label:hover::before, .switch-round-success[disabled] + label:focus::before, .switch-round-success[disabled] + label.focus:before, .switch-round-success[disabled] + label:before, .switch-round-success[disabled] + label:hover, .switch-round-success[disabled] + label:focus, .switch-round-success[disabled] + label.focus, .switch-round-success[disabled]:checked + label, .switch-round-success[disabled]:checked + label:hover::before, .switch-round-success[disabled]:checked + label:focus::before, .switch-round-success[disabled]:checked + label.focus:before, .switch-round-success[disabled]:checked + label:before, .switch-round-success[disabled]:checked + label:hover, .switch-round-success[disabled]:checked + label:focus, .switch-round-success[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-round-success + label, fieldset[disabled]:checked .switch-round-success + label:hover::before, fieldset[disabled]:checked .switch-round-success + label:focus::before, fieldset[disabled]:checked .switch-round-success + label.focus:before, fieldset[disabled]:checked .switch-round-success + label:before, fieldset[disabled]:checked .switch-round-success + label:hover, fieldset[disabled]:checked .switch-round-success + label:focus, fieldset[disabled]:checked .switch-round-success + label.focus, fieldset[disabled] .switch-round-success + label, fieldset[disabled] .switch-round-success + label:hover::before, fieldset[disabled] .switch-round-success + label:focus::before, fieldset[disabled] .switch-round-success + label.focus:before, fieldset[disabled] .switch-round-success + label:before, fieldset[disabled] .switch-round-success + label:hover, fieldset[disabled] .switch-round-success + label:focus, fieldset[disabled] .switch-round-success + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 165, ../scss/bootstrap-extend.scss */
+.switch-round-info + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: background 0.4s;
+}
+/* line 172, ../scss/bootstrap-extend.scss */
+.switch-round-info + label:before, .switch-round-info + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 177, ../scss/bootstrap-extend.scss */
+.switch-round-info + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 26px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 187, ../scss/bootstrap-extend.scss */
+.switch-round-info + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 196, ../scss/bootstrap-extend.scss */
+.switch-round-info + label:hover, .switch-round-info + label:focus, .switch-round-info + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 198, ../scss/bootstrap-extend.scss */
+.switch-round-info + label:hover:after, .switch-round-info + label:focus:after, .switch-round-info + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 201, ../scss/bootstrap-extend.scss */
+.switch-round-info + label:hover:before, .switch-round-info + label:focus:before, .switch-round-info + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 207, ../scss/bootstrap-extend.scss */
+.switch-round-info:checked + label {
+  background-color: #46b8da;
+}
+/* line 209, ../scss/bootstrap-extend.scss */
+.switch-round-info:checked + label:before {
+  color: #5bc0de;
+}
+/* line 212, ../scss/bootstrap-extend.scss */
+.switch-round-info:checked + label:after {
+  margin-left: 27px;
+  background-color: #5bc0de;
+}
+/* line 216, ../scss/bootstrap-extend.scss */
+.switch-round-info:checked + label:hover, .switch-round-info:checked + label:focus, .switch-round-info:checked + label.focus {
+  background-color: #1b6d86;
+}
+/* line 218, ../scss/bootstrap-extend.scss */
+.switch-round-info:checked + label:hover:after, .switch-round-info:checked + label:focus:after, .switch-round-info:checked + label.focus:after {
+  background-color: #31b0d5;
+}
+/* line 221, ../scss/bootstrap-extend.scss */
+.switch-round-info:checked + label:hover:before, .switch-round-info:checked + label:focus:before, .switch-round-info:checked + label.focus:before {
+  color: #31b0d5;
+}
+/* line 229, ../scss/bootstrap-extend.scss */
+.switch-round-info.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+}
+/* line 236, ../scss/bootstrap-extend.scss */
+.switch-round-info.switch-io:checked + label:before {
+  content: "\00a0\00a0I";
+  font-size: 17px;
+}
+/* line 245, ../scss/bootstrap-extend.scss */
+.switch-round-info.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 253, ../scss/bootstrap-extend.scss */
+.switch-round-info.switch-on-off:checked + label:before {
+  content: "\00a0\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 263, ../scss/bootstrap-extend.scss */
+.switch-round-info.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 271, ../scss/bootstrap-extend.scss */
+.switch-round-info.switch-yes-no:checked + label:before {
+  content: "\00a0\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 282, ../scss/bootstrap-extend.scss */
+.switch-round-info.disabled + label, .switch-round-info.disabled + label:hover::before, .switch-round-info.disabled + label:focus::before, .switch-round-info.disabled + label.focus:before, .switch-round-info.disabled + label:before, .switch-round-info.disabled + label:hover, .switch-round-info.disabled + label:focus, .switch-round-info.disabled + label.focus, .switch-round-info.disabled:checked + label, .switch-round-info.disabled:checked + label:hover::before, .switch-round-info.disabled:checked + label:focus::before, .switch-round-info.disabled:checked + label.focus:before, .switch-round-info.disabled:checked + label:before, .switch-round-info.disabled:checked + label:hover, .switch-round-info.disabled:checked + label:focus, .switch-round-info.disabled:checked + label.focus, .switch-round-info[disabled] + label, .switch-round-info[disabled] + label:hover::before, .switch-round-info[disabled] + label:focus::before, .switch-round-info[disabled] + label.focus:before, .switch-round-info[disabled] + label:before, .switch-round-info[disabled] + label:hover, .switch-round-info[disabled] + label:focus, .switch-round-info[disabled] + label.focus, .switch-round-info[disabled]:checked + label, .switch-round-info[disabled]:checked + label:hover::before, .switch-round-info[disabled]:checked + label:focus::before, .switch-round-info[disabled]:checked + label.focus:before, .switch-round-info[disabled]:checked + label:before, .switch-round-info[disabled]:checked + label:hover, .switch-round-info[disabled]:checked + label:focus, .switch-round-info[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-round-info + label, fieldset[disabled]:checked .switch-round-info + label:hover::before, fieldset[disabled]:checked .switch-round-info + label:focus::before, fieldset[disabled]:checked .switch-round-info + label.focus:before, fieldset[disabled]:checked .switch-round-info + label:before, fieldset[disabled]:checked .switch-round-info + label:hover, fieldset[disabled]:checked .switch-round-info + label:focus, fieldset[disabled]:checked .switch-round-info + label.focus, fieldset[disabled] .switch-round-info + label, fieldset[disabled] .switch-round-info + label:hover::before, fieldset[disabled] .switch-round-info + label:focus::before, fieldset[disabled] .switch-round-info + label.focus:before, fieldset[disabled] .switch-round-info + label:before, fieldset[disabled] .switch-round-info + label:hover, fieldset[disabled] .switch-round-info + label:focus, fieldset[disabled] .switch-round-info + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 165, ../scss/bootstrap-extend.scss */
+.switch-round-warning + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: background 0.4s;
+}
+/* line 172, ../scss/bootstrap-extend.scss */
+.switch-round-warning + label:before, .switch-round-warning + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 177, ../scss/bootstrap-extend.scss */
+.switch-round-warning + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 26px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 187, ../scss/bootstrap-extend.scss */
+.switch-round-warning + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 196, ../scss/bootstrap-extend.scss */
+.switch-round-warning + label:hover, .switch-round-warning + label:focus, .switch-round-warning + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 198, ../scss/bootstrap-extend.scss */
+.switch-round-warning + label:hover:after, .switch-round-warning + label:focus:after, .switch-round-warning + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 201, ../scss/bootstrap-extend.scss */
+.switch-round-warning + label:hover:before, .switch-round-warning + label:focus:before, .switch-round-warning + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 207, ../scss/bootstrap-extend.scss */
+.switch-round-warning:checked + label {
+  background-color: #eea236;
+}
+/* line 209, ../scss/bootstrap-extend.scss */
+.switch-round-warning:checked + label:before {
+  color: #f0ad4e;
+}
+/* line 212, ../scss/bootstrap-extend.scss */
+.switch-round-warning:checked + label:after {
+  margin-left: 27px;
+  background-color: #f0ad4e;
+}
+/* line 216, ../scss/bootstrap-extend.scss */
+.switch-round-warning:checked + label:hover, .switch-round-warning:checked + label:focus, .switch-round-warning:checked + label.focus {
+  background-color: #985e0d;
+}
+/* line 218, ../scss/bootstrap-extend.scss */
+.switch-round-warning:checked + label:hover:after, .switch-round-warning:checked + label:focus:after, .switch-round-warning:checked + label.focus:after {
+  background-color: #ec971f;
+}
+/* line 221, ../scss/bootstrap-extend.scss */
+.switch-round-warning:checked + label:hover:before, .switch-round-warning:checked + label:focus:before, .switch-round-warning:checked + label.focus:before {
+  color: #ec971f;
+}
+/* line 229, ../scss/bootstrap-extend.scss */
+.switch-round-warning.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+}
+/* line 236, ../scss/bootstrap-extend.scss */
+.switch-round-warning.switch-io:checked + label:before {
+  content: "\00a0\00a0I";
+  font-size: 17px;
+}
+/* line 245, ../scss/bootstrap-extend.scss */
+.switch-round-warning.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 253, ../scss/bootstrap-extend.scss */
+.switch-round-warning.switch-on-off:checked + label:before {
+  content: "\00a0\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 263, ../scss/bootstrap-extend.scss */
+.switch-round-warning.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 271, ../scss/bootstrap-extend.scss */
+.switch-round-warning.switch-yes-no:checked + label:before {
+  content: "\00a0\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 282, ../scss/bootstrap-extend.scss */
+.switch-round-warning.disabled + label, .switch-round-warning.disabled + label:hover::before, .switch-round-warning.disabled + label:focus::before, .switch-round-warning.disabled + label.focus:before, .switch-round-warning.disabled + label:before, .switch-round-warning.disabled + label:hover, .switch-round-warning.disabled + label:focus, .switch-round-warning.disabled + label.focus, .switch-round-warning.disabled:checked + label, .switch-round-warning.disabled:checked + label:hover::before, .switch-round-warning.disabled:checked + label:focus::before, .switch-round-warning.disabled:checked + label.focus:before, .switch-round-warning.disabled:checked + label:before, .switch-round-warning.disabled:checked + label:hover, .switch-round-warning.disabled:checked + label:focus, .switch-round-warning.disabled:checked + label.focus, .switch-round-warning[disabled] + label, .switch-round-warning[disabled] + label:hover::before, .switch-round-warning[disabled] + label:focus::before, .switch-round-warning[disabled] + label.focus:before, .switch-round-warning[disabled] + label:before, .switch-round-warning[disabled] + label:hover, .switch-round-warning[disabled] + label:focus, .switch-round-warning[disabled] + label.focus, .switch-round-warning[disabled]:checked + label, .switch-round-warning[disabled]:checked + label:hover::before, .switch-round-warning[disabled]:checked + label:focus::before, .switch-round-warning[disabled]:checked + label.focus:before, .switch-round-warning[disabled]:checked + label:before, .switch-round-warning[disabled]:checked + label:hover, .switch-round-warning[disabled]:checked + label:focus, .switch-round-warning[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-round-warning + label, fieldset[disabled]:checked .switch-round-warning + label:hover::before, fieldset[disabled]:checked .switch-round-warning + label:focus::before, fieldset[disabled]:checked .switch-round-warning + label.focus:before, fieldset[disabled]:checked .switch-round-warning + label:before, fieldset[disabled]:checked .switch-round-warning + label:hover, fieldset[disabled]:checked .switch-round-warning + label:focus, fieldset[disabled]:checked .switch-round-warning + label.focus, fieldset[disabled] .switch-round-warning + label, fieldset[disabled] .switch-round-warning + label:hover::before, fieldset[disabled] .switch-round-warning + label:focus::before, fieldset[disabled] .switch-round-warning + label.focus:before, fieldset[disabled] .switch-round-warning + label:before, fieldset[disabled] .switch-round-warning + label:hover, fieldset[disabled] .switch-round-warning + label:focus, fieldset[disabled] .switch-round-warning + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 165, ../scss/bootstrap-extend.scss */
+.switch-round-danger + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: background 0.4s;
+}
+/* line 172, ../scss/bootstrap-extend.scss */
+.switch-round-danger + label:before, .switch-round-danger + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 177, ../scss/bootstrap-extend.scss */
+.switch-round-danger + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 26px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 187, ../scss/bootstrap-extend.scss */
+.switch-round-danger + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 196, ../scss/bootstrap-extend.scss */
+.switch-round-danger + label:hover, .switch-round-danger + label:focus, .switch-round-danger + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 198, ../scss/bootstrap-extend.scss */
+.switch-round-danger + label:hover:after, .switch-round-danger + label:focus:after, .switch-round-danger + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 201, ../scss/bootstrap-extend.scss */
+.switch-round-danger + label:hover:before, .switch-round-danger + label:focus:before, .switch-round-danger + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 207, ../scss/bootstrap-extend.scss */
+.switch-round-danger:checked + label {
+  background-color: #d43f3a;
+}
+/* line 209, ../scss/bootstrap-extend.scss */
+.switch-round-danger:checked + label:before {
+  color: #d9534f;
+}
+/* line 212, ../scss/bootstrap-extend.scss */
+.switch-round-danger:checked + label:after {
+  margin-left: 27px;
+  background-color: #d9534f;
+}
+/* line 216, ../scss/bootstrap-extend.scss */
+.switch-round-danger:checked + label:hover, .switch-round-danger:checked + label:focus, .switch-round-danger:checked + label.focus {
+  background-color: #751d1a;
+}
+/* line 218, ../scss/bootstrap-extend.scss */
+.switch-round-danger:checked + label:hover:after, .switch-round-danger:checked + label:focus:after, .switch-round-danger:checked + label.focus:after {
+  background-color: #c9302c;
+}
+/* line 221, ../scss/bootstrap-extend.scss */
+.switch-round-danger:checked + label:hover:before, .switch-round-danger:checked + label:focus:before, .switch-round-danger:checked + label.focus:before {
+  color: #c9302c;
+}
+/* line 229, ../scss/bootstrap-extend.scss */
+.switch-round-danger.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+}
+/* line 236, ../scss/bootstrap-extend.scss */
+.switch-round-danger.switch-io:checked + label:before {
+  content: "\00a0\00a0I";
+  font-size: 17px;
+}
+/* line 245, ../scss/bootstrap-extend.scss */
+.switch-round-danger.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 253, ../scss/bootstrap-extend.scss */
+.switch-round-danger.switch-on-off:checked + label:before {
+  content: "\00a0\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 263, ../scss/bootstrap-extend.scss */
+.switch-round-danger.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 271, ../scss/bootstrap-extend.scss */
+.switch-round-danger.switch-yes-no:checked + label:before {
+  content: "\00a0\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 282, ../scss/bootstrap-extend.scss */
+.switch-round-danger.disabled + label, .switch-round-danger.disabled + label:hover::before, .switch-round-danger.disabled + label:focus::before, .switch-round-danger.disabled + label.focus:before, .switch-round-danger.disabled + label:before, .switch-round-danger.disabled + label:hover, .switch-round-danger.disabled + label:focus, .switch-round-danger.disabled + label.focus, .switch-round-danger.disabled:checked + label, .switch-round-danger.disabled:checked + label:hover::before, .switch-round-danger.disabled:checked + label:focus::before, .switch-round-danger.disabled:checked + label.focus:before, .switch-round-danger.disabled:checked + label:before, .switch-round-danger.disabled:checked + label:hover, .switch-round-danger.disabled:checked + label:focus, .switch-round-danger.disabled:checked + label.focus, .switch-round-danger[disabled] + label, .switch-round-danger[disabled] + label:hover::before, .switch-round-danger[disabled] + label:focus::before, .switch-round-danger[disabled] + label.focus:before, .switch-round-danger[disabled] + label:before, .switch-round-danger[disabled] + label:hover, .switch-round-danger[disabled] + label:focus, .switch-round-danger[disabled] + label.focus, .switch-round-danger[disabled]:checked + label, .switch-round-danger[disabled]:checked + label:hover::before, .switch-round-danger[disabled]:checked + label:focus::before, .switch-round-danger[disabled]:checked + label.focus:before, .switch-round-danger[disabled]:checked + label:before, .switch-round-danger[disabled]:checked + label:hover, .switch-round-danger[disabled]:checked + label:focus, .switch-round-danger[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-round-danger + label, fieldset[disabled]:checked .switch-round-danger + label:hover::before, fieldset[disabled]:checked .switch-round-danger + label:focus::before, fieldset[disabled]:checked .switch-round-danger + label.focus:before, fieldset[disabled]:checked .switch-round-danger + label:before, fieldset[disabled]:checked .switch-round-danger + label:hover, fieldset[disabled]:checked .switch-round-danger + label:focus, fieldset[disabled]:checked .switch-round-danger + label.focus, fieldset[disabled] .switch-round-danger + label, fieldset[disabled] .switch-round-danger + label:hover::before, fieldset[disabled] .switch-round-danger + label:focus::before, fieldset[disabled] .switch-round-danger + label.focus:before, fieldset[disabled] .switch-round-danger + label:before, fieldset[disabled] .switch-round-danger + label:hover, fieldset[disabled] .switch-round-danger + label:focus, fieldset[disabled] .switch-round-danger + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* line 165, ../scss/bootstrap-extend.scss */
+.switch-round-notice + label {
+  padding: 2px;
+  width: 56px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: background 0.4s;
+}
+/* line 172, ../scss/bootstrap-extend.scss */
+.switch-round-notice + label:before, .switch-round-notice + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+/* line 177, ../scss/bootstrap-extend.scss */
+.switch-round-notice + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 26px;
+  transition: background 0.4s;
+  color: #ccc;
+}
+/* line 187, ../scss/bootstrap-extend.scss */
+.switch-round-notice + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 21px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: margin 0.4s, background 0.4s;
+}
+/* line 196, ../scss/bootstrap-extend.scss */
+.switch-round-notice + label:hover, .switch-round-notice + label:focus, .switch-round-notice + label.focus {
+  background-color: #8c8c8c;
+}
+/* line 198, ../scss/bootstrap-extend.scss */
+.switch-round-notice + label:hover:after, .switch-round-notice + label:focus:after, .switch-round-notice + label.focus:after {
+  background-color: #b3b3b3;
+}
+/* line 201, ../scss/bootstrap-extend.scss */
+.switch-round-notice + label:hover:before, .switch-round-notice + label:focus:before, .switch-round-notice + label.focus:before {
+  color: #b3b3b3;
+}
+/* line 207, ../scss/bootstrap-extend.scss */
+.switch-round-notice:checked + label {
+  background-color: #6f5499;
+}
+/* line 209, ../scss/bootstrap-extend.scss */
+.switch-round-notice:checked + label:before {
+  color: #9783b9;
+}
+/* line 212, ../scss/bootstrap-extend.scss */
+.switch-round-notice:checked + label:after {
+  margin-left: 27px;
+  background-color: #9783b9;
+}
+/* line 216, ../scss/bootstrap-extend.scss */
+.switch-round-notice:checked + label:hover, .switch-round-notice:checked + label:focus, .switch-round-notice:checked + label.focus {
+  background-color: #332747;
+}
+/* line 218, ../scss/bootstrap-extend.scss */
+.switch-round-notice:checked + label:hover:after, .switch-round-notice:checked + label:focus:after, .switch-round-notice:checked + label.focus:after {
+  background-color: #7c62a7;
+}
+/* line 221, ../scss/bootstrap-extend.scss */
+.switch-round-notice:checked + label:hover:before, .switch-round-notice:checked + label:focus:before, .switch-round-notice:checked + label.focus:before {
+  color: #7c62a7;
+}
+/* line 229, ../scss/bootstrap-extend.scss */
+.switch-round-notice.switch-io + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+  font-size: 17px;
+}
+/* line 236, ../scss/bootstrap-extend.scss */
+.switch-round-notice.switch-io:checked + label:before {
+  content: "\00a0\00a0I";
+  font-size: 17px;
+}
+/* line 245, ../scss/bootstrap-extend.scss */
+.switch-round-notice.switch-on-off + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 253, ../scss/bootstrap-extend.scss */
+.switch-round-notice.switch-on-off:checked + label:before {
+  content: "\00a0\00a0ON";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 263, ../scss/bootstrap-extend.scss */
+.switch-round-notice.switch-yes-no + label:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 271, ../scss/bootstrap-extend.scss */
+.switch-round-notice.switch-yes-no:checked + label:before {
+  content: "\00a0\00a0YES";
+  font-size: 12px;
+  line-height: 2.14;
+}
+/* line 282, ../scss/bootstrap-extend.scss */
+.switch-round-notice.disabled + label, .switch-round-notice.disabled + label:hover::before, .switch-round-notice.disabled + label:focus::before, .switch-round-notice.disabled + label.focus:before, .switch-round-notice.disabled + label:before, .switch-round-notice.disabled + label:hover, .switch-round-notice.disabled + label:focus, .switch-round-notice.disabled + label.focus, .switch-round-notice.disabled:checked + label, .switch-round-notice.disabled:checked + label:hover::before, .switch-round-notice.disabled:checked + label:focus::before, .switch-round-notice.disabled:checked + label.focus:before, .switch-round-notice.disabled:checked + label:before, .switch-round-notice.disabled:checked + label:hover, .switch-round-notice.disabled:checked + label:focus, .switch-round-notice.disabled:checked + label.focus, .switch-round-notice[disabled] + label, .switch-round-notice[disabled] + label:hover::before, .switch-round-notice[disabled] + label:focus::before, .switch-round-notice[disabled] + label.focus:before, .switch-round-notice[disabled] + label:before, .switch-round-notice[disabled] + label:hover, .switch-round-notice[disabled] + label:focus, .switch-round-notice[disabled] + label.focus, .switch-round-notice[disabled]:checked + label, .switch-round-notice[disabled]:checked + label:hover::before, .switch-round-notice[disabled]:checked + label:focus::before, .switch-round-notice[disabled]:checked + label.focus:before, .switch-round-notice[disabled]:checked + label:before, .switch-round-notice[disabled]:checked + label:hover, .switch-round-notice[disabled]:checked + label:focus, .switch-round-notice[disabled]:checked + label.focus, fieldset[disabled]:checked .switch-round-notice + label, fieldset[disabled]:checked .switch-round-notice + label:hover::before, fieldset[disabled]:checked .switch-round-notice + label:focus::before, fieldset[disabled]:checked .switch-round-notice + label.focus:before, fieldset[disabled]:checked .switch-round-notice + label:before, fieldset[disabled]:checked .switch-round-notice + label:hover, fieldset[disabled]:checked .switch-round-notice + label:focus, fieldset[disabled]:checked .switch-round-notice + label.focus, fieldset[disabled] .switch-round-notice + label, fieldset[disabled] .switch-round-notice + label:hover::before, fieldset[disabled] .switch-round-notice + label:focus::before, fieldset[disabled] .switch-round-notice + label.focus:before, fieldset[disabled] .switch-round-notice + label:before, fieldset[disabled] .switch-round-notice + label:hover, fieldset[disabled] .switch-round-notice + label:focus, fieldset[disabled] .switch-round-notice + label.focus {
+  cursor: not-allowed;
+  opacity: .65;
 }
