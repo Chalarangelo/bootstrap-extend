@@ -1,1 +1,2 @@
 bootstrap-extend.* linguist-vendored=false
+scss/*.scss linguist-vendored=false
