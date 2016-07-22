@@ -356,3 +356,86 @@ input[type="radio"].rdbtn {
 .rdbtn-notice{
    @include radio-variant($shadeWhite,$shadePurple, $shadeDarkPurple);
 }
+//=====================================================================
+//  Toggle Switch Styles
+//=====================================================================
+input[type="radio"].switch, input[type="checkbox"].switch{
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+  &+label{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+}
+.switch-round{
+  &+label{
+    padding: 2px;
+    width: 56px;
+    height: 28px;
+    background-color: $shadeDarkGray;
+    border-radius: 26px;
+    transition: background 0.4s;
+    &:before, &:after{
+      display: block;
+      position: absolute;
+      content: "";
+    }
+    &:before{
+      top: 1px;
+      left: 1px;
+      bottom: 1px;
+      right: 1px;
+      background-color: $shadeWhite;
+      border-radius: 26px;
+      transition: background 0.4s;
+      content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+      color: $shadeDarkGray;
+      font-size: 17px;
+    }
+    &:after{
+      top: 4px;
+      left: 4px;
+      bottom: 4px;
+      width: 22px;
+      background-color: $shadeDarkGray;
+      border-radius: 26px;
+      transition: margin 0.4s, background 0.4s;
+    }
+    &:hover{
+      background-color: darken($shadeDarkGray,25%);
+      &:after{
+        background-color: darken($shadeDarkGray,25%);
+      }
+      &:before{
+        color: darken($shadeDarkGray,25%);
+      }
+    }
+  }
+  &:checked{
+    &+label{
+      background-color: $shadeDarkGreen;
+      &:before{
+        content: "\00a0\00a0I";
+        color: $shadeGreen;
+        font-size: 17px;
+      }
+      &:after{
+        margin-left: 26px;
+        background-color: $shadeGreen;
+      }
+      &:hover{
+        background-color: darken($shadeDarkGreen,25%);
+        &:after{
+          background-color: darken($shadeGreen,25%);
+        }
+        &:before{
+          color: darken($shadeGreen,25%);
+        }
+      }
+    }
+  }
+}
