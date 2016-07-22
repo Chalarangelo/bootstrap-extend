@@ -145,14 +145,41 @@
    </div> 
   </div>
 
-<!-- TODO: Write the proper divs and stuff for the radios-->
+ <h3>Radio button styles <small>In 7 pure CSS flavours</small></h3>
+  <p>Use the <code>.rdbtn</code> class only on an <code>&lt;input type="radio"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the radio button's <code>id</code>. There are seven flavours of radio buttons, similar to the classic Bootstrap buttons:</p>
+  <ul>
+    <li><code>.rdbtn-default</code></li>
+    <li><code>.rdbtn-primary</code></li>
+    <li><code>.rdbtn-success</code></li>
+    <li><code>.rdbtn-info</code></li>
+    <li><code>.rdbtn-warning</code></li>
+    <li><code>.rdbtn-danger</code></li>
+    <li><code>.rdbtn-notice</code></li>
+  </ul>
+ <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Example</h4>
+   </div>
+  <div class="panel-body">
   <input id="rd1" class="rdbtn rdbtn-default" name="test" type="radio"> <label for="rd1">Default  </label>
   <input id="rd2" class="rdbtn rdbtn-primary" name="test" type="radio"> <label for="rd2">Primary  </label>
   <input id="rd3" class="rdbtn rdbtn-success" name="test" type="radio"> <label for="rd3">Success  </label>
   <input id="rd4" class="rdbtn rdbtn-info" name="test" type="radio"> <label for="rd4">Info  </label>
   <input id="rd5" class="rdbtn rdbtn-warning" name="test" type="radio"> <label for="rd5">Danger  </label>
-  <input id="rd5" class="rdbtn rdbtn-danger" name="test" type="radio"> <label for="rd6">Warning  </label>
+  <input id="rd6" class="rdbtn rdbtn-danger" name="test" type="radio"> <label for="rd6">Warning  </label>
   <input id="rd7" class="rdbtn rdbtn-notice" name="test" type="radio"> <label for="rd7">Notice  </label>
+  <br/>
+   <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;input type="radio" class="rdbtn rdbtn-default" id="rdb-default"&gt;&lt;label for="rdb-default"&gt;Default&lt;/label&gt;
+&lt;input type="radio" class="rdbtn rdbtn-primary" id="rdb-primary"&gt;&lt;label for="rdb-primary"&gt;Primary&lt;/label&gt;
+&lt;input type="radio" class="rdbtn rdbtn-success" id="rdb-success"&gt;&lt;label for="rdb-success"&gt;Success&lt;/label&gt;
+&lt;input type="radio" class="rdbtn rdbtn-info" id="rdb-info"&gt;&lt;label for="rdb-info"&gt;Info&lt;/label&gt;
+&lt;input type="radio" class="rdbtn rdbtn-warning" id="rdb-warning"&gt;&lt;label for="rdb-warning"&gt;Warning&lt;/label&gt;
+&lt;input type="radio" class="rdbtn rdbtn-danger" id="rdb-danger"&gt;&lt;label for="rdb-danger"&gt;Danger&lt;/label&gt;
+&lt;input type="radio" class="rdbtn rdbtn-notice" id="rdb-notice"&gt;&lt;label for="rdb-notice"&gt;Notice&lt;/label&gt;</code></pre></figure>
+   </div> 
+  </div>
 
 </div>
  </body>

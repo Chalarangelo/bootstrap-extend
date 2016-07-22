@@ -320,10 +320,21 @@ input[type="radio"].rdbtn {
   }
 }
 .rdbtn-default{
-  @include radio-variant($shadeBlackGray,$shadeWhite, $shadeDarkGray);
+  @include radio-variant($shadeLightGray, $shadeWhite, $shadeDarkGray);
   +label{
    &:hover::before, &:focus::before, &.focus::before{
-      color: $shadeBlackGray !important;
+      background: darken($shadeLightGray, 25%) !important;
+      box-shadow: inset 0px 0px 0px 3px $shadeWhite !important;
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        background: darken($shadeDarkGray, 25%) !important;
+      }
+      &:hover::before, &:focus::before, &.focus:before{      
+        background: darken($shadeDarkGray, 37%) !important;
+      }
     }
   }
 }
