@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <script type="text/javascript" src="js/bootstrap-extend.js"></script>
   <link rel="stylesheet" href="css/bootstrap-extend.css"/>
+  <script>  <!-- Used for showing tooltips -->
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
 <!--   <script type="text/javascript" src="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/master/js/bootstrap-extend.min.js"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/master/css/bootstrap-extend.min.css"/> -->
 
@@ -167,6 +173,39 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
    <p>&nbsp;&nbsp;&nbsp;<strong>Original idea and implementation</strong> by <a href="http://callmenick.com/post/css-toggle-switch-examples">callmenick.com</a>.</p>
   </div>
 
+  <h3>Responsive Lightbox <small>Simple, light and Javascript-based</small></h3>
+  <p>Use the <code>.lightbox-toggle</code> class on a link element surrounding an image element to create a lightbox that opens when you click on the image. Be sure to specify a unique <code>id</code> for the image element. The lightbox will automatically resize to properly fit your browser's size and it will change its size accordingly when the browser window is resized. You can use the <code>alt</code> attribute of the image to show a custom title in your lightbox, otherwise you can leave it blank to show the URL of the image. <strong>Suggestion:</strong> Use this lightbox with Bootstrap's <code>.thumbnail</code> class and/or in combination with tooltips to show your users that the images can be viewed in a lightbox.</p>
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Examples</h4>
+   </div>
+  <div class="panel-body">
+   <div class="row">
+  <div class="col-xs-6 col-md-3">
+<a href="" class="thumbnail lightbox-toggle">
+  <img alt="This image has an alt attribute specified for the title bar" id="light-img1" src="http://dummyimage.com/hd1080" data-toggle="tooltip" data-placement="top" title="View image">
+</a>
+</div> 
+<div class="col-xs-6 col-md-3">
+<a href="" class="thumbnail lightbox-toggle">
+  <img id="light-img2" src="http://dummyimage.com/vga" data-toggle="tooltip" data-placement="top" title="View image">
+</a>
+</div> 
+</div>
+   <br/>
+   <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">
+&lt;a href="" class="thumbnail lightbox-toggle"&gt;
+  &lt;img alt="This image has an alt attribute specified for the title bar" id="light-img1" src="http://dummyimage.com/hd1080" data-toggle="tooltip" data-placement="top" title="View image"&gt;
+&lt;/a&gt;
+
+&lt;a href="" class="thumbnail lightbox-toggle"&gt;
+  &lt;img id="light-img2" src="http://dummyimage.com/vga" data-toggle="tooltip" data-placement="top" title="View image"&gt;
+&lt;/a&gt;</code></pre></figure>
+   </div> 
+  </div>
+
   <h3>Collapse toggle box</h3>
   <p>Bootstrap's <a href="http://getbootstrap.com/javascript/#collapse">Collapse</a> is great. But if you are looking for a different style for your content toggle buttons, you can now use the <code>.btn.btn-toggle</code> class next to a <code>&lt;label&gt;</code> element to achieve that. All the functionality of the original Bootstrap component remains intact.</p>
   <div class="panel panel-default">
@@ -286,6 +325,14 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
   </div>
 
 
+
+
+
+
+
+
+
+<!-- Page ending, do not modify below this line -->
 </div>
  </body>
 </html>

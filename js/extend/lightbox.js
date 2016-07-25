@@ -1,42 +1,8 @@
 //=====================================================================
-//    Password Toggle (pwdtoggle.js)
+//	Lightbox
 //=====================================================================
-$(document).on('click','.pwd-toggle, .pwd-untoggle', function(e){
-  e && e.preventDefault();
-  if($(e.target).hasClass('disabled') || $(e.target).attr('disabled') == true) 
-    return;
-  var $field = $(e.target).siblings('.pwd');
-  if ($field.attr('type') == 'password') {
-      $(e.target).removeClass('pwd-toggle').addClass('pwd-untoggle');
-      $field.attr('type','text');
-    } else {
-      $(e.target).removeClass('pwd-untoggle').addClass('pwd-toggle');
-      $field.attr('type','password');
-    }
-});
-$(document).on('click','[type="submit"]', function(e){
-  e && e.preventDefault();
-  $('.pwd').attr("type","password");
-});
 
-//=====================================================================
-//  Collapse Button (collapsetoggle.js)
-//=====================================================================
-$(document).on('click','.btn.btn-toggle, .btn.btn-untoggle', function(e){
-  e && e.preventDefault();
-  if($(e.target).attr('aria-expanded') == 'true')
-    $(e.target).removeClass('btn-toggle').addClass('btn-untoggle');
-  else
-    $(e.target).removeClass('btn-untoggle').addClass('btn-toggle');
-});
-$(document).on('click','.btn.btn-toggle+label, .btn.btn-untoggle+label', function(e){
-  e && e.preventDefault();
-  $(e.target).prev().click();
-});
-
-//=====================================================================
-//  Lightbox (lightbox.js)
-//=====================================================================
+//  Lightbox Toggle Click Event
 $(document).on('click','.lightbox-toggle', function(e){
   e && e.preventDefault();
   var width = ($(e.target).prop('naturalWidth')>$(window).width())?$(window).width():$(e.target).prop('naturalWidth');
@@ -61,13 +27,14 @@ $(document).on('click','.lightbox-toggle', function(e){
   $('#'+$(e.target).attr('id')+'-modal > .modal-dialog').css('width',width - 200);
   $('#'+$(e.target).attr('id')+'-modal').modal();
   $('#'+$(e.target).attr('id')+'-modal').modal('show');
+  // Dispose of the modal when it is hidden
   $('#'+$(e.target).attr('id')+'-modal').on('hidden.bs.modal', function (e) {
       $(this).remove();
   });
+  // Window resize event resizes modal and contents
   $( window ).resize(function() {
     var width = ($(e.target).prop('naturalWidth')>$(window).width())?$(window).width():$(e.target).prop('naturalWidth');
     $('#'+$(e.target).attr('id')+'-modal-image').css('width',width - 230);
     $('#'+$(e.target).attr('id')+'-modal > .modal-dialog').css('width',width - 200);
   });
 });
-
