@@ -1,0 +1,19 @@
+//=====================================================================
+//  Collapse Button - Requires Javascript to function properly
+//=====================================================================
+.btn.btn-toggle:before{
+    content: "+";
+}
+.btn.btn-untoggle:before{
+  content: "\2212";
+}
+.btn.btn-toggle, .btn.btn-untoggle{
+  font-size: 18px;
+  line-height: 1.111111112222222;
+  &+label{
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

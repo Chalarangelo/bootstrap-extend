@@ -1,0 +1,338 @@
+//=====================================================================
+// Switch variants mixins (round and square)
+//
+// Easily pump out default styles, as well as :hover, :focus and 
+// disabled options for all switches
+//=====================================================================
+//  Round switches
+//=====================================================================
+@mixin switch-round-variant ($color, $border){
+  &+label{
+    padding: 2px;
+    width: 56px;
+    height: 28px;
+    background-color: $shadeDarkGray;
+    border-radius: 26px;
+    transition: background 0.4s;
+    &:before, &:after{
+      display: block;
+      position: absolute;
+      content: "";
+    }
+    &:before{
+      top: 1px;
+      left: 1px;
+      bottom: 1px;
+      right: 1px;
+      background-color: $shadeWhite;
+      border-radius: 26px;
+      transition: background 0.4s;
+      color: $shadeDarkGray;
+    }
+    &:after{
+      top: 4px;
+      left: 4px;
+      bottom: 4px;
+      width: 21px;
+      background-color: $shadeDarkGray;
+      border-radius: 26px;
+      transition: margin 0.4s, background 0.4s;
+    }
+    &:hover, &:focus, &.focus{
+      background-color: darken($shadeDarkGray,25%);
+      &:after{
+        background-color: darken($shadeDarkGray, 10%);
+      }
+      &:before{
+        color: darken($shadeDarkGray, 10%);
+      }
+    }
+  }
+  &:checked{
+    &+label{
+      background-color: $border;
+      &:before{
+        color: $color;
+      }
+      &:after{
+        margin-left: 27px;
+        background-color: $color;
+      }
+      &:hover, &:focus, &.focus{
+        background-color: darken($border,25%);
+        &:after{
+          background-color: darken($color, 10%);
+        }
+        &:before{
+          color: darken($color, 10%);
+        }
+      }
+    }
+  }
+  &.switch-io{
+    &+label{
+      &:before{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+        font-size: 17px;
+      }
+    }
+    &:checked{
+      &+label{
+        &:before{
+          content: "\00a0\00a0I";
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  &.switch-on-off{
+    &+label{
+      &:before{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+        font-size: 12px;
+        line-height: 2.14;
+      }
+    }
+    &:checked{
+      &+label{
+        &:before{
+          content: "\00a0\00a0ON";
+          font-size: 12px;
+          line-height: 2.14;
+        }
+      }
+    }
+  }
+  &.switch-yes-no{
+    &+label{
+      &:before{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+        font-size: 12px;
+        line-height: 2.14;
+      }
+    }
+    &:checked{
+      &+label{
+        &:before{
+          content: "\00a0\00a0YES";
+          font-size: 12px;
+          line-height: 2.14;
+        }
+      }
+    }
+  }
+  &.disabled, &.disabled:checked, &[disabled], &[disabled]:checked,
+  fieldset[disabled]:checked &, fieldset[disabled] & {
+    +label{
+      &,&:hover::before,&:focus::before,&.focus:before,
+      &:before, &:hover, &:focus, &.focus {
+        cursor: not-allowed;
+        opacity: .65;
+      }
+    }
+  }
+}
+//=====================================================================
+//  Rectangular switches
+//=====================================================================
+@mixin switch-rect-variant ($color, $border){
+  &+label{
+    padding: 2px;
+    width: 56px;
+    height: 28px;
+    background-color: $shadeDarkGray;
+    border-radius: 4px;
+    transition: background 0.4s;
+    &:before, &:after{
+      display: block;
+      position: absolute;
+      content: "";
+    }
+    &:before{
+      top: 1px;
+      left: 1px;
+      bottom: 1px;
+      right: 1px;
+      background-color: $shadeWhite;
+      border-radius: 4px;
+      transition: background 0.4s;
+      color: $shadeDarkGray;
+    }
+    &:after{
+      top: 4px;
+      left: 4px;
+      bottom: 4px;
+      width: 21px;
+      background-color: $shadeDarkGray;
+      border-radius: 4px;
+      transition: margin 0.4s, background 0.4s;
+    }
+    &:hover, &:focus, &.focus{
+      background-color: darken($shadeDarkGray,25%);
+      &:after{
+        background-color: darken($shadeDarkGray, 10%);
+      }
+      &:before{
+        color: darken($shadeDarkGray, 10%);
+      }
+    }
+  }
+  &:checked{
+    &+label{
+      background-color: $border;
+      &:before{
+        color: $color;
+      }
+      &:after{
+        margin-left: 27px;
+        background-color: $color;
+      }
+      &:hover, &:focus, &.focus{
+        background-color: darken($border,25%);
+        &:after{
+          background-color: darken($color, 10%);
+        }
+        &:before{
+          color: darken($color, 10%);
+        }
+      }
+    }
+  }
+  &.switch-io{
+    &+label{
+      &:before{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0O";
+        font-size: 17px;
+        line-height: 1.5;
+      }
+    }
+    &:checked{
+      &+label{
+        &:before{
+          content: "\00a0I";
+          font-size: 17px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  &.switch-on-off{
+    &+label{
+      &:before{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+        font-size: 12px;
+        line-height: 2.14;
+      }
+    }
+    &:checked{
+      &+label{
+        &:before{
+          content: "\00a0ON";
+          font-size: 12px;
+          line-height: 2.14;
+        }
+      }
+    }
+  }
+  &.switch-yes-no{
+    &+label{
+      &:before{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0NO";
+        font-size: 12px;
+        line-height: 2.14;
+      }
+    }
+    &:checked{
+      &+label{
+        &:before{
+          content: "\00a0YES";
+          font-size: 12px;
+          line-height: 2.14;
+        }
+      }
+    }
+  }
+  &.disabled, &.disabled:checked, &[disabled], &[disabled]:checked,
+  fieldset[disabled]:checked &, fieldset[disabled] & {
+    +label{
+      &,&:hover::before,&:focus::before,&.focus:before,
+      &:before, &:hover, &:focus, &.focus {
+        cursor: not-allowed;
+        opacity: .65;
+      }
+    }
+  }
+}
+//=====================================================================
+//  Toggle Switch Styles
+//=====================================================================
+input[type="radio"].switch, input[type="checkbox"].switch{
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+  &+label{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+}
+.switch-rect-default{
+  @include switch-rect-variant($shadeBlackGray,$shadeDarkGray);
+  &:checked{
+    &+label{
+      background-color: $shadeBlackGray;
+      &:hover{
+        background-color: darken($shadeBlackGray,25%);
+      }
+    }
+  }
+}
+.switch-rect-primary{
+  @include switch-rect-variant($shadeBlue,$shadeDarkBlue);
+}
+.switch-rect-success{
+  @include switch-rect-variant($shadeGreen,$shadeDarkGreen);
+}
+.switch-rect-info{
+  @include switch-rect-variant($shadeCyan,$shadeDarkCyan);
+}
+.switch-rect-warning{
+  @include switch-rect-variant($shadeOrange,$shadeDarkOrange);
+}
+.switch-rect-danger{
+  @include switch-rect-variant($shadeRed,$shadeDarkRed);
+}
+.switch-rect-notice{
+  @include switch-rect-variant($shadePurple,$shadeDarkPurple);
+}
+.switch-round-default{
+  @include switch-round-variant($shadeBlackGray,$shadeDarkGray);
+  &:checked{
+    &+label{
+      background-color: $shadeBlackGray;
+      &:hover{
+        background-color: darken($shadeBlackGray,25%);
+      }
+    }
+  }
+}
+.switch-round-primary{
+  @include switch-round-variant($shadeBlue,$shadeDarkBlue);
+}
+.switch-round-success{
+  @include switch-round-variant($shadeGreen,$shadeDarkGreen);
+}
+.switch-round-info{
+  @include switch-round-variant($shadeCyan,$shadeDarkCyan);
+}
+.switch-round-warning{
+  @include switch-round-variant($shadeOrange,$shadeDarkOrange);
+}
+.switch-round-danger{
+  @include switch-round-variant($shadeRed,$shadeDarkRed);
+}
+.switch-round-notice{
+  @include switch-round-variant($shadePurple,$shadeDarkPurple);
+}

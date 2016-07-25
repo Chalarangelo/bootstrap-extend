@@ -1,0 +1,33 @@
+//=====================================================================
+//  Password Toggle - Requires Javascript to function properly
+//=====================================================================
+.pwd-toggle, .pwd-untoggle{
+  cursor: pointer;
+  color: $shadeWhite;
+  background-color: $shadeCyan;
+  border-color: $shadeDarkCyan;
+  &:hover, &:active, &:focus, &.focus, &.active{
+    background-color: darken($shadeCyan, 10%);
+    border-color: darken($shadeDarkCyan, 25%);
+  }
+  &:before{
+    font-family: 'Glyphicons Halflings';
+    font-size: 16px;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      cursor: not-allowed;
+        opacity: .65;
+    }
+  }
+}
+.pwd-toggle:before{
+  content: "\e105";
+}
+.pwd-untoggle:before{
+  content: "\e106";
+}

@@ -1,0 +1,116 @@
+//=====================================================================
+// Radio button variants mixin
+//
+// Easily pump out default styles, as well as :hover, :focus and 
+// disabled options for all radio buttons
+//=====================================================================
+@mixin radio-variant($color, $background, $border){
+  +label{
+    &:before{
+      border: 1px solid $border;
+    }
+    &:hover::before, &:focus::before, &.focus:before{
+      border: 1px solid darken($background, 25%);
+      color: $background !important;
+      background: $background !important;
+      box-shadow: inset 0px 0px 0px 3px $color;
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        color: $color;
+        background: $background !important;
+      }
+      &:hover::before, &:focus::before, &.focus:before{
+        color: darken($color, 10%) !important;
+        background: darken($background, 10%) !important;
+      }
+    }
+  }
+  &.disabled, &.disabled:checked, &[disabled], &[disabled]:checked,
+  fieldset[disabled]:checked &, fieldset[disabled] & {
+    +label{
+      &,&:hover::before,&:focus::before,&.focus:before,
+      &:before, &:hover, &:focus, &.focus {
+        cursor: not-allowed;
+        opacity: .65;
+      }
+    }
+  }
+}
+//=====================================================================
+//  Radio Button Styles
+//=====================================================================
+input[type="radio"].rdbtn {
+  opacity: 0;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+  &+label{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+    &:before{
+      content: '';
+      background: $shadeWhite;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+      padding: 2px;
+      margin-right: 10px;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        box-shadow: inset 0px 0px 0px 3px $shadeWhite;
+      }
+    }
+  }
+}
+.rdbtn-default{
+  @include radio-variant($shadeLightGray, $shadeWhite, $shadeDarkGray);
+  +label{
+   &:hover::before, &:focus::before, &.focus::before{
+      background: darken($shadeLightGray, 25%) !important;
+      box-shadow: inset 0px 0px 0px 3px $shadeWhite !important;
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        background: darken($shadeDarkGray, 25%) !important;
+      }
+      &:hover::before, &:focus::before, &.focus:before{      
+        background: darken($shadeDarkGray, 37%) !important;
+      }
+    }
+  }
+}
+.rdbtn-primary{
+  @include radio-variant($shadeWhite,$shadeBlue, $shadeDarkBlue);
+}
+.rdbtn-success{
+  @include radio-variant($shadeWhite,$shadeGreen, $shadeDarkGreen);
+}
+.rdbtn-info{
+  @include radio-variant($shadeWhite,$shadeCyan, $shadeDarkCyan);
+}
+.rdbtn-warning{
+  @include radio-variant($shadeWhite,$shadeOrange, $shadeDarkOrange);
+}
+.rdbtn-danger{
+  @include radio-variant($shadeWhite,$shadeRed, $shadeDarkRed);
+}
+.rdbtn-notice{
+   @include radio-variant($shadeWhite,$shadePurple, $shadeDarkPurple);
+}
