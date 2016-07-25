@@ -105,3 +105,69 @@ input[type="checkbox"].chkbox{
 .chkbox-notice{
    @include checkbox-variant($shadeWhite,$shadePurple, $shadeDarkPurple);
 }
+.chkbox-sm{
+  &+label{
+    &:before{
+      content: '';
+      width: 24px !important;
+      height: 24px !important;
+      font-size: 12px;
+    }
+    &:hover::before{
+      content: "\e013";
+      font-family: 'Glyphicons Halflings';
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        content: "\e013";
+        font-family: 'Glyphicons Halflings';       
+      }
+    }
+  }
+}
+.chkbox-xs{
+  &+label{
+    &:before{
+      width: 18px !important;
+      height: 18px !important;
+      padding: 0.6px !important;
+      font-size: 10.5px;
+    }
+    &:hover::before{
+      content: "\e013";
+      font-family: 'Glyphicons Halflings';     
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        content: "\e013";
+        font-family: 'Glyphicons Halflings';
+      }
+    }
+  }
+}
+.chkbox-lg{
+  &+label{
+    &:before{
+      width: 42px !important;
+      height: 42px !important;
+      padding: 5px !important;
+      font-size: 21px;
+    }
+    &:hover::before{
+      content: "\e013";
+      font-family: 'Glyphicons Halflings';
+    }
+  }
+  &:checked{
+    &+label{
+      &:before{
+        content: "\e013";
+        font-family: 'Glyphicons Halflings';
+      }
+    }
+  }
+}

@@ -263,6 +263,60 @@ input[type="checkbox"].chkbox:checked + label:before {
   opacity: .65;
 }
 
+/* line 110, ../scss/extend/_checkboxes.scss */
+.chkbox-sm + label:before {
+  content: '';
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 12px;
+}
+/* line 116, ../scss/extend/_checkboxes.scss */
+.chkbox-sm + label:hover::before {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+}
+/* line 123, ../scss/extend/_checkboxes.scss */
+.chkbox-sm:checked + label:before {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+}
+
+/* line 132, ../scss/extend/_checkboxes.scss */
+.chkbox-xs + label:before {
+  width: 18px !important;
+  height: 18px !important;
+  padding: 0.6px !important;
+  font-size: 10.5px;
+}
+/* line 138, ../scss/extend/_checkboxes.scss */
+.chkbox-xs + label:hover::before {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+}
+/* line 145, ../scss/extend/_checkboxes.scss */
+.chkbox-xs:checked + label:before {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+}
+
+/* line 154, ../scss/extend/_checkboxes.scss */
+.chkbox-lg + label:before {
+  width: 42px !important;
+  height: 42px !important;
+  padding: 5px !important;
+  font-size: 21px;
+}
+/* line 160, ../scss/extend/_checkboxes.scss */
+.chkbox-lg + label:hover::before {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+}
+/* line 167, ../scss/extend/_checkboxes.scss */
+.chkbox-lg:checked + label:before {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+}
+
 /* line 45, ../scss/extend/_radiobuttons.scss */
 input[type="radio"].rdbtn {
   opacity: 0;
@@ -499,6 +553,27 @@ input[type="radio"].rdbtn:checked + label:before {
 .rdbtn-notice.disabled + label, .rdbtn-notice.disabled + label:hover::before, .rdbtn-notice.disabled + label:focus::before, .rdbtn-notice.disabled + label.focus:before, .rdbtn-notice.disabled + label:before, .rdbtn-notice.disabled + label:hover, .rdbtn-notice.disabled + label:focus, .rdbtn-notice.disabled + label.focus, .rdbtn-notice.disabled:checked + label, .rdbtn-notice.disabled:checked + label:hover::before, .rdbtn-notice.disabled:checked + label:focus::before, .rdbtn-notice.disabled:checked + label.focus:before, .rdbtn-notice.disabled:checked + label:before, .rdbtn-notice.disabled:checked + label:hover, .rdbtn-notice.disabled:checked + label:focus, .rdbtn-notice.disabled:checked + label.focus, .rdbtn-notice[disabled] + label, .rdbtn-notice[disabled] + label:hover::before, .rdbtn-notice[disabled] + label:focus::before, .rdbtn-notice[disabled] + label.focus:before, .rdbtn-notice[disabled] + label:before, .rdbtn-notice[disabled] + label:hover, .rdbtn-notice[disabled] + label:focus, .rdbtn-notice[disabled] + label.focus, .rdbtn-notice[disabled]:checked + label, .rdbtn-notice[disabled]:checked + label:hover::before, .rdbtn-notice[disabled]:checked + label:focus::before, .rdbtn-notice[disabled]:checked + label.focus:before, .rdbtn-notice[disabled]:checked + label:before, .rdbtn-notice[disabled]:checked + label:hover, .rdbtn-notice[disabled]:checked + label:focus, .rdbtn-notice[disabled]:checked + label.focus, fieldset[disabled]:checked .rdbtn-notice + label, fieldset[disabled]:checked .rdbtn-notice + label:hover::before, fieldset[disabled]:checked .rdbtn-notice + label:focus::before, fieldset[disabled]:checked .rdbtn-notice + label.focus:before, fieldset[disabled]:checked .rdbtn-notice + label:before, fieldset[disabled]:checked .rdbtn-notice + label:hover, fieldset[disabled]:checked .rdbtn-notice + label:focus, fieldset[disabled]:checked .rdbtn-notice + label.focus, fieldset[disabled] .rdbtn-notice + label, fieldset[disabled] .rdbtn-notice + label:hover::before, fieldset[disabled] .rdbtn-notice + label:focus::before, fieldset[disabled] .rdbtn-notice + label.focus:before, fieldset[disabled] .rdbtn-notice + label:before, fieldset[disabled] .rdbtn-notice + label:hover, fieldset[disabled] .rdbtn-notice + label:focus, fieldset[disabled] .rdbtn-notice + label.focus {
   cursor: not-allowed;
   opacity: .65;
+}
+
+/* line 119, ../scss/extend/_radiobuttons.scss */
+.rdbtn-sm + label:before {
+  content: '';
+  width: 21px !important;
+  height: 21px !important;
+}
+
+/* line 128, ../scss/extend/_radiobuttons.scss */
+.rdbtn-xs + label:before {
+  width: 15px !important;
+  height: 15px !important;
+  padding: 1.5px !important;
+}
+
+/* line 137, ../scss/extend/_radiobuttons.scss */
+.rdbtn-lg + label:before {
+  width: 32px !important;
+  height: 32px !important;
+  padding: 5px !important;
 }
 
 /* line 269, ../scss/extend/_switches.scss */
@@ -2163,23 +2238,97 @@ input[type="radio"].switch + label, input[type="checkbox"].switch + label {
 
 /* line 5, ../scss/extend/_collapsetoggle.scss */
 .btn.btn-toggle:before {
-  content: "+";
+  font-family: 'Glyphicons Halflings';
+  content: "\002b";
 }
 
-/* line 8, ../scss/extend/_collapsetoggle.scss */
+/* line 9, ../scss/extend/_collapsetoggle.scss */
 .btn.btn-untoggle:before {
+  font-family: 'Glyphicons Halflings';
   content: "\2212";
 }
 
-/* line 11, ../scss/extend/_collapsetoggle.scss */
+/* line 13, ../scss/extend/_collapsetoggle.scss */
 .btn.btn-toggle, .btn.btn-untoggle {
-  font-size: 18px;
-  line-height: 1.111111112222222;
+  font-size: 14px;
+  line-height: 1.58465306;
+  font-weight: 200;
 }
-/* line 14, ../scss/extend/_collapsetoggle.scss */
+/* line 17, ../scss/extend/_collapsetoggle.scss */
 .btn.btn-toggle + label, .btn.btn-untoggle + label {
   margin-left: 12px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* line 5, ../scss/extend/_spinner.scss */
+.spinner {
+  width: 100px;
+}
+/* line 7, ../scss/extend/_spinner.scss */
+.spinner > div {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+/* line 13, ../scss/extend/_spinner.scss */
+.spinner > div > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+/* line 22, ../scss/extend/_spinner.scss */
+.spinner > div > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+/* line 25, ../scss/extend/_spinner.scss */
+.spinner > div > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+/* line 35, ../scss/extend/_spinner.scss */
+.spinner.spinner-up-down > div > .btn:first-child:before {
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  content: "\e253";
+  font-family: 'Glyphicons Halflings';
+  font-size: 10px;
+}
+/* line 46, ../scss/extend/_spinner.scss */
+.spinner.spinner-up-down > div > .btn:last-child:before {
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  content: "\e252";
+  font-family: 'Glyphicons Halflings';
+  font-size: 10px;
+}
+/* line 63, ../scss/extend/_spinner.scss */
+.spinner.spinner-plus-minus > div > .btn:first-child:before {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  content: "\002b";
+  font-family: 'Glyphicons Halflings';
+  font-size: 10px;
+}
+/* line 73, ../scss/extend/_spinner.scss */
+.spinner.spinner-plus-minus > div > .btn:last-child:before {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  content: "\2212";
+  font-family: 'Glyphicons Halflings';
+  font-size: 10px;
 }

@@ -1,0 +1,85 @@
+//=====================================================================
+//  Numeric Spinner - Requires Javascript to function properly 
+//    Linked Javascript file: (spinner.js)
+//=====================================================================
+.spinner {
+  width: 100px;
+  &>div{
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+    &>.btn{
+      display: block;
+      float: none;
+      width: 100%;
+      max-width: 100%;
+      padding: 8px;
+      margin-left: -1px;
+      position: relative;
+      border-radius: 0;
+      &:first-child{
+        border-top-right-radius: 4px;
+      }
+      &:last-child{
+        margin-top: -2px;
+        border-bottom-right-radius: 4px;
+      }
+    }    
+  }
+  &.spinner-up-down{
+    &>div{
+      &>.btn{
+        &:first-child{
+          &:before{
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            left: 4px;
+            content: "\e253";
+            font-family: 'Glyphicons Halflings';
+            font-size: 10px;
+          }
+        }
+        &:last-child{
+          &:before{
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            left: 4px;
+            content: "\e252";
+            font-family: 'Glyphicons Halflings';
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  &.spinner-plus-minus{
+    &>div{
+      &>.btn{
+        &:first-child{
+          &:before{
+            position: absolute;
+            top: 0;
+            left: 4px;
+            content: "\002b";
+            font-family: 'Glyphicons Halflings';
+            font-size: 10px;
+          }
+        }
+        &:last-child{
+          &:before{
+            position: absolute;
+            top: 0;
+            left: 4px;
+            content: "\2212";
+            font-family: 'Glyphicons Halflings';
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

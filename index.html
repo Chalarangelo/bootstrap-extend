@@ -5,13 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="http://chalarangelo.github.io/htmltemplategenerator/">
+  <meta name="description" content="Bootstrap-Extend, a set of useful, responsive extensions for the Bootstrap framework.">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <script type="text/javascript" src="js/bootstrap-extend.js"></script>
   <link rel="stylesheet" href="css/bootstrap-extend.css"/>
-  <script>  <!-- Used for showing tooltips -->
+  <!-- Used for showing tooltips -->
+  <script>  
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     });
@@ -33,7 +35,7 @@
 <a aria-label="Star chalarangelo/bootstrap-extend on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/chalarangelo/bootstrap-extend#stargazers_count" data-count-href="/chalarangelo/bootstrap-extend/stargazers" data-icon="octicon-star" href="https://github.com/chalarangelo/bootstrap-extend" class="github-button">Star</a>
 <a aria-label="Fork chalarangelo/bootstrap-extend on GitHub" data-count-aria-label="# forks on GitHub" data-count-api="/repos/chalarangelo/bootstrap-extend#forks_count" data-count-href="/chalarangelo/bootstrap-extend/network" data-icon="octicon-repo-forked" href="https://github.com/chalarangelo/bootstrap-extend/fork" class="github-button">Fork</a>
 <a aria-label="Issue chalarangelo/bootstrap-extend on GitHub" data-count-aria-label="# issues on GitHub" data-count-api="/repos/chalarangelo/bootstrap-extend#open_issues_count" data-icon="octicon-issue-opened" href="https://github.com/chalarangelo/bootstrap-extend/issues" class="github-button">Issue</a><br>
-<p>A few useful extensions for the very popular <a href="http://getbootstrap.com/">Bootstrap</a> framework.</p>
+<p>A set of useful extensions for the very popular <a href="http://getbootstrap.com/">Bootstrap</a> framework.</p>
   </div>
 
   <h2>Dependencies and usage</h2>
@@ -263,11 +265,13 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
     <li><code>.chkbox-danger</code></li>
     <li><code>.chkbox-notice</code></li>
   </ul>
+  <p>You can also use the <code>.chkbox-lg</code>, <code>.chkbox-sm</code> and <code>.chkbox-xs</code> classes to change the size of your checkboxes</p>
   <div class="panel panel-default">
    <div class="panel-heading">
-    <h4 class="panel-title">Example</h4>
+    <h4 class="panel-title">Examples</h4>
    </div>
   <div class="panel-body">
+  <h4>Checkbox variants:</h4>
    <input id="ch1" class="chkbox chkbox-default" type="checkbox"> <label for="ch1">Default  </label>
    <input id="ch2" class="chkbox chkbox-primary" type="checkbox"> <label for="ch2">Primary  </label>
    <input id="ch3" class="chkbox chkbox-success" type="checkbox"> <label for="ch3">Success  </label>
@@ -284,7 +288,18 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
 &lt;input type="checkbox" class="chkbox chkbox-info" id="chk-info"&gt;&lt;label for="chk-info"&gt;Info&lt;/label&gt;
 &lt;input type="checkbox" class="chkbox chkbox-warning" id="chk-warning"&gt;&lt;label for="chk-warning"&gt;Warning&lt;/label&gt;
 &lt;input type="checkbox" class="chkbox chkbox-danger" id="chk-danger"&gt;&lt;label for="chk-danger"&gt;Danger&lt;/label&gt;
-&lt;input type="checkbox" class="chkbox chkbox-notice" id="chk-notice"&gt;&lt;label for="chk-notice"&gt;Notice&lt;/label&gt;</code></pre></figure>
+&lt;input type="checkbox" class="chkbox chkbox-notice" id="chk-notice"&gt;&lt;label for="chk-notice"&gt;Notice&lt;/label&gt;</code></pre></figure><br/>
+   <h4>Checkbox sizes:</h4>
+    <input id="chL" class="chkbox chkbox-primary chkbox-lg" type="checkbox"> <label for="chL">Large checkbox  </label>
+    <input id="chN" class="chkbox chkbox-primary" type="checkbox"> <label for="chN">Normal checkbox  </label>
+    <input id="chS" class="chkbox chkbox-primary chkbox-sm" type="checkbox"> <label for="chS">Small checkbox  </label>
+    <input id="chXS" class="chkbox chkbox-primary chkbox-xs" type="checkbox"> <label for="chXS">Extra small checkbox  </label>
+    <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;input id="chL" class="chkbox chkbox-primary chkbox-lg" type="checkbox"&gt; &lt;label for="chL"&gt;Large checkbox&lt;/label&gt;
+&lt;input id="chN" class="chkbox chkbox-primary" type="checkbox"&gt; &lt;label for="chN"&gt;Normal checkbox&lt;/label&gt;
+&lt;input id="chS" class="chkbox chkbox-primary chkbox-sm" type="checkbox"&gt; &lt;label for="chS"&gt;Small checkbox&lt;/label&gt;
+&lt;input id="chXS" class="chkbox chkbox-primary chkbox-xs" type="checkbox"&gt; &lt;label for="chXS"&gt;Extra small checkbox&lt;/label&gt;</code></pre></figure>
    </div> 
   </div>
 
@@ -301,9 +316,10 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
   </ul>
  <div class="panel panel-default">
    <div class="panel-heading">
-    <h4 class="panel-title">Example</h4>
+    <h4 class="panel-title">Examples</h4>
    </div>
   <div class="panel-body">
+  <h4>Radio button variants:</h4>
   <input id="rd1" class="rdbtn rdbtn-default" name="test" type="radio"> <label for="rd1">Default  </label>
   <input id="rd2" class="rdbtn rdbtn-primary" name="test" type="radio"> <label for="rd2">Primary  </label>
   <input id="rd3" class="rdbtn rdbtn-success" name="test" type="radio"> <label for="rd3">Success  </label>
@@ -320,17 +336,63 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
 &lt;input type="radio" class="rdbtn rdbtn-info" id="rdb-info" name="rd-group"&gt;&lt;label for="rdb-info"&gt;Info&lt;/label&gt;
 &lt;input type="radio" class="rdbtn rdbtn-warning" id="rdb-warning" name="rd-group"&gt;&lt;label for="rdb-warning"&gt;Warning&lt;/label&gt;
 &lt;input type="radio" class="rdbtn rdbtn-danger" id="rdb-danger" name="rd-group"&gt;&lt;label for="rdb-danger"&gt;Danger&lt;/label&gt;
-&lt;input type="radio" class="rdbtn rdbtn-notice" id="rdb-notice" name="rd-group"&gt;&lt;label for="rdb-notice"&gt;Notice&lt;/label&gt;</code></pre></figure>
+&lt;input type="radio" class="rdbtn rdbtn-notice" id="rdb-notice" name="rd-group"&gt;&lt;label for="rdb-notice"&gt;Notice&lt;/label&gt;</code></pre></figure><br/>
+   <h4>Radio button sizes:</h4>
+    <input id="rdL" class="rdbtn rdbtn-primary rdbtn-lg" name="test" type="radio"> <label for="rdL">Large radio  </label>
+    <input id="rdN" class="rdbtn rdbtn-primary" name="test" type="radio"> <label for="rdN">Normal radio  </label>
+    <input id="rdS" class="rdbtn rdbtn-primary rdbtn-sm" name="test" type="radio"> <label for="rdS">Small radio  </label>
+    <input id="rdXS" class="rdbtn rdbtn-primary rdbtn-xs" name="test" type="radio"> <label for="rdXS">Extra small radio  </label>
+    <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;input id="rdL" class="rdbtn rdbtn-primary rdbtn-lg" name="test-s" type="radio"&gt; &lt;label for="rdL"&gt;Large radio  &lt;/label&gt;
+&lt;input id="rdN" class="rdbtn rdbtn-primary" name="test-s" type="radio"&gt; &lt;label for="rdL"&gt;Normal radio  &lt;/label&gt;
+&lt;input id="rdS" class="rdbtn rdbtn-primary rdbtn-sm" name="test-s" type="radio"&gt; &lt;label for="rdL"&gt;Small radio  &lt;/label&gt;
+&lt;input id="rdXS" class="rdbtn rdbtn-primary rdbtn-xs" name="test-s" type="radio"&gt; &lt;label for="rdL"&gt;Extra small radio  &lt;/label&gt;</code></pre></figure>
    </div> 
   </div>
 
+  <h3>Numeric Spinner</h3>
+  <p>Make your numeric inputs prettier by using the <code>.spinner</code> class on an <code>.input-group</code> <code>&lt;div&gt;</code> with a text input element and two buttons. Comes in two styles: arrows (<code>.spinner-up-down</code> class) and plus/minus (<code>.spinner-plus-minus</code> class).</p>
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Examples</h4>
+   </div>
+  <div class="panel-body">
+   <div class="input-group spinner spinner-up-down">
+    <input type="text" class="form-control" value="25">
+    <div>
+      <button class="btn btn-default" type="button"></button>
+      <button class="btn btn-default" type="button"></button>
+    </div>
+  </div>
+   <br/>
+   <div class="input-group spinner spinner-plus-minus">
+    <input type="text" class="form-control" value="40">
+    <div>
+      <button class="btn btn-default" type="button"></button>
+      <button class="btn btn-default" type="button"></button>
+    </div>
+  </div>
+   <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;div class="input-group spinner spinner-up-down"&gt;
+  &lt;input type="text" class="form-control" value="25"&gt;
+  &lt;div&gt;
+    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
+    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-
-
-
-
-
-
+&lt;div class="input-group spinner spinner-plus-minus"&gt;
+  &lt;input type="text" class="form-control" value="40"&gt;
+  &lt;div&gt;
+    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
+    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+   </div> 
+   <p>&nbsp;&nbsp;&nbsp;<strong>Original idea and implementation</strong> by <a href="http://codepen.io/Thomas-Lebeau/pen/csHqx">Thomas Lebeau</a>.</p>
+  </div>
 
 <!-- Page ending, do not modify below this line -->
 </div>

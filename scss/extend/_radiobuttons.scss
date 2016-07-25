@@ -114,3 +114,30 @@ input[type="radio"].rdbtn {
 .rdbtn-notice{
    @include radio-variant($shadeWhite,$shadePurple, $shadeDarkPurple);
 }
+.rdbtn-sm{
+  &+label{
+    &:before{
+      content: '';
+      width: 21px !important;
+      height: 21px !important;
+    }
+  }
+}
+.rdbtn-xs{
+  &+label{
+    &:before{
+      width: 15px !important;
+      height: 15px !important;
+      padding: 1.5px !important;
+    }
+  }
+}
+.rdbtn-lg{
+  &+label{
+    &:before{
+      width: 32px !important;
+      height: 32px !important;
+      padding: 5px !important;
+    }
+  }
+}
