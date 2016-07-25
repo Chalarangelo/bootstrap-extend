@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 62, ../scss/extend/_buttons.scss */
 .btn-notice {
   color: #fff;
@@ -2331,4 +2332,1177 @@ input[type="radio"].switch + label, input[type="checkbox"].switch + label {
   content: "\2212";
   font-family: 'Glyphicons Halflings';
   font-size: 10px;
+}
+
+/* line 87, ../scss/extend/_lists.scss */
+ul.ul-big li:before {
+  content: "";
+  top: 1.5px !important;
+  left: 1.5px !important;
+  bottom: 1.5px !important;
+  right: 1.5px !important;
+  padding: 3.5px !important;
+  margin: 2px 8px;
+}
+
+/* line 101, ../scss/extend/_lists.scss */
+ul.ul-disc-default {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 15, ../scss/extend/_lists.scss */
+ul.ul-disc-default li {
+  padding-left: 16px;
+}
+/* line 17, ../scss/extend/_lists.scss */
+ul.ul-disc-default li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  background-color: #555;
+  border: 1px solid #363636;
+}
+
+/* line 104, ../scss/extend/_lists.scss */
+ul.ul-circle-default {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 40, ../scss/extend/_lists.scss */
+ul.ul-circle-default li {
+  padding-left: 16px;
+}
+/* line 42, ../scss/extend/_lists.scss */
+ul.ul-circle-default li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  border: 1px solid #555;
+}
+
+/* line 107, ../scss/extend/_lists.scss */
+ul.ul-square-default {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 64, ../scss/extend/_lists.scss */
+ul.ul-square-default li {
+  padding-left: 16px;
+}
+/* line 66, ../scss/extend/_lists.scss */
+ul.ul-square-default li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 2px 8px;
+  background-color: #555;
+  border: 1px solid #363636;
+}
+
+/* line 110, ../scss/extend/_lists.scss */
+ul.ul-disc-primary {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 15, ../scss/extend/_lists.scss */
+ul.ul-disc-primary li {
+  padding-left: 16px;
+}
+/* line 17, ../scss/extend/_lists.scss */
+ul.ul-disc-primary li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+}
+
+/* line 113, ../scss/extend/_lists.scss */
+ul.ul-circle-primary {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 40, ../scss/extend/_lists.scss */
+ul.ul-circle-primary li {
+  padding-left: 16px;
+}
+/* line 42, ../scss/extend/_lists.scss */
+ul.ul-circle-primary li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  border: 1px solid #2e6da4;
+}
+
+/* line 116, ../scss/extend/_lists.scss */
+ul.ul-square-primary {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 64, ../scss/extend/_lists.scss */
+ul.ul-square-primary li {
+  padding-left: 16px;
+}
+/* line 66, ../scss/extend/_lists.scss */
+ul.ul-square-primary li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 2px 8px;
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+}
+
+/* line 119, ../scss/extend/_lists.scss */
+ul.ul-disc-success {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 15, ../scss/extend/_lists.scss */
+ul.ul-disc-success li {
+  padding-left: 16px;
+}
+/* line 17, ../scss/extend/_lists.scss */
+ul.ul-disc-success li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  background-color: #5cb85c;
+  border: 1px solid #4cae4c;
+}
+
+/* line 122, ../scss/extend/_lists.scss */
+ul.ul-circle-success {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 40, ../scss/extend/_lists.scss */
+ul.ul-circle-success li {
+  padding-left: 16px;
+}
+/* line 42, ../scss/extend/_lists.scss */
+ul.ul-circle-success li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  border: 1px solid #4cae4c;
+}
+
+/* line 125, ../scss/extend/_lists.scss */
+ul.ul-square-success {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 64, ../scss/extend/_lists.scss */
+ul.ul-square-success li {
+  padding-left: 16px;
+}
+/* line 66, ../scss/extend/_lists.scss */
+ul.ul-square-success li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 2px 8px;
+  background-color: #5cb85c;
+  border: 1px solid #4cae4c;
+}
+
+/* line 128, ../scss/extend/_lists.scss */
+ul.ul-disc-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 15, ../scss/extend/_lists.scss */
+ul.ul-disc-info li {
+  padding-left: 16px;
+}
+/* line 17, ../scss/extend/_lists.scss */
+ul.ul-disc-info li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  background-color: #5bc0de;
+  border: 1px solid #46b8da;
+}
+
+/* line 131, ../scss/extend/_lists.scss */
+ul.ul-circle-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 40, ../scss/extend/_lists.scss */
+ul.ul-circle-info li {
+  padding-left: 16px;
+}
+/* line 42, ../scss/extend/_lists.scss */
+ul.ul-circle-info li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  border: 1px solid #46b8da;
+}
+
+/* line 134, ../scss/extend/_lists.scss */
+ul.ul-square-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 64, ../scss/extend/_lists.scss */
+ul.ul-square-info li {
+  padding-left: 16px;
+}
+/* line 66, ../scss/extend/_lists.scss */
+ul.ul-square-info li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 2px 8px;
+  background-color: #5bc0de;
+  border: 1px solid #46b8da;
+}
+
+/* line 137, ../scss/extend/_lists.scss */
+ul.ul-disc-warning {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 15, ../scss/extend/_lists.scss */
+ul.ul-disc-warning li {
+  padding-left: 16px;
+}
+/* line 17, ../scss/extend/_lists.scss */
+ul.ul-disc-warning li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  background-color: #f0ad4e;
+  border: 1px solid #eea236;
+}
+
+/* line 140, ../scss/extend/_lists.scss */
+ul.ul-circle-warning {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 40, ../scss/extend/_lists.scss */
+ul.ul-circle-warning li {
+  padding-left: 16px;
+}
+/* line 42, ../scss/extend/_lists.scss */
+ul.ul-circle-warning li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  border: 1px solid #eea236;
+}
+
+/* line 143, ../scss/extend/_lists.scss */
+ul.ul-square-warning {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 64, ../scss/extend/_lists.scss */
+ul.ul-square-warning li {
+  padding-left: 16px;
+}
+/* line 66, ../scss/extend/_lists.scss */
+ul.ul-square-warning li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 2px 8px;
+  background-color: #f0ad4e;
+  border: 1px solid #eea236;
+}
+
+/* line 146, ../scss/extend/_lists.scss */
+ul.ul-disc-danger {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 15, ../scss/extend/_lists.scss */
+ul.ul-disc-danger li {
+  padding-left: 16px;
+}
+/* line 17, ../scss/extend/_lists.scss */
+ul.ul-disc-danger li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  background-color: #d9534f;
+  border: 1px solid #d43f3a;
+}
+
+/* line 149, ../scss/extend/_lists.scss */
+ul.ul-circle-danger {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 40, ../scss/extend/_lists.scss */
+ul.ul-circle-danger li {
+  padding-left: 16px;
+}
+/* line 42, ../scss/extend/_lists.scss */
+ul.ul-circle-danger li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  border: 1px solid #d43f3a;
+}
+
+/* line 152, ../scss/extend/_lists.scss */
+ul.ul-square-danger {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 64, ../scss/extend/_lists.scss */
+ul.ul-square-danger li {
+  padding-left: 16px;
+}
+/* line 66, ../scss/extend/_lists.scss */
+ul.ul-square-danger li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 2px 8px;
+  background-color: #d9534f;
+  border: 1px solid #d43f3a;
+}
+
+/* line 155, ../scss/extend/_lists.scss */
+ul.ul-disc-notice {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 15, ../scss/extend/_lists.scss */
+ul.ul-disc-notice li {
+  padding-left: 16px;
+}
+/* line 17, ../scss/extend/_lists.scss */
+ul.ul-disc-notice li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  background-color: #9783b9;
+  border: 1px solid #6f5499;
+}
+
+/* line 158, ../scss/extend/_lists.scss */
+ul.ul-circle-notice {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 40, ../scss/extend/_lists.scss */
+ul.ul-circle-notice li {
+  padding-left: 16px;
+}
+/* line 42, ../scss/extend/_lists.scss */
+ul.ul-circle-notice li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 2px 8px;
+  border: 1px solid #6f5499;
+}
+
+/* line 161, ../scss/extend/_lists.scss */
+ul.ul-square-notice {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 64, ../scss/extend/_lists.scss */
+ul.ul-square-notice li {
+  padding-left: 16px;
+}
+/* line 66, ../scss/extend/_lists.scss */
+ul.ul-square-notice li:before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 2px 8px;
+  background-color: #9783b9;
+  border: 1px solid #6f5499;
+}
+
+/* line 257, ../scss/extend/_lists.scss */
+ol.ol-disc-default {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 175, ../scss/extend/_lists.scss */
+ol.ol-disc-default li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 179, ../scss/extend/_lists.scss */
+ol.ol-disc-default li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #555;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+/* line 260, ../scss/extend/_lists.scss */
+ol.ol-circle-default {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 204, ../scss/extend/_lists.scss */
+ol.ol-circle-default li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 208, ../scss/extend/_lists.scss */
+ol.ol-circle-default li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #555;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  border: 1px solid #555;
+}
+
+/* line 263, ../scss/extend/_lists.scss */
+ol.ol-square-default {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 232, ../scss/extend/_lists.scss */
+ol.ol-square-default li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 236, ../scss/extend/_lists.scss */
+ol.ol-square-default li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #555;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 4px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+/* line 266, ../scss/extend/_lists.scss */
+ol.ol-disc-primary {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 175, ../scss/extend/_lists.scss */
+ol.ol-disc-primary li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 179, ../scss/extend/_lists.scss */
+ol.ol-disc-primary li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+}
+
+/* line 269, ../scss/extend/_lists.scss */
+ol.ol-circle-primary {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 204, ../scss/extend/_lists.scss */
+ol.ol-circle-primary li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 208, ../scss/extend/_lists.scss */
+ol.ol-circle-primary li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #555;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  border: 1px solid #2e6da4;
+}
+
+/* line 272, ../scss/extend/_lists.scss */
+ol.ol-square-primary {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 232, ../scss/extend/_lists.scss */
+ol.ol-square-primary li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 236, ../scss/extend/_lists.scss */
+ol.ol-square-primary li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 4px;
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+}
+
+/* line 275, ../scss/extend/_lists.scss */
+ol.ol-disc-success {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 175, ../scss/extend/_lists.scss */
+ol.ol-disc-success li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 179, ../scss/extend/_lists.scss */
+ol.ol-disc-success li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  background-color: #5cb85c;
+  border: 1px solid #4cae4c;
+}
+
+/* line 278, ../scss/extend/_lists.scss */
+ol.ol-circle-success {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 204, ../scss/extend/_lists.scss */
+ol.ol-circle-success li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 208, ../scss/extend/_lists.scss */
+ol.ol-circle-success li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #555;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  border: 1px solid #4cae4c;
+}
+
+/* line 281, ../scss/extend/_lists.scss */
+ol.ol-square-success {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 232, ../scss/extend/_lists.scss */
+ol.ol-square-success li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 236, ../scss/extend/_lists.scss */
+ol.ol-square-success li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  border: 1px solid #4cae4c;
+}
+
+/* line 284, ../scss/extend/_lists.scss */
+ol.ol-disc-info {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 175, ../scss/extend/_lists.scss */
+ol.ol-disc-info li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 179, ../scss/extend/_lists.scss */
+ol.ol-disc-info li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  background-color: #5bc0de;
+  border: 1px solid #46b8da;
+}
+
+/* line 287, ../scss/extend/_lists.scss */
+ol.ol-circle-info {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 204, ../scss/extend/_lists.scss */
+ol.ol-circle-info li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 208, ../scss/extend/_lists.scss */
+ol.ol-circle-info li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #555;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  border: 1px solid #46b8da;
+}
+
+/* line 290, ../scss/extend/_lists.scss */
+ol.ol-square-info {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 232, ../scss/extend/_lists.scss */
+ol.ol-square-info li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 236, ../scss/extend/_lists.scss */
+ol.ol-square-info li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 4px;
+  background-color: #5bc0de;
+  border: 1px solid #46b8da;
+}
+
+/* line 293, ../scss/extend/_lists.scss */
+ol.ol-disc-warning {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 175, ../scss/extend/_lists.scss */
+ol.ol-disc-warning li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 179, ../scss/extend/_lists.scss */
+ol.ol-disc-warning li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  background-color: #f0ad4e;
+  border: 1px solid #eea236;
+}
+
+/* line 296, ../scss/extend/_lists.scss */
+ol.ol-circle-warning {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 204, ../scss/extend/_lists.scss */
+ol.ol-circle-warning li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 208, ../scss/extend/_lists.scss */
+ol.ol-circle-warning li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #555;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  border: 1px solid #eea236;
+}
+
+/* line 299, ../scss/extend/_lists.scss */
+ol.ol-square-warning {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 232, ../scss/extend/_lists.scss */
+ol.ol-square-warning li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 236, ../scss/extend/_lists.scss */
+ol.ol-square-warning li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 4px;
+  background-color: #f0ad4e;
+  border: 1px solid #eea236;
+}
+
+/* line 302, ../scss/extend/_lists.scss */
+ol.ol-disc-danger {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 175, ../scss/extend/_lists.scss */
+ol.ol-disc-danger li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 179, ../scss/extend/_lists.scss */
+ol.ol-disc-danger li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  background-color: #d9534f;
+  border: 1px solid #d43f3a;
+}
+
+/* line 305, ../scss/extend/_lists.scss */
+ol.ol-circle-danger {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 204, ../scss/extend/_lists.scss */
+ol.ol-circle-danger li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 208, ../scss/extend/_lists.scss */
+ol.ol-circle-danger li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #555;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  border: 1px solid #d43f3a;
+}
+
+/* line 308, ../scss/extend/_lists.scss */
+ol.ol-square-danger {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 232, ../scss/extend/_lists.scss */
+ol.ol-square-danger li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 236, ../scss/extend/_lists.scss */
+ol.ol-square-danger li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 4px;
+  background-color: #d9534f;
+  border: 1px solid #d43f3a;
+}
+
+/* line 311, ../scss/extend/_lists.scss */
+ol.ol-disc-notice {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 175, ../scss/extend/_lists.scss */
+ol.ol-disc-notice li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 179, ../scss/extend/_lists.scss */
+ol.ol-disc-notice li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  background-color: #9783b9;
+  border: 1px solid #6f5499;
+}
+
+/* line 314, ../scss/extend/_lists.scss */
+ol.ol-circle-notice {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 204, ../scss/extend/_lists.scss */
+ol.ol-circle-notice li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 208, ../scss/extend/_lists.scss */
+ol.ol-circle-notice li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #555;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 50%;
+  border: 1px solid #6f5499;
+}
+
+/* line 317, ../scss/extend/_lists.scss */
+ol.ol-square-notice {
+  counter-reset: item;
+  padding-left: 16px;
+  margin: 0;
+}
+/* line 232, ../scss/extend/_lists.scss */
+ol.ol-square-notice li {
+  display: block;
+  padding-left: 0px;
+  left: -10px;
+}
+/* line 236, ../scss/extend/_lists.scss */
+ol.ol-square-notice li:before {
+  content: " " counter(item) ". ";
+  counter-increment: item;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: -10;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  margin: 2px 8px;
+  border-radius: 4px;
+  background-color: #9783b9;
+  border: 1px solid #6f5499;
 }
