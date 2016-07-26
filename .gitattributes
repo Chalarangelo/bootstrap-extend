@@ -1,5 +1,5 @@
 bootstrap-extend.* linguist-vendored=false
 scss/*.scss linguist-vendored=false
 scss/bootstrap-extend.scss linguist-vendored=false
-index.html lingust-documentation=true
-favicon.png lingust-documentation=true
+index.html lingust-documentation
+favicon.png lingust-documentation
