@@ -12,11 +12,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <script type="text/javascript" src="js/bootstrap-extend.js"></script>
   <link rel="stylesheet" href="css/bootstrap-extend.css"/>
-  <!-- Used for showing tooltips -->
+  <!-- Used for showing tooltips and activating the scrollspy-->
   <script>  
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     });
+    $('body').scrollspy({ target: '#navbar-bse' });
   </script>
 
 <!--   <script type="text/javascript" src="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/master/js/bootstrap-extend.min.js"></script>
@@ -26,11 +27,35 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script>
   <title>Bootstrap-Extend</title>
  </head>
- <body>
-<div class="container">
+ <body  data-spy="scroll" data-target="#navbar-bse">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-2" id="navbar-bse">
+<!-- Page start, do not midify above this line-->
+<br/>
+<ul class="nav nav-pills nav-stacked" style="position:fixed;">
+  <li role="presentation" class="active"><a href="#home">Home</a></li>
+  <li role="presentation"><a href="#dependencies">      Dependencies &amp; usage</a></li>  
+  <li style="padding:7px 15px;color:#959595;"><strong>  COMPONENTS, CSS &amp; JS</strong></li>
+  <li role="presentation"><a href="#button">            New button style</a></li>
+  <li role="presentation"><a href="#pwdtoggle">         Password toggle</a></li>
+  <li role="presentation"><a href="#switches">          Toggle switches</a></li>
+  <li role="presentation"><a href="#lightbox">          Responsive lightbox</a></li>
+  <li role="presentation"><a href="#spinner">           Numeric spinner</a></li>
+  <li role="presentation"><a href="#collapsetoggle">    Collapse toggle box</a></li>
+  <li role="presentation"><a href="#checkboxes">        Checkbox styles</a></li>
+  <li role="presentation"><a href="#radiobuttons">      Radio button styles</a></li>
+  <li role="presentation"><a href="#lists">             List element styles</a></li>
+
+</ul>
+
+</div><div id="content-bse" class="col-md-10">
+<!-- Navigation end, content starts -->
+
+
 
   <div class="page-header">
-  <h1>Bootstrap Extend <small>Easy-to-use components for Bootstrap 3</small></h1>
+  <h1 id="home">Bootstrap Extend <small>Easy-to-use components for Bootstrap 3</small></h1>
 <a aria-label="Watch chalarangelo/bootstrap-extend on GitHub" data-count-aria-label="# watchers on GitHub" data-count-api="/repos/chalarangelo/bootstrap-extend#subscribers_count" data-count-href="/chalarangelo/bootstrap-extend/watchers" data-icon="octicon-eye" href="https://github.com/chalarangelo/bootstrap-extend" class="github-button">Watch</a>
 <a aria-label="Star chalarangelo/bootstrap-extend on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/chalarangelo/bootstrap-extend#stargazers_count" data-count-href="/chalarangelo/bootstrap-extend/stargazers" data-icon="octicon-star" href="https://github.com/chalarangelo/bootstrap-extend" class="github-button">Star</a>
 <a aria-label="Fork chalarangelo/bootstrap-extend on GitHub" data-count-aria-label="# forks on GitHub" data-count-api="/repos/chalarangelo/bootstrap-extend#forks_count" data-count-href="/chalarangelo/bootstrap-extend/network" data-icon="octicon-repo-forked" href="https://github.com/chalarangelo/bootstrap-extend/fork" class="github-button">Fork</a>
@@ -38,7 +63,7 @@
 <p>A set of useful extensions for the very popular <a href="http://getbootstrap.com/">Bootstrap</a> framework.</p>
   </div>
 
-  <h2>Dependencies and usage</h2>
+  <h2 id="dependencies">Dependencies and usage</h2>
   <p>This framework depends heavily on Bootstrap 3 and jQuery. Include the dependencies (jQuery 2.2.4 or newer, Bootstrap 3 js and css files) in your <code>&lt;head&gt;</code> section and after them insert the following two lines to include Bootstrap-Extend:</p>
   <figure class="highlight">
   <pre><code class="language-html" data-lang="html">&lt;script type="text/javascript" src="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/master/js/bootstrap-extend.min.js"&gt;&lt;script/&gt;
@@ -48,7 +73,7 @@
   <h2>Components, CSS and Javascript</h2>
   <p>The following is a list of available components, styles and scripts as of now. This list will be updated as more components are developed and added to the framework.</p>
 
-  <h3>One extra button style <small>Because there can never be enough</small></h3>
+  <h3 id="button">One extra button style <small>Because there can never be enough</small></h3>
   <p>Use the <code>.btn-notice</code> class like any other button tag from Bootstrap. Inspired from the Bootstrap website's header colours.</p>
   <div class="panel panel-default">
    <div class="panel-heading">
@@ -63,7 +88,7 @@
    </div> 
   </div>
 
-  <h3>Password field with toggle</h3>
+  <h3 id="pwdtoggle">Password field with toggle</h3>
   <p>Extend the functionality of your <code>&lt;input type="password"&gt;</code> fields by adding a button that toggles password display on or off. Simply add the <code>.pwd</code> class to your field and the <code>.pwd-toggle</code> class to a <code>&lt;span&gt;&lt;span/&gt;</code> element in the same <code>.input-group</code> and users can now toggle password viewing on or off. When the form is submitted, the field will revert to <code>type="password"</code> regardless of its current state for security reasons. Just be sure to use an <code>&lt;input type="submit"&gt;</code> element to submit your form.</p>
   <div class="panel panel-default">
    <div class="panel-heading">
@@ -87,7 +112,7 @@
   <p>&nbsp;&nbsp;&nbsp;<strong>Original idea and implementation</strong> by <a href="https://codepen.io/shellbryson/post/toggle-passwords">Shell Bryson</a>.</p> 
   </div>
 
-<h3>Toggle Switches <small>Rectangular, round, with text or without, all in pure CSS</small></h3>
+<h3 id="switches">Toggle Switches <small>Rectangular, round, with text or without, all in pure CSS</small></h3>
   <p>Use the <code>.switch</code> class only on <code>&lt;input type="checkbox"&gt;</code> or <code>&lt;input type="radio"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the inout's <code>id</code>. There are two types of toggle switches, round and rectangular. Both types have seven flavours, similar to the classic Bootstrap buttons:</p>
   <ul>
     <li><code>.switch-round-default</code> and <code>.switch-rect-default</code></li>
@@ -175,7 +200,7 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
    <p>&nbsp;&nbsp;&nbsp;<strong>Original idea and implementation</strong> by <a href="http://callmenick.com/post/css-toggle-switch-examples">callmenick.com</a>.</p>
   </div>
 
-  <h3>Responsive Lightbox <small>Simple, light and Javascript-based</small></h3>
+  <h3 id="lightbox">Responsive Lightbox <small>Simple, light and Javascript-based</small></h3>
   <p>Use the <code>.lightbox-toggle</code> class on a link element surrounding an image element to create a lightbox that opens when you click on the image. Be sure to specify a unique <code>id</code> for the image element. The lightbox will automatically resize to properly fit your browser's size and it will change its size accordingly when the browser window is resized. You can use the <code>alt</code> attribute of the image to show a custom title in your lightbox, otherwise you can leave it blank to show the URL of the image. <strong>Suggestion:</strong> Use this lightbox with Bootstrap's <code>.thumbnail</code> class and/or in combination with tooltips to show your users that the images can be viewed in a lightbox.</p>
   <div class="panel panel-default">
    <div class="panel-heading">
@@ -208,7 +233,50 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
    </div> 
   </div>
 
-  <h3>Collapse toggle box</h3>
+  <h3 id="spinner">Numeric Spinner</h3>
+  <p>Make your numeric inputs prettier by using the <code>.spinner</code> class on an <code>.input-group</code> <code>&lt;div&gt;</code> with a text input element and two buttons. Comes in two styles: arrows (<code>.spinner-up-down</code> class) and plus/minus (<code>.spinner-plus-minus</code> class).</p>
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Examples</h4>
+   </div>
+  <div class="panel-body">
+   <div class="input-group spinner spinner-up-down">
+    <input type="text" class="form-control" value="25">
+    <div>
+      <button class="btn btn-default" type="button"></button>
+      <button class="btn btn-default" type="button"></button>
+    </div>
+  </div>
+   <br/>
+   <div class="input-group spinner spinner-plus-minus">
+    <input type="text" class="form-control" value="40">
+    <div>
+      <button class="btn btn-default" type="button"></button>
+      <button class="btn btn-default" type="button"></button>
+    </div>
+  </div>
+   <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;div class="input-group spinner spinner-up-down"&gt;
+  &lt;input type="text" class="form-control" value="25"&gt;
+  &lt;div&gt;
+    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
+    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="input-group spinner spinner-plus-minus"&gt;
+  &lt;input type="text" class="form-control" value="40"&gt;
+  &lt;div&gt;
+    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
+    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+   </div> 
+   <p>&nbsp;&nbsp;&nbsp;<strong>Original idea and implementation</strong> by <a href="http://codepen.io/Thomas-Lebeau/pen/csHqx">Thomas Lebeau</a>.</p>
+  </div>
+
+  <h3 id="collapsetoggle">Collapse toggle box</h3>
   <p>Bootstrap's <a href="http://getbootstrap.com/javascript/#collapse">Collapse</a> is great. But if you are looking for a different style for your content toggle buttons, you can now use the <code>.btn.btn-toggle</code> class next to a <code>&lt;label&gt;</code> element to achieve that. All the functionality of the original Bootstrap component remains intact.</p>
   <div class="panel panel-default">
    <div class="panel-heading">
@@ -254,7 +322,7 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
    </div>
   </div>
 
-  <h3>Checkbox styles <small>In 7 pure CSS flavours</small></h3>
+  <h3 id="checkboxes">Checkbox styles <small>In 7 pure CSS flavours</small></h3>
   <p>Use the <code>.chkbox</code> class only on <code>&lt;input type="checkbox"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the checkbox's <code>id</code>. There are seven flavours of checkboxes, similar to the classic Bootstrap buttons:</p>
   <ul>
     <li><code>.chkbox-default</code></li>
@@ -303,7 +371,7 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
    </div> 
   </div>
 
- <h3>Radio button styles <small>In 7 pure CSS flavours</small></h3>
+ <h3 id="radiobuttons">Radio button styles <small>In 7 pure CSS flavours</small></h3>
   <p>Use the <code>.rdbtn</code> class only on <code>&lt;input type="radio"&gt;</code> elements. Don't forget to add a <code>&lt;label&gt;</code> after it and link it to the radio button's <code>id</code>. There are seven flavours of radio buttons, similar to the classic Bootstrap buttons:</p>
   <ul>
     <li><code>.rdbtn-default</code></li>
@@ -351,60 +419,135 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
    </div> 
   </div>
 
-  <h3>Numeric Spinner</h3>
-  <p>Make your numeric inputs prettier by using the <code>.spinner</code> class on an <code>.input-group</code> <code>&lt;div&gt;</code> with a text input element and two buttons. Comes in two styles: arrows (<code>.spinner-up-down</code> class) and plus/minus (<code>.spinner-plus-minus</code> class).</p>
+<h3 id="lists">List element styles <small>Lots of pure CSS options</small></h3>
+<p>Use the <code>.urd</code> class for unordered lists or the <code>.ord</code> class for ordered lists in combination with one of the three styles (disc, circle and square). Apart from that, you can use the <code>.urd-big</code> to make your unordered list bullets larger. There are 7 color combinations, along with the above options:</p>
+  <ul>
+    <li><code>.urd-disc-default</code>, <code>.urd-circle-default</code> and <code>.urd-square-default</code></li>
+    <li><code>.urd-disc-primary</code>, <code>.urd-circle-primary</code> and <code>.urd-square-primary</code></li>
+    <li><code>.urd-disc-success</code>, <code>.urd-circle-success</code> and <code>.urd-square-success</code></li>
+    <li><code>.urd-disc-info</code>, <code>.urd-circle-info</code> and <code>.urd-square-info</code></li>
+    <li><code>.urd-disc-warning</code>, <code>.urd-circle-warning</code> and <code>.urd-square-warning</code></li>
+    <li><code>.urd-disc-danger</code>, <code>.urd-circle-danger</code> and <code>.urd-square-danger</code></li>
+    <li><code>.urd-disc-notice</code>, <code>.urd-circle-notice</code> and <code>.urd-square-notice</code></li>
+  </ul>
+  <p>Similarly, you can use the classes for ordered lists by replacing <code>.urd-</code> with <code>.ord-</code>. Note that ordered lists using these classes only use the <code>decimal</code> value for the <code>list-style</code> attribute and different values will not be taken into account.</p>
+
   <div class="panel panel-default">
    <div class="panel-heading">
     <h4 class="panel-title">Examples</h4>
    </div>
   <div class="panel-body">
-   <div class="input-group spinner spinner-up-down">
-    <input type="text" class="form-control" value="25">
-    <div>
-      <button class="btn btn-default" type="button"></button>
-      <button class="btn btn-default" type="button"></button>
-    </div>
-  </div>
-   <br/>
-   <div class="input-group spinner spinner-plus-minus">
-    <input type="text" class="form-control" value="40">
-    <div>
-      <button class="btn btn-default" type="button"></button>
-      <button class="btn btn-default" type="button"></button>
-    </div>
-  </div>
-   <h4>Usage:</h4>
+    <h4>Unordered lists</h4>
+    <ul class="urd urd-disc-primary">
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+    </ul>
+    <ul class="urd urd-circle-default">
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+    </ul>
+    <ul class="urd urd-square-success">
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+    </ul>
+    <h4>Usage:</h4>
+    <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;ul class="urd urd-disc-primary"&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="urd urd-circle-default"&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="urd urd-square-success"&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+&lt;/ul&gt;</code></pre></figure>
+    <h4>Unordered lists - larger bullets</h4>
+    <ul class="urd urd-disc-warning urd-big">
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+    </ul>
+    <ul class="urd urd-circle-danger urd-big">
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+    </ul>
+    <ul class="urd urd-square-notice urd-big">
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+    </ul>
+    <h4>Usage:</h4>
+    <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;ul class="urd urd-disc-warning urd-big"&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="urd urd-circle-danger urd-big"&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="urd urd-square-notice urd-big"&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+&lt;/ul&gt;</code></pre></figure>
+    <h4>Ordered lists</h4>
+    <ol class="ord ord-disc-primary">
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+    </ol>
+    <ol class="ord ord-circle-default">
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+    </ol>
+    <ol class="ord ord-square-info">
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+      <li>This is a list element</li>
+    </ol>
+    <h4>Usage:</h4>
    <figure class="highlight">
-    <pre><code class="language-html" data-lang="html">&lt;div class="input-group spinner spinner-up-down"&gt;
-  &lt;input type="text" class="form-control" value="25"&gt;
-  &lt;div&gt;
-    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
-    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+    <pre><code class="language-html" data-lang="html">&lt;ol class="ord ord-disc-primary"&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;div class="input-group spinner spinner-plus-minus"&gt;
-  &lt;input type="text" class="form-control" value="40"&gt;
-  &lt;div&gt;
-    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
-    &lt;button class="btn btn-default" type="button"&gt;&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+&lt;ol class="ord ord-circle-default"&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="ord ord-square-info"&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+  &lt;li&gt;This is a list element&lt;/li&gt;
+&lt;/ol&gt;</code></pre></figure>
    </div> 
-   <p>&nbsp;&nbsp;&nbsp;<strong>Original idea and implementation</strong> by <a href="http://codepen.io/Thomas-Lebeau/pen/csHqx">Thomas Lebeau</a>.</p>
   </div>
-
-<h4>List element styles <small>Work in progress, check back later</small></h4>
-<ol class="ol-disc-success">
-  <li>I</li>
-  <li>am</li>
-  <li>a</li>
-  <li>list</li>
-  <li>element</li>
-</ol>
 
 
 <!-- Page ending, do not modify below this line -->
+</div></div>
 </div>
  </body>
 </html>

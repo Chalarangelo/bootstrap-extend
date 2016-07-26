@@ -8,23 +8,10 @@
 //=====================================================================
 //  Disc variant for unordered lists
 //=====================================================================
-@mixin ul-disc-variant ($background, $border){
-	list-style: none;
-    padding: 0;
-    margin: 0;
+@mixin urd-disc-variant ($background, $border){
     & li{
-    	padding-left: 16px; 
     	&:before{
-    		display: inline-block;
-      		position: relative;
-			content: "";
-			top: 1px;
-	  		left: 1px;
-	  		bottom: 1px;
-	  		right: 1px;
-			padding: 2px;
 			border-radius: 4px;
-			margin: 2px 8px;
 			background-color: $background;
 			border: 1px solid $border;
     	}
@@ -33,23 +20,10 @@
 //=====================================================================
 //  Circle variant for unordered lists
 //=====================================================================
-@mixin ul-circle-variant ($border){
-	list-style: none;
-    padding: 0;
-    margin: 0;
-    & li{
-    	padding-left: 16px; 
+@mixin urd-circle-variant ($border){
+    & li{ 
     	&:before{
-    		display: inline-block;
-      		position: relative;
-			content: "";
-			top: 1px;
-	  		left: 1px;
-	  		bottom: 1px;
-	  		right: 1px;
-			padding: 2px;
 			border-radius: 4px;
-			margin: 2px 8px;
 			border: 1px solid $border;
     	}
     }
@@ -57,23 +31,10 @@
 //=====================================================================
 //  Square variant for unordered lists
 //=====================================================================
-@mixin ul-square-variant ($background, $border){
-	list-style: none;
-    padding: 0;
-    margin: 0;
+@mixin urd-square-variant ($background, $border){
     & li{
-    	padding-left: 16px; 
     	&:before{
-    		display: inline-block;
-      		position: relative;
-			content: "";
-			top: 1px;
-	  		left: 1px;
-	  		bottom: 1px;
-	  		right: 1px;
-			padding: 2px;
 			border-radius: 2px;
-			margin: 2px 8px;
 			background-color: $background;
 			border: 1px solid $border;
     	}
@@ -82,7 +43,7 @@
 //=====================================================================
 //  Unordered list alternate size
 //=====================================================================
-ul.ul-big{
+ul.urd-big{
     & li{
     	&:before{
 			content: "";
@@ -98,68 +59,87 @@ ul.ul-big{
 //=====================================================================
 //  Unordered list styles
 //=====================================================================
-ul.ul-disc-default{
-	@include ul-disc-variant($shadeBlackGray, darken($shadeBlackGray,12%));
+ul.urd{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    & li{
+    	padding-left: 16px; 
+    	&:before{
+    		display: inline-block;
+      		position: relative;
+			content: "";
+			top: 1px;
+	  		left: 1px;
+	  		bottom: 1px;
+	  		right: 1px;
+			padding: 2px;
+			margin: 2px 8px;
+    	}
+    }
 }
-ul.ul-circle-default{
-	@include ul-circle-variant($shadeBlackGray);
+.urd-disc-default{
+	@include urd-disc-variant($shadeBlackGray, darken($shadeBlackGray,12%));
 }
-ul.ul-square-default{
-	@include ul-square-variant($shadeBlackGray, darken($shadeBlackGray,12%));
+.urd-circle-default{
+	@include urd-circle-variant($shadeBlackGray);
 }
-ul.ul-disc-primary{
-	@include ul-disc-variant($shadeBlue, $shadeDarkBlue);
+.urd-square-default{
+	@include urd-square-variant($shadeBlackGray, darken($shadeBlackGray,12%));
 }
-ul.ul-circle-primary{
-	@include ul-circle-variant($shadeDarkBlue);
+.urd-disc-primary{
+	@include urd-disc-variant($shadeBlue, $shadeDarkBlue);
 }
-ul.ul-square-primary{
-	@include ul-square-variant($shadeBlue, $shadeDarkBlue);
+.urd-circle-primary{
+	@include urd-circle-variant($shadeDarkBlue);
 }
-ul.ul-disc-success{
-	@include ul-disc-variant($shadeGreen, $shadeDarkGreen);
+.urd-square-primary{
+	@include urd-square-variant($shadeBlue, $shadeDarkBlue);
 }
-ul.ul-circle-success{
-	@include ul-circle-variant($shadeDarkGreen);
+.urd-disc-success{
+	@include urd-disc-variant($shadeGreen, $shadeDarkGreen);
 }
-ul.ul-square-success{
-	@include ul-square-variant($shadeGreen, $shadeDarkGreen);
+.urd-circle-success{
+	@include urd-circle-variant($shadeDarkGreen);
 }
-ul.ul-disc-info{
-	@include ul-disc-variant($shadeCyan, $shadeDarkCyan);
+.urd-square-success{
+	@include urd-square-variant($shadeGreen, $shadeDarkGreen);
 }
-ul.ul-circle-info{
-	@include ul-circle-variant($shadeDarkCyan);
+.urd-disc-info{
+	@include urd-disc-variant($shadeCyan, $shadeDarkCyan);
 }
-ul.ul-square-info{
-	@include ul-square-variant($shadeCyan, $shadeDarkCyan);
+.urd-circle-info{
+	@include urd-circle-variant($shadeDarkCyan);
 }
-ul.ul-disc-warning{
-	@include ul-disc-variant($shadeOrange, $shadeDarkOrange);
+.urd-square-info{
+	@include urd-square-variant($shadeCyan, $shadeDarkCyan);
 }
-ul.ul-circle-warning{
-	@include ul-circle-variant($shadeDarkOrange);
+.urd-disc-warning{
+	@include urd-disc-variant($shadeOrange, $shadeDarkOrange);
 }
-ul.ul-square-warning{
-	@include ul-square-variant($shadeOrange, $shadeDarkOrange);
+.urd-circle-warning{
+	@include urd-circle-variant($shadeDarkOrange);
 }
-ul.ul-disc-danger{
-	@include ul-disc-variant($shadeRed, $shadeDarkRed);
+.urd-square-warning{
+	@include urd-square-variant($shadeOrange, $shadeDarkOrange);
 }
-ul.ul-circle-danger{
-	@include ul-circle-variant($shadeDarkRed);
+.urd-disc-danger{
+	@include urd-disc-variant($shadeRed, $shadeDarkRed);
 }
-ul.ul-square-danger{
-	@include ul-square-variant($shadeRed, $shadeDarkRed);
+.urd-circle-danger{
+	@include urd-circle-variant($shadeDarkRed);
 }
-ul.ul-disc-notice{
-	@include ul-disc-variant($shadePurple, $shadeDarkPurple);
+.urd-square-danger{
+	@include urd-square-variant($shadeRed, $shadeDarkRed);
 }
-ul.ul-circle-notice{
-	@include ul-circle-variant($shadeDarkPurple);
+.urd-disc-notice{
+	@include urd-disc-variant($shadePurple, $shadeDarkPurple);
 }
-ul.ul-square-notice{
-	@include ul-square-variant($shadePurple, $shadeDarkPurple);
+.urd-circle-notice{
+	@include urd-circle-variant($shadeDarkPurple);
+}
+.urd-square-notice{
+	@include urd-square-variant($shadePurple, $shadeDarkPurple);
 }
 //=====================================================================
 // Ordered list variants mixins (disc, circle and square)
@@ -168,26 +148,10 @@ ul.ul-square-notice{
 //=====================================================================
 //  Disc variant for ordered lists
 //=====================================================================
-@mixin ol-disc-variant ($color, $background, $border) {
-	counter-reset: item;
-    padding-left: 16px;
-    margin: 0;
+@mixin ord-disc-variant ($color, $background, $border) {
     & li{
-    	display: block;
-    	padding-left: 0px;
-    	left: -10px;
     	&:before{
-    		content: "\00a0" counter(item) ".\00a0";
-            counter-increment: item;
     		color: $color;
-    		display: inline-block;
-      		position: relative;
-			z-index: -10;
-			top: 2px;
-	  		left: 2px;
-	  		bottom: 2px;
-	  		right: 2px;
-	  		margin: 2px 8px;
 			border-radius: 50%;
 			background-color: $background;
 			border: 1px solid $border;
@@ -197,26 +161,10 @@ ul.ul-square-notice{
 //=====================================================================
 //  Circle variant for ordered lists
 //=====================================================================
-@mixin ol-circle-variant ($border){
-	counter-reset: item;
-    padding-left: 16px;
-    margin: 0;
+@mixin ord-circle-variant ($border){
     & li{
-    	display: block;
-    	padding-left: 0px;
-    	left: -10px;
     	&:before{
-    		content: "\00a0" counter(item) ".\00a0";
-            counter-increment: item;
     		color: $shadeBlackGray;
-    		display: inline-block;
-      		position: relative;
-			z-index: -10;
-			top: 2px;
-	  		left: 2px;
-	  		bottom: 2px;
-	  		right: 2px;
-	  		margin: 2px 8px;
 			border-radius: 50%;
 			border: 1px solid $border;
     	}
@@ -225,26 +173,10 @@ ul.ul-square-notice{
 //=====================================================================
 //  Square variant for ordered lists
 //=====================================================================
-@mixin ol-square-variant ($color, $background, $border){
-	counter-reset: item;
-    padding-left: 16px;
-    margin: 0;
+@mixin ord-square-variant ($color, $background, $border){
     & li{
-    	display: block;
-    	padding-left: 0px;
-    	left: -10px;
     	&:before{
-    		content: "\00a0" counter(item) ".\00a0";
-            counter-increment: item;
     		color: $color;
-    		display: inline-block;
-      		position: relative;
-			z-index: -10;
-			top: 2px;
-	  		left: 2px;
-	  		bottom: 2px;
-	  		right: 2px;
-	  		margin: 2px 8px;
 			border-radius: 4px;
 			background-color: $background;
 			border: 1px solid $border;
@@ -254,66 +186,87 @@ ul.ul-square-notice{
 //=====================================================================
 //  Ordered list styles
 //=====================================================================
-ol.ol-disc-default{
-	@include ol-disc-variant($shadeBlackGray, $shadeLightGray, $shadeDarkGray);
+ol.ord{
+	counter-reset: item;
+    padding-left: 16px;
+    margin: 0;
+    & li{
+    	display: block;
+    	padding-left: 0px;
+    	left: -10px;
+    	&:before{
+    		content: "\00a0" counter(item) ".\00a0";
+            counter-increment: item;
+    		display: inline-block;
+      		position: relative;
+			top: 2px;
+	  		left: 2px;
+	  		bottom: 2px;
+	  		right: 2px;
+	  		margin: 2px 8px;
+    	}
+    }	
 }
-ol.ol-circle-default{
-	@include ol-circle-variant($shadeBlackGray);
+.ord-disc-default{
+	@include ord-disc-variant($shadeBlackGray, $shadeLightGray, $shadeDarkGray);
 }
-ol.ol-square-default{
-	@include ol-square-variant($shadeBlackGray, $shadeLightGray, $shadeDarkGray);
+.ord-circle-default{
+	@include ord-circle-variant($shadeBlackGray);
 }
-ol.ol-disc-primary{
-	@include ol-disc-variant($shadeWhite, $shadeBlue, $shadeDarkBlue);
+.ord-square-default{
+	@include ord-square-variant($shadeBlackGray, $shadeLightGray, $shadeDarkGray);
 }
-ol.ol-circle-primary{
-	@include ol-circle-variant($shadeDarkBlue);
+.ord-disc-primary{
+	@include ord-disc-variant($shadeWhite, $shadeBlue, $shadeDarkBlue);
 }
-ol.ol-square-primary{
-	@include ol-square-variant($shadeWhite, $shadeBlue, $shadeDarkBlue);
+.ord-circle-primary{
+	@include ord-circle-variant($shadeDarkBlue);
 }
-ol.ol-disc-success{
-	@include ol-disc-variant($shadeWhite, $shadeGreen, $shadeDarkGreen);
+.ord-square-primary{
+	@include ord-square-variant($shadeWhite, $shadeBlue, $shadeDarkBlue);
 }
-ol.ol-circle-success{
-	@include ol-circle-variant($shadeDarkGreen);
+.ord-disc-success{
+	@include ord-disc-variant($shadeWhite, $shadeGreen, $shadeDarkGreen);
 }
-ol.ol-square-success{
-	@include ol-square-variant($shadeWhite, $shadeGreen, $shadeDarkGreen);
+.ord-circle-success{
+	@include ord-circle-variant($shadeDarkGreen);
 }
-ol.ol-disc-info{
-	@include ol-disc-variant($shadeWhite, $shadeCyan, $shadeDarkCyan);
+.ord-square-success{
+	@include ord-square-variant($shadeWhite, $shadeGreen, $shadeDarkGreen);
 }
-ol.ol-circle-info{
-	@include ol-circle-variant($shadeDarkCyan);
+.ord-disc-info{
+	@include ord-disc-variant($shadeWhite, $shadeCyan, $shadeDarkCyan);
 }
-ol.ol-square-info{
-	@include ol-square-variant($shadeWhite, $shadeCyan, $shadeDarkCyan);
+.ord-circle-info{
+	@include ord-circle-variant($shadeDarkCyan);
 }
-ol.ol-disc-warning{
-	@include ol-disc-variant($shadeWhite, $shadeOrange, $shadeDarkOrange);
+.ord-square-info{
+	@include ord-square-variant($shadeWhite, $shadeCyan, $shadeDarkCyan);
 }
-ol.ol-circle-warning{
-	@include ol-circle-variant($shadeDarkOrange);
+.ord-disc-warning{
+	@include ord-disc-variant($shadeWhite, $shadeOrange, $shadeDarkOrange);
 }
-ol.ol-square-warning{
-	@include ol-square-variant($shadeWhite, $shadeOrange, $shadeDarkOrange);
+.ord-circle-warning{
+	@include ord-circle-variant($shadeDarkOrange);
 }
-ol.ol-disc-danger{
-	@include ol-disc-variant($shadeWhite, $shadeRed, $shadeDarkRed);
+.ord-square-warning{
+	@include ord-square-variant($shadeWhite, $shadeOrange, $shadeDarkOrange);
 }
-ol.ol-circle-danger{
-	@include ol-circle-variant($shadeDarkRed);
+.ord-disc-danger{
+	@include ord-disc-variant($shadeWhite, $shadeRed, $shadeDarkRed);
 }
-ol.ol-square-danger{
-	@include ol-square-variant($shadeWhite, $shadeRed, $shadeDarkRed);
+.ord-circle-danger{
+	@include ord-circle-variant($shadeDarkRed);
 }
-ol.ol-disc-notice{
-	@include ol-disc-variant($shadeWhite, $shadePurple, $shadeDarkPurple);
+.ord-square-danger{
+	@include ord-square-variant($shadeWhite, $shadeRed, $shadeDarkRed);
 }
-ol.ol-circle-notice{
-	@include ol-circle-variant($shadeDarkPurple);
+.ord-disc-notice{
+	@include ord-disc-variant($shadeWhite, $shadePurple, $shadeDarkPurple);
 }
-ol.ol-square-notice{
-	@include ol-square-variant($shadeWhite, $shadePurple, $shadeDarkPurple);
+.ord-circle-notice{
+	@include ord-circle-variant($shadeDarkPurple);
+}
+.ord-square-notice{
+	@include ord-square-variant($shadeWhite, $shadePurple, $shadeDarkPurple);
 }
