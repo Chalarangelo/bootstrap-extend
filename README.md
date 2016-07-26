@@ -10,9 +10,9 @@ For information on the components, as well as a live demo of the components, che
 
 This framework depends heavily on jQuery (2.2.4 or newer) and Bootstrap 3 (currently supported 3.3.6 and 3.3.7). Include them in your `<head>` before it. Use the following two lines to include **Bootstrap-Extend** in your page:
 
-`<script type="text/javascript" src="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/master/js/bootstrap-extend.min.js"></script>`
+`<script type="text/javascript" src="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/stable/js/bootstrap-extend.min.js"></script>`
 
-`<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/master/css/bootstrap-extend.min.css"/>`
+`<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/stable/css/bootstrap-extend.min.css"/>`
 
 ## Contributing
 
