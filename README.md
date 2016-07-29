@@ -1,5 +1,7 @@
 # Bootstrap-Extend
 
+** The project is under reconstruction, check back soon!**
+
 A set of useful extensions for the very popular [Bootstrap](http://getbootstrap.com/) framework.
 
 ## Live Demo and Documentation

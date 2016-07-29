@@ -45,6 +45,7 @@
   <li role="presentation"><a href="#checkboxes">        Checkbox styles</a></li>
   <li role="presentation"><a href="#radiobuttons">      Radio button styles</a></li>
   <li role="presentation"><a href="#lists">             List element styles</a></li>
+  <li role="presentation"><a href="#select">            Alternate style for selects</a></li>
 
 </ul>
 
@@ -543,6 +544,33 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
 &lt;/ol&gt;</code></pre></figure>
    </div> 
   </div>
+
+<h3 id="select">Alternate style for selects <small>Pure CSS</small></h3>
+  <p>Use the <code>.slct</code> class to give a new style to your <code>&lt;select&gt;</code> elements. <strong>Note:</strong> this particular class might not work in older versions of Internet Explorer.</p>
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Example</h4>
+   </div>
+  <div class="panel-body">
+   <select class="slct">
+    <option>Apples</option>
+    <option selected>Oranges</option>
+    <option>Strawberries</option>
+    <option>Cherries</option>
+   </select>
+   <br/>
+   <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;select class="slct"&gt;
+  &lt;option&gt;Apples&lt;/option&gt;
+  &lt;option selected&gt;Oranges&lt;/option&gt;
+  &lt;option&gt;Strawberries&lt;/option&gt;
+  &lt;option&gt;Cherries&lt;/option&gt;
+&lt;/select&gt;</code></pre></figure>
+   </div> 
+  </div>
+
+
 
 <footer style="padding: 20px;">Designed and built by <a href="https://github.com/Chalarangelo">@chalarangelo</a> for use with <a href="http://getbootstrap.com">Bootstrap</a> (versions 3.3.6 and 3.3.7).<br>All components are licensed under the <a href="https://raw.githubusercontent.com/Chalarangelo/bootstrap-extend/master/LICENSE">MIT License</a>.</footer>
 <!-- Page ending, do not modify below this line -->
