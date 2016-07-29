@@ -449,3 +449,6 @@ ol.ord li:before{content:" " counter(item) ". ";counter-increment:item;display
 .ord-disc-notice li:before{color:#fff;border-radius:50%;background-color:#9783b9;border:1px solid #6f5499}
 .ord-circle-notice li:before{color:#555;border-radius:50%;border:1px solid #6f5499}
 .ord-square-notice li:before{color:#fff;border-radius:4px;background-color:#9783b9;border:1px solid #6f5499}
+select.slct{border:1px solid #ccc;border-radius:4px;padding:5px 35px 5px 5px;height:32px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(res/select-arrow.png) 96%/15% no-repeat #fff}
+select.slct.focus,select.slct:active,select.slct:focus,select.slct:hover{border:1px solid #66afe9;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}
+fieldset[disabled] select.slct,fieldset[disabled] select.slct.focus,fieldset[disabled] select.slct:active,fieldset[disabled] select.slct:focus,fieldset[disabled] select.slct:hover,select.slct.disabled,select.slct.disabled.focus,select.slct.disabled:active,select.slct.disabled:focus,select.slct.disabled:hover,select.slct[disabled],select.slct[disabled].focus,select.slct[disabled]:active,select.slct[disabled]:focus,select.slct[disabled]:hover{cursor:not-allowed;opacity:.65}
