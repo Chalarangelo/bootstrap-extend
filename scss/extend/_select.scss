@@ -1,0 +1,23 @@
+//=====================================================================
+// Select style
+//=====================================================================
+select.slct{
+  border: 1px solid $shadeDarkGray;
+  border-radius: 4px;
+  padding: 5px 35px 5px 5px;
+  height: 32px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/stable/css/res/select-arrow.PNG) 96% / 15% no-repeat $shadeWhite;
+  &:hover, &:focus, &.focus, &:active{
+    border: 1px solid $shadeLightBlue;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  }
+  &.disabled, &[disabled], fieldset[disabled] & {
+    &,&:hover, &:focus, &.focus, &:active {
+      cursor: not-allowed;
+      opacity: .65;
+    }
+  }
+}

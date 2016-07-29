@@ -10,6 +10,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/bootstrap-extend.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap-extend.min.css"/>
+<!-- v1.1 -->
+<!--     <script type="text/javascript" src="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/880420ae663f7c539971ded33411cdecffcc2134/js/bootstrap-extend.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/880420ae663f7c539971ded33411cdecffcc2134/css/bootstrap-extend.min.css"/> -->
   <link rel="icon" type="image/png" href="favicon.png">
   <!-- Used for showing tooltips and activating the scrollspy-->
   <script>  
@@ -18,9 +21,9 @@
     });
     $('body').scrollspy({ target: '#navbar-bse' });
   </script>
+  
 
-<!--   <script type="text/javascript" src="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/stable/js/bootstrap-extend.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/stable/css/bootstrap-extend.min.css"/> -->
+
 
   <!-- Github buttons. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -45,6 +48,7 @@
   <li role="presentation"><a href="#checkboxes">        Checkbox styles</a></li>
   <li role="presentation"><a href="#radiobuttons">      Radio button styles</a></li>
   <li role="presentation"><a href="#lists">             List element styles</a></li>
+  <li role="presentation"><a href="#select">            Alternative select style&nbsp;<span class="label label-danger">New!</span></a></li>
 
 </ul>
 
@@ -64,9 +68,9 @@
   <h2 id="dependencies">Dependencies and usage</h2>
   <p>This framework depends heavily on Bootstrap 3 and jQuery. Include the dependencies (jQuery 2.2.4 or newer, Bootstrap 3 js and css files) in your <code>&lt;head&gt;</code> section and after them insert the following two lines to include Bootstrap-Extend:</p>
   <figure class="highlight">
-  <pre><code class="language-html" data-lang="html">&lt;script type="text/javascript" src="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/stable/js/bootstrap-extend.min.js"&gt;&lt;script/&gt;
-&lt;rel type=stylesheet" href="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/stable/css/bootstrap-extend.min.css" /&gt;</code></pre></figure>
-<p>Alternatively you can download the files on your computer from <a href="https://github.com/Chalarangelo/bootstrap-extend">my Github page</a> and include them using a local path.</p>
+  <pre><code class="language-html" data-lang="html">&lt;script type="text/javascript" src="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/880420ae663f7c539971ded33411cdecffcc2134/js/bootstrap-extend.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/880420ae663f7c539971ded33411cdecffcc2134/css/bootstrap-extend.min.css"/&gt;</code></pre></figure>
+<p>Alternatively you can download the files on your local machine from <a href="https://github.com/Chalarangelo/bootstrap-extend">my Github page</a> and include them using a local path.<br><strong>Note:</strong> I know that <a href="https://rawgit.com/">RawGit</a> is not 100% reliable and that sometimes problems can occur, as well as the fact that using a hash might look kinda clumsy, but this is a free project and so far this seems like my best option.</p>
 
   <h2>Components, CSS and Javascript</h2>
   <p>This framework is all about custom CSS styles for commonly used elements and responsive and lightweight components. Most of these components complement Bootstrap's aesthetic or aim to deal with its shortcomings in one way or another. More components will be added regularly. Bootstrap-Extend aims to eventually fill the gap left by Bootstrap in certain areas, without the need to include each component individually, but rather provide people with a consistent set of elements all in one place. <br>
@@ -543,6 +547,33 @@ Yes/No &lt;input id="o6" class="switch switch-rect-primary switch-yes-no" type="
 &lt;/ol&gt;</code></pre></figure>
    </div> 
   </div>
+
+<h3 id="select">Alternative select style <small>In pure CSS</small>&nbsp;<span class="label label-danger">New!</span></h3>
+  <p>Use the <code>.slct</code> class to give a new style to your <code>&lt;select&gt;</code> elements. <strong>Note:</strong> this particular class might not work in older versions of Internet Explorer.</p>
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h4 class="panel-title">Example</h4>
+   </div>
+  <div class="panel-body">
+   <select class="slct">
+    <option>Apples</option>
+    <option selected>Oranges</option>
+    <option>Strawberries</option>
+    <option>Cherries</option>
+   </select>
+   <br/>
+   <h4>Usage:</h4>
+   <figure class="highlight">
+    <pre><code class="language-html" data-lang="html">&lt;select class="slct"&gt;
+  &lt;option&gt;Apples&lt;/option&gt;
+  &lt;option selected&gt;Oranges&lt;/option&gt;
+  &lt;option&gt;Strawberries&lt;/option&gt;
+  &lt;option&gt;Cherries&lt;/option&gt;
+&lt;/select&gt;</code></pre></figure>
+   </div> 
+  </div>
+
+
 
 <footer style="padding: 20px;">Designed and built by <a href="https://github.com/Chalarangelo">@chalarangelo</a> for use with <a href="http://getbootstrap.com">Bootstrap</a> (versions 3.3.6 and 3.3.7).<br>All components are licensed under the <a href="https://raw.githubusercontent.com/Chalarangelo/bootstrap-extend/master/LICENSE">MIT License</a>.</footer>
 <!-- Page ending, do not modify below this line -->
