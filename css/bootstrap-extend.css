@@ -2703,7 +2703,7 @@ select.slct {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(res/select-arrow.png) 96%/15% no-repeat #fff;
+  background: url(https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/stable/css/res/select-arrow.PNG) 96%/15% no-repeat #fff;
 }
 /* line 13, ../scss/extend/_select.scss */
 select.slct:hover, select.slct:focus, select.slct.focus, select.slct:active {

@@ -9,7 +9,7 @@ select.slct{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(res/select-arrow.png) 96% / 15% no-repeat $shadeWhite;
+  background: url(https://cdn.rawgit.com/Chalarangelo/bootstrap-extend/stable/css/res/select-arrow.PNG) 96% / 15% no-repeat $shadeWhite;
   &:hover, &:focus, &.focus, &:active{
     border: 1px solid $shadeLightBlue;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
